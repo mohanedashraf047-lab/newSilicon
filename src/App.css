@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Standard CSS variables work in Tailwind 4 without @theme */
+:root {
+  --animate-fade-in-down: fade-in-down 0.6s ease-out forwards;
+  --animate-fade-in-left: fade-in-left 0.6s ease-out forwards;
+  --animate-shine: shine 1.5s ease-in-out infinite;
+}
+
+/* Keyframes work in any CSS version */
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+/* Manually create the classes so Tailwind doesn't have to */
+.animate-fade-in-down {
+  animation: var(--animate-fade-in-down);
+}
+.animate-fade-in-left {
+  animation: var(--animate-fade-in-left);
+}
+.animate-shine {
+  animation: var(--animate-shine);
+}
+.perspective-1000 {
+  perspective: 1000px;
+}
