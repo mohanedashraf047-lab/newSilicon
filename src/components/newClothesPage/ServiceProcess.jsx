@@ -10,6 +10,8 @@ const steps = [
   { id: "06", title: "Step 6", desc: "Confirm PI And Payments" },
 ];
 
+// ServiceProcess Component
+
 const ServiceProcess = () => {
   return (
     <section className="py-16 lg:py-24 bg-blue-600 text-white my-12 rounded-3xl shadow-2xl overflow-hidden relative">
