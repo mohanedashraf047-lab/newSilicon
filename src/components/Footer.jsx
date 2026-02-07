@@ -52,7 +52,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="text-center md:text-left">
             <img
-              src="/src/assets/logo.jpeg"
+              src="/logo.jpeg"
               alt="Silicon Value Logo"
               className="w-40 sm:w-48 md:w-56 lg:w-64 object-contain mb-4 mx-auto md:mx-0"
             />
