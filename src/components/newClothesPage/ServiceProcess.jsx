@@ -11,6 +11,7 @@ const steps = [
 ];
 
 // ServiceProcess Component
+// This component renders the service process workflow with a modern and engaging design.
 
 const ServiceProcess = () => {
   return (
