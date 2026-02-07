@@ -9,6 +9,7 @@ import { useScroll } from "./hooks";
 import { scrollToTop } from "./utils/helpers";
 import Layout from "./pages/Layout";
 import About from "./pages/About";
+import './App.css' 
 
 const BackToTop = () => {
   const { scrollY } = useScroll();
