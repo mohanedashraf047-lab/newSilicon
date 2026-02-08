@@ -119,13 +119,13 @@ const Header = () => {
         <div className="hidden lg:block">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between py-1">
-              <a href="/" className="shrink-0">
+              <Link to="/" className="shrink-0">
                 <img
                   src="/logo.jpeg"
                   alt="Silicon Value Logo"
                   className="h-20 w-auto object-contain"
                 />
-              </a>
+              </Link>
 
               <nav>
                 <ul className="flex items-center space-x-1">
