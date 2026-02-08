@@ -1,4 +1,5 @@
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -60,7 +61,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 px-4 py-2 bg-white/90 backdrop-blur-sm text-green-600 rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-sm"
               >
-                <MessageCircle className="w-4 h-4 shrink-0" />
+                <FaWhatsapp className="w-4 h-4 shrink-0" />
                 <span className="text-xs font-semibold hidden xl:inline whitespace-nowrap">
                   WhatsApp Us
                 </span>

@@ -9,7 +9,8 @@ import { useScroll } from "./hooks";
 import { scrollToTop } from "./utils/helpers";
 import Layout from "./pages/Layout";
 import About from "./pages/About";
-import './App.css' 
+import WhatsAppButton from "./components/WhatsAppButton";
+import './App.css'
 
 const BackToTop = () => {
   const { scrollY } = useScroll();
@@ -56,6 +57,7 @@ function App() {
   return (
     <>
       <RouterProvider router={routes} />
+      <WhatsAppButton />
       <BackToTop />
     </>
   );
