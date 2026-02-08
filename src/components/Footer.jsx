@@ -29,15 +29,14 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Create mailto link with form data
-    const subject = `Quick Message from ${formData.name}`;
-    const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-    const mailtoLink = `mailto:${COMPANY_INFO.email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const toEmail = COMPANY_INFO.email[0];
+    const subject = encodeURIComponent(`Quick Message from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
 
-    // Open email client
-    window.location.href = mailtoLink;
+    window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
 
-    // Show success message and reset form
     setFormStatus("Opening your email client...");
     setTimeout(() => {
       setFormData({ name: "", email: "", message: "" });
@@ -46,30 +45,37 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#FFD700] text-white py-12 sm:py-14">
+    <footer className="bg-[#FFD700] py-12 sm:py-14">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-8 sm:mb-12">
-          {/* Company Info */}
-          <div className="text-center md:text-left">
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-10">
+          {/* Logo & Description */}
+          <div className="sm:col-span-2 lg:col-span-3 flex flex-col items-center sm:items-start">
             <img
               src="/logo.jpeg"
               alt="Silicon Value Logo"
-              className="w-40 sm:w-48 md:w-56 lg:w-64 object-contain mb-4 mx-auto md:mx-0"
+              className="w-40 sm:w-48 lg:w-56 object-contain mb-4"
             />
+            <p className="text-gray-800 text-xs sm:text-sm text-center sm:text-left leading-relaxed">
+              Leading the way in second-hand clothes, shoes, and bags wholesale.
+            </p>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="font-bold mb-4 sm:mb-6 text-base sm:text-lg text-blue-500 border-b border-white/10 pb-2">
+          <div className="lg:col-span-3">
+            <h4 className="font-bold mb-4 text-base sm:text-lg text-blue-600 pb-2 border-b-2 border-blue-600/30">
               Quick Links
             </h4>
-            <ul className="space-y-2 sm:space-y-3">
+            <ul className="space-y-2.5">
               {footerLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     to={link.path}
-                    className="text-gray-700 text-sm sm:text-base hover:text-white transition-all duration-300 flex items-center group"
+                    className="text-gray-800 text-sm sm:text-base hover:text-blue-700 transition-all duration-200 flex items-center group"
                   >
+                    <span className="mr-2 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                      ›
+                    </span>
                     <span className="group-hover:translate-x-1 transition-transform">
                       {link.name}
                     </span>
@@ -79,13 +85,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Quick Contact Form */}
-          <div className="lg:col-span-2">
-            <h4 className="font-bold mb-4 sm:mb-6 text-base sm:text-lg text-blue-500 border-b border-white/10 pb-2">
-              Contact Us
+          {/* Contact Form */}
+          <div className="sm:col-span-2 lg:col-span-6">
+            <h4 className="font-bold mb-4 text-base sm:text-lg text-blue-600 pb-2 border-b-2 border-blue-600/30">
+              Send Us a Message
             </h4>
-            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4">
-              <div>
+            <form onSubmit={handleSubmit} className="space-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input
                   type="text"
                   name="name"
@@ -93,10 +99,8 @@ const Footer = () => {
                   onChange={handleChange}
                   placeholder="Your Name"
                   required
-                  className="w-full px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-white/20 bg-white/10 text-white placeholder-gray-300 focus:border-white focus:bg-white/20 outline-none transition-all"
+                  className="w-full px-4 py-2.5 text-sm rounded-lg bg-white/80 text-gray-900 placeholder-gray-500 border border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all"
                 />
-              </div>
-              <div>
                 <input
                   type="email"
                   name="email"
@@ -104,28 +108,26 @@ const Footer = () => {
                   onChange={handleChange}
                   placeholder="Your Email"
                   required
-                  className="w-full px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-white/20 bg-white/5 text-white placeholder-gray-300 focus:border-white focus:bg-white/20 outline-none transition-all"
+                  className="w-full px-4 py-2.5 text-sm rounded-lg bg-white/80 text-gray-900 placeholder-gray-500 border border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all"
                 />
               </div>
-              <div>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Your Message"
-                  required
-                  rows="3"
-                  className="w-full px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base rounded-lg border-2 border-white/20 bg-white/10 text-white placeholder-gray-300 focus:border-white focus:bg-white/20 outline-none transition-all resize-none"
-                />
-              </div>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Your Message"
+                required
+                rows="3"
+                className="w-full px-4 py-2.5 text-sm rounded-lg bg-white/80 text-gray-900 placeholder-gray-500 border border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all resize-none"
+              />
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 sm:py-2.5 px-4 rounded-lg transition-all duration-300 active:scale-95 text-sm sm:text-base"
+                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-8 rounded-lg transition-all duration-300 active:scale-95 text-sm"
               >
                 Send Message
               </button>
               {formStatus && (
-                <p className="text-white text-xs sm:text-sm text-center bg-blue-600/50 py-2 rounded-lg">
+                <p className="text-blue-700 text-xs sm:text-sm font-medium">
                   {formStatus}
                 </p>
               )}
@@ -134,41 +136,68 @@ const Footer = () => {
         </div>
 
         {/* Contact Info Bar */}
-        <div className="border-t border-blue-600 pt-6 sm:pt-8 mb-6 sm:mb-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            <div className="flex items-center justify-center sm:justify-start">
-              <span className="text-xl sm:text-2xl mr-2 sm:mr-3">📧</span>
-              <a
-                href={`mailto:${COMPANY_INFO.email}`}
-                className="text-gray-700 hover:text-white transition-colors text-xs sm:text-sm break-all"
-              >
-                {COMPANY_INFO.email}
-              </a>
+        <div className="border-t-2 border-blue-600/30 pt-6 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
+            {/* Emails */}
+            <div className="flex items-start gap-3">
+              <span className="text-lg sm:text-xl shrink-0 mt-0.5">📧</span>
+              <div className="space-y-1">
+                <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
+                  Email
+                </p>
+                {COMPANY_INFO.email.map((email) => (
+                  <a
+                    key={email}
+                    href={`mailto:${email}`}
+                    className="block text-gray-800 hover:text-blue-700 transition-colors text-sm break-all"
+                  >
+                    {email}
+                  </a>
+                ))}
+              </div>
             </div>
-            <div className="flex items-center justify-center sm:justify-start">
-              <span className="text-xl sm:text-2xl mr-2 sm:mr-3">📱</span>
-              <span className="text-gray-700 text-xs sm:text-sm">
-                {COMPANY_INFO.whatsapp[0]}
-              </span>
+
+            {/* WhatsApp */}
+            <div className="flex items-start gap-3">
+              <span className="text-lg sm:text-xl shrink-0 mt-0.5">📱</span>
+              <div className="space-y-1">
+                <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
+                  WhatsApp
+                </p>
+                {COMPANY_INFO.whatsapp.map((phone) => (
+                  <a
+                    key={phone}
+                    href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-gray-800 hover:text-blue-700 transition-colors text-sm"
+                  >
+                    {phone}
+                  </a>
+                ))}
+              </div>
             </div>
-            <div className="flex items-center justify-center sm:justify-start">
-              <span className="text-xl sm:text-2xl mr-2 sm:mr-3">📍</span>
-              <span className="text-gray-700 text-xs sm:text-sm">
-                {COMPANY_INFO.address}
-              </span>
-            </div>
-            <div className="flex items-center justify-center sm:justify-start">
-              <span className="text-xl sm:text-2xl mr-2 sm:mr-3">🏭</span>
-              <span className="text-gray-700 text-xs sm:text-sm">
-                Factory: {COMPANY_INFO.factorySize}
-              </span>
+
+            {/* Address */}
+            <div className="flex items-start gap-3">
+              <span className="text-lg sm:text-xl shrink-0 mt-0.5">📍</span>
+              <div className="space-y-1">
+                <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
+                  Location
+                </p>
+                {COMPANY_INFO.address.map((addr) => (
+                  <p key={addr} className="text-gray-800 text-sm">
+                    {addr}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-blue-600 pt-6 sm:pt-8 ">
-          <p className="text-center text-sm sm:text-xl  text-gray-700">
+        <div className="border-t-2 border-blue-600/30 pt-6">
+          <p className="text-center text-sm sm:text-base text-gray-800">
             &copy; {new Date().getFullYear()} {COMPANY_INFO.name}. All rights
             reserved.
           </p>

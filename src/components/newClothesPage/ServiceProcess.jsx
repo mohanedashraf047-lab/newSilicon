@@ -5,7 +5,7 @@ const steps = [
   { id: "01", title: "Step 1", desc: "Confirm The Product Categories" },
   { id: "02", title: "Step 2", desc: "Confirm Your Order Quantities Full Container" },
   { id: "03", title: "Step 3", desc: "Small Orders Discussion" },
-  { id: "04", title: "Step 4", desc: "Confirm The Quantity And Grade" },
+  { id: "04", title: "Step 4", desc: "Confirm The Quantity" },
   { id: "05", title: "Step 5", desc: "Discuss Prices And Discounts With Our Sales Team" },
   { id: "06", title: "Step 6", desc: "Confirm PI And Payments" },
 ];
