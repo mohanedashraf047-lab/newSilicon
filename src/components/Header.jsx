@@ -1,6 +1,6 @@
 import { Mail, MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -76,13 +76,13 @@ const Header = () => {
         <div className="lg:hidden">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-20">
-              <a href="/" className="shrink-0">
+              <Link to="/" className="shrink-0">
                 <img
                   src="/logo.jpeg"
                   alt="Silicon Value Logo"
                   className="h-12 sm:h-14 w-auto object-contain"
                 />
-              </a>
+              </Link>
 
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
