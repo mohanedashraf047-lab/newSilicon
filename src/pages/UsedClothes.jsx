@@ -1,18 +1,30 @@
-import React from 'react'
+
+import SecondHandShoes from '../components/usedClothesPage/SecondHandShoes'
+import ProductGrid from '../components/usedClothesPage/ProductGrid'
+import WhyChooseUs from '../components/usedClothesPage/WhyChooseUs'
+import CategoryBrowser from '../components/usedClothesPage/CategoryBrowser'
+import Banner2 from '../components/usedClothesPage/Banner2'
+import CustomerFeedback from '../components/usedClothesPage/CustomerFeedback'
+import ComparisonSection from '../components/usedClothesPage/ComparisonSection'
+import ContactSection from '../components/usedClothesPage/ContactSection'
 
 const UsedClothes = () => {
   return (
     <div className="pt-20 lg:pt-32">
-      <section className="min-h-screen py-16 lg:py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-center">
-            Used Clothes
-          </h1>
-          <p className="text-base sm:text-lg text-gray-600 text-center max-w-3xl mx-auto">
-            Content coming soon. Discover our extensive collection of quality used clothing items.
-          </p>
-        </div>
-      </section>
+      {/* SecondHandShoes => is (Banner1) section */}
+      <SecondHandShoes />
+      <ProductGrid />
+      <WhyChooseUs />
+      <CategoryBrowser />
+      {/* <Banner2 /> => is (The Second Hand Clothes Leading Exporter) section */}
+      <Banner2 />
+      {/* CustomerFeedback => is (Testimonials) section */}
+      <CustomerFeedback />
+      {/* ComparisonSection => is (Comparison) section */}
+      <ComparisonSection />
+      {/* ContactSection => is (Contact Us) section */}
+      <ContactSection />
+
     </div>
   )
 }
