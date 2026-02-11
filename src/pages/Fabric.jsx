@@ -1,20 +1,49 @@
-import React from 'react'
+import ProductGrid from "../components/usedClothesPage/ProductGrid";
+import SecondHandShoes from "../components/usedClothesPage/SecondHandShoes";
+import WhyChooseUs from "../components/usedClothesPage/WhyChooseUs";
+import CategoryBrowser from "../components/usedClothesPage/CategoryBrowser";
+import { PAGE_DATA } from "../constants/pageData";
+import Banner2 from "../components/usedClothesPage/Banner2";
+import CustomerFeedback from "../components/usedClothesPage/CustomerFeedback";
+
+const data = PAGE_DATA.fabric;
 
 const Fabric = () => {
   return (
     <div className="pt-20 lg:pt-32">
-      <section className="min-h-screen py-16 lg:py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-center">
-            Fabric
-          </h1>
-          <p className="text-base sm:text-lg text-gray-600 text-center max-w-3xl mx-auto">
-            Content coming soon. Browse our premium fabric selection for your business needs.
-          </p>
-        </div>
-      </section>
-    </div>
-  )
-}
+      <SecondHandShoes
+        title={data.hero.title}
+        highlightWord={data.hero.highlightWord}
+        content={data.content}
+      />
+      <ProductGrid products={data.products} />
 
-export default Fabric
+      <WhyChooseUs
+        title={data.whyChoose.title}
+        highlightWord={data.whyChoose.highlightWord}
+        subtitle={data.whyChoose.subtitle}
+        features={data.whyChoose.features}
+      />
+      <CategoryBrowser
+        title={data.categories.title}
+        banner={data.categories.banner}
+        groups={data.categories.groups}
+      />
+      <Banner2
+        badge={data.banner2.badge}
+        heading={data.banner2.heading}
+        headingHighlight={data.banner2.headingHighlight}
+        paragraphs={data.banner2.paragraphs}
+        cards={data.banner2.cards}
+      />
+      <CustomerFeedback
+        title={data.feedback.title}
+        highlightWord={data.feedback.highlightWord}
+        trustText={data.feedback.trustText}
+        testimonials={data.feedback.testimonials}
+      />
+    </div>
+  );
+};
+
+export default Fabric;

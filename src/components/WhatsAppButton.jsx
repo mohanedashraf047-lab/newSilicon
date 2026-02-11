@@ -26,8 +26,8 @@ const WhatsAppButton = () => {
             : "opacity-0 translate-y-2 pointer-events-none"
         }`}
       >
-        <div className="relative bg-white text-gray-800 text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 rounded-lg shadow-lg whitespace-nowrap border border-gray-100">
-          Chat with us!
+        <div className="relative bg-white text-blue-800 text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 rounded-lg shadow-lg whitespace-nowrap border border-gray-100">
+          <strong className="font-semibold text-[#FFD700] mr-1 bg-blue-700 p-1 rounded-full cursor-pointer">Get Price</strong>, Chat with us!
           {/* Arrow pointing down */}
           <div className="absolute -bottom-1.5 right-5 w-3 h-3 bg-white border-r border-b border-gray-100 rotate-45" />
         </div>

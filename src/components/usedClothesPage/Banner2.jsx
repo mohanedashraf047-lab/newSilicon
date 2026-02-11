@@ -1,90 +1,85 @@
-import React from "react";
 import { Factory, CheckCircle, ShieldCheck } from "lucide-react";
 
-const Banner2 = () => {
+const ICON_MAP = {
+  Factory,
+  CheckCircle,
+  ShieldCheck,
+};
+
+const Banner2 = ({
+  badge,
+  heading,
+  headingHighlight,
+  paragraphs = [],
+  cards = [],
+}) => {
   return (
     <section className="py-20 bg-blue-500 overflow-hidden text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Left Side: Content */}
           <div className="w-full lg:w-7/12 space-y-8">
-            {/* Top Badge - Changed to White Glass style */}
+            {/* Top Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
               <ShieldCheck size={16} className="text-white" />
               <span className="text-white font-bold text-sm uppercase tracking-wider">
-                Trusted Industry Partner
+                {badge}
               </span>
             </div>
 
-            {/* Main Heading - White text */}
+            {/* Main Heading */}
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">
-              The Leading Exporter of{" "}
-              <span className="text-blue-100 italic">Second Hand Clothes</span>
+              {heading}{" "}
+              <span className="text-blue-100 italic">{headingHighlight}</span>
             </h2>
 
-            {/* Paragraphs - Light Slate/Blue-White for better contrast */}
+            {/* Paragraphs */}
             <div className="space-y-6 text-blue-50 text-lg leading-relaxed">
-              <p>
-                We understand that trusting a supplier, especially for something
-                as crucial as second-hand clothing, can be a complex process.
-                You may have concerns about quality, reliability, or whether we
-                can truly deliver on our promises. At Silicon Value, we’re here
-                to show you that we’re a trustworthy partner who can meet your
-                business needs, all while fitting within your budget.
-              </p>
-              <p className="font-semibold text-white">
-                Here are some of the advantages you’ll enjoy by choosing Silicon
-                Value:
-              </p>
+              {paragraphs.map((text, idx) => (
+                <p
+                  key={idx}
+                  className={
+                    idx === paragraphs.length - 1
+                      ? "font-semibold text-white"
+                      : ""
+                  }
+                >
+                  {text}
+                </p>
+              ))}
             </div>
 
-            {/* Benefit Cards Container */}
+            {/* Benefit Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Card 1 - Unified Style */}
-              <div className="group space-y-4 p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm hover:bg-white/20 hover:shadow-xl hover:shadow-[#FFD700]/20 transition-all duration-300">
-                <div className="flex items-center gap-4">
-                  {/* Icon Wrapper */}
-                  <div className="p-3 bg-[#FFD700] rounded-xl text-blue-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Factory size={24} />
+              {cards.map((card, idx) => {
+                const IconComponent = ICON_MAP[card.icon];
+                return (
+                  <div
+                    key={idx}
+                    className="group space-y-4 p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm hover:bg-white/20 hover:shadow-xl hover:shadow-[#FFD700]/20 transition-all duration-300"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-[#FFD700] rounded-xl text-blue-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        {IconComponent && <IconComponent size={24} />}
+                      </div>
+                      <h4 className="text-xl font-bold text-white tracking-tight">
+                        {card.title}
+                      </h4>
+                    </div>
+                    <p
+                      className="text-blue-50 text-base leading-relaxed opacity-90"
+                      dangerouslySetInnerHTML={{ __html: card.description }}
+                    />
                   </div>
-                  <h4 className="text-xl font-bold text-white tracking-tight">
-                    A Reliable Experienced Exporter
-                  </h4>
-                </div>
-                <p className="text-blue-50 text-base leading-relaxed opacity-90">
-                  Silicon Value is one of the top exporters of second-hand
-                  garments in China. With two large, fully operational factories
-                  spanning over <strong>20,000 square meters</strong>, we have
-                  the capacity to meet your needs.
-                </p>
-              </div>
-
-              {/* Card 2 - Unified Style */}
-              <div className="group space-y-4 p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-sm hover:bg-white/20 hover:shadow-xl hover:shadow-[#FFD700]/20 transition-all duration-300">
-                <div className="flex items-center gap-4">
-                  {/* Icon Wrapper */}
-                  <div className="p-3 bg-[#FFD700] rounded-xl text-blue-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <CheckCircle size={24} />
-                  </div>
-                  <h4 className="text-xl font-bold text-white tracking-tight">
-                    Specialized Sorting Expertise
-                  </h4>
-                </div>
-                <p className="text-blue-50 text-base leading-relaxed opacity-90">
-                  We have a dedicated team specializing in sorting used
-                  clothing. Our expertise allows us to handle garments
-                  carefully, ensuring they meet
-                  <strong> high standards</strong> and your specific
-                  requirements.
-                </p>
-              </div>
+                );
+              })}
             </div>
           </div>
 
           {/* Right Side: Video Placeholder */}
           <div className="w-full lg:w-5/12">
             <div className="relative group">
-              {/* Decorative Frame - Darker blue for contrast against blue-500 */}
+              {/* Decorative Frame */}
               <div className="absolute -inset-4 bg-blue-600/50 rounded-[2.5rem] rotate-2 group-hover:rotate-0 transition-transform duration-700"></div>
 
               {/* Video Box */}

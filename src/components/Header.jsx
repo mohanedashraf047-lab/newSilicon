@@ -22,8 +22,7 @@ const Header = () => {
     { id: 2, label: "New Clothes", href: "/newClothes" },
     { id: 3, label: "Used Clothes", href: "/usedClothes" },
     { id: 4, label: "Fabric", href: "/fabric" }, // fixed trailing space
-    { id: 5, label: "About US", href: "/about" },
-    { id: 6, label: "Contact Us", href: "/contact" },
+    { id: 5, label: "Contact Us", href: "/contact" },
   ];
 
   return (

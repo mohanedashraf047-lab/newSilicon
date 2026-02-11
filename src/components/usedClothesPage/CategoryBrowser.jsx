@@ -1,95 +1,73 @@
-import React from "react";
 import { Heart, Star, Gift, Plus } from "lucide-react";
 
-const CategoryBrowser = () => {
-  const categories = [
-    {
-      title: "Used Clothes",
-      icon: <Heart size={20} className="text-rose-500" />,
-      items: [
-        "Used Summer Clothes",
-        "Used Winter Clothes",
-        "Used Ladies Clothes",
-        "Used Men Clothes",
-        "Used Kids Clothes",
-      ],
-    },
-    {
-      title: "Used Shoes",
-      icon: <Star size={20} className="text-amber-500" />,
-      items: [
-        "Used Mix Shoes",
-        "Used Branded Clothes",
-        "Used Football Shoes",
-        "Used Sneakers",
-        "Used Fashion Lady Shoes",
-      ],
-    },
-    {
-      title: "Used Bags",
-      icon: <Gift size={20} className="text-blue-500" />,
-      items: [
-        "Used Mixed Bags",
-        "Used Ladies Bags",
-        "Used School Bags",
-        "Used Branded Bags",
-        "Used Backpack",
-      ],
-    },
-    {
-      title: "Other Items",
-      icon: <Plus size={20} className="text-emerald-500" />,
-      items: [
-        "Used Toys",
-        "Second Hand Curtain",
-        "Used Bed Sheet",
-        "Second Hand Blanket",
-        "Second Hand Cap",
-      ],
-    },
-  ];
+const ICON_MAP = {
+  Heart,
+  Star,
+  Gift,
+  Plus,
+};
 
+const ICON_COLORS = {
+  Heart: "text-rose-500",
+  Star: "text-amber-500",
+  Gift: "text-blue-500",
+  Plus: "text-emerald-500",
+};
+
+const CategoryBrowser = ({ title, banner, groups = [] }) => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-black text-slate-900 mb-4">
-            Browse Our Product Categories
-          </h2>
+          <h2 className="text-3xl font-black text-slate-900 mb-4">{title}</h2>
           <div className="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
         </div>
 
         {/* Hero Banner for Categories */}
-        <AnimatedBanner />
+        {banner && (
+          <AnimatedBanner
+            image={banner.image}
+            title={banner.title}
+            subtitle={banner.subtitle}
+          />
+        )}
 
         {/* Categories Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {categories.map((cat, idx) => (
-            <div key={idx} className="flex flex-col">
-              {/* Category Header */}
-              <div className="flex items-center gap-3 mb-6 pb-2 border-b-2 border-slate-100">
-                <div className="p-2 bg-slate-50 rounded-lg">{cat.icon}</div>
-                <h4 className="font-black text-slate-900 uppercase tracking-wider text-sm">
-                  {cat.title}
-                </h4>
-              </div>
+          {groups.map((cat, idx) => {
+            const IconComponent = ICON_MAP[cat.icon];
+            const iconColor = ICON_COLORS[cat.icon] || "text-slate-500";
+            return (
+              <div key={idx} className="flex flex-col">
+                {/* Category Header */}
+                <div className="flex items-center gap-3 mb-6 pb-2 border-b-2 border-slate-100">
+                  <div className="p-2 bg-slate-50 rounded-lg">
+                    {IconComponent && (
+                      <IconComponent size={20} className={iconColor} />
+                    )}
+                  </div>
+                  <h4 className="font-black text-slate-900 uppercase tracking-wider text-sm">
+                    {cat.title}
+                  </h4>
+                </div>
 
-              {/* Items List */}
-              <div className="flex flex-col space-y-2">
-                {cat.items.map((item, i) => (
-                  <button
-                    key={i}
-                    className="group flex items-center justify-between p-3 rounded-xl  border border-transparent transition-all duration-200 text-left"
-                  >
-                    <span className="text-slate-600  font-medium transition-colors pl-6">
-                      {item}
-                    </span>
-                  </button>
-                ))}
+                {/* Items List */}
+                <div className="flex flex-col space-y-2">
+                  {cat.items.map((item, i) => (
+                    <button
+                      key={i}
+                      className="group flex items-center justify-between p-3 rounded-xl  border border-transparent transition-all duration-200 text-left"
+                    >
+                      <span className="text-slate-600  font-medium transition-colors pl-6">
+                        {item}
+                      </span>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -98,13 +76,13 @@ const CategoryBrowser = () => {
 
 export default CategoryBrowser;
 
-const AnimatedBanner = () => {
+const AnimatedBanner = ({ image, title, subtitle }) => {
   return (
     <div className="relative mb-16 rounded-3xl overflow-hidden bg-slate-900 h-48 md:h-64 flex items-center justify-center">
       {/* 1. THE IMAGE: Slowly zooms and pans automatically every 10 seconds */}
       <img
-        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop"
-        alt="Warehouse"
+        src={image}
+        alt="Banner"
         className="absolute inset-0 w-full h-full object-cover opacity-50 animate-ken-burns"
       />
 
@@ -114,10 +92,10 @@ const AnimatedBanner = () => {
       {/* 3. THE TEXT: Pulses slightly to stay dynamic */}
       <div className="relative z-10 text-center px-4 animate-float">
         <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight drop-shadow-lg">
-          Used Clothes & Used Shoes & Used Bags
+          {title}
         </h3>
         <p className="text-indigo-300 mt-2 font-medium tracking-wide">
-          Premium Grade Quality • Global Shipping
+          {subtitle}
         </p>
 
         {/* Automatic expanding/shrinking bar */}

@@ -8,9 +8,8 @@ import Contact from "./pages/Contact";
 import { useScroll } from "./hooks";
 import { scrollToTop } from "./utils/helpers";
 import Layout from "./pages/Layout";
-import About from "./pages/About";
 import WhatsAppButton from "./components/WhatsAppButton";
-import './App.css'
+import "./App.css";
 
 const BackToTop = () => {
   const { scrollY } = useScroll();
@@ -48,7 +47,6 @@ function App() {
         { path: "/newClothes", element: <NewClothes /> },
         { path: "/usedClothes", element: <UsedClothes /> },
         { path: "/fabric", element: <Fabric /> },
-        { path: "/about", element: <About /> },
         { path: "/contact", element: <Contact /> },
       ],
     },
