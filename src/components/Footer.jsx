@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { COMPANY_INFO } from "../constants/siteData";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const footerLinks = [
@@ -31,7 +32,7 @@ const Footer = () => {
     const toEmail = COMPANY_INFO.email[0];
     const subject = encodeURIComponent(`Quick Message from ${formData.name}`);
     const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
     );
 
     window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
@@ -158,7 +159,7 @@ const Footer = () => {
 
             {/* WhatsApp */}
             <div className="flex items-start gap-3">
-              <span className="text-lg sm:text-xl shrink-0 mt-0.5">📱</span>
+              <FaWhatsapp className="w-5 h-5 shrink-0 mt-0.5 text-blue-700" />
               <div className="space-y-1">
                 <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
                   WhatsApp

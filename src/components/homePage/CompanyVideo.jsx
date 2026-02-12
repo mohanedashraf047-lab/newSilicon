@@ -53,7 +53,7 @@ const CompanyVideo = () => {
               <img
                 src="https://static.kingswayvideo.com/101299836586060892225/vod/ce7e399065/cover.jpg"
                 alt="Company Video"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
 
               {/* Play Button Overlay */}
@@ -108,22 +108,22 @@ const CompanyVideo = () => {
           {images.map((image, index) => (
             <div
               key={image.id}
-              /* 1. Added the custom animate class here */
-              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in-left"
+              className="group relative rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in-left overflow-hidden"
               style={{
-                /* 2. Keep this to make them pop in one by one */
                 animationDelay: `${index * 0.1}s`,
                 animationFillMode: "backwards",
               }}
             >
-              <a href={image.link} className="block relative aspect-4/3">
+              {/* Increased height by changing aspect-4/3 to aspect-[3/4] */}
+              <a href={image.link} className="block relative aspect-[5/6]">
                 <img
                   src={image.src}
                   alt={image.alt}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 
+            ${image.id === 3 ? "object-top" : "object-center"}`}
+                  /* If it's the 3rd image, show the top. Otherwise, keep it centered like normal */
                 />
-                {/* ... rest of your overlay code ... */}
               </a>
             </div>
           ))}
