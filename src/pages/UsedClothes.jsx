@@ -18,7 +18,7 @@ const UsedClothes = () => {
         highlightWord={data.hero.highlightWord}
         content={data.content}
       />
-      <ProductGrid products={data.products} />
+      <ProductGrid products={data.products} productsPage="usedClothesImages" />
       <WhyChooseUs
         title={data.whyChoose.title}
         highlightWord={data.whyChoose.highlightWord}

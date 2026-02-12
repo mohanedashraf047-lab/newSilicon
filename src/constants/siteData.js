@@ -17,9 +17,7 @@ export const COMPANY_INFO = {
     "Leading the way in second-hand clothes, shoes, and bags wholesale",
   fullDescription:
     "Silicon Value Co., Ltd is a highly regarded recycling company that exports used clothes, shoes, and bags to countries in Africa, Southeast Asia, and the Middle East.",
-  email: [
-    "info@siliconvalue.org",
-  ],
+  email: ["info@siliconvalue.org"],
   whatsapp: ["+86 134 1957 9731", "+20 11 58595725"],
   address: ["Wuhan, China", "Cairo, Egypt"],
 };
@@ -108,8 +106,6 @@ export const HERO_SLIDES = [
   },
 ];
 
-
-
 export const WHYSILICONVALUE = [
   {
     id: "raw-materials",
@@ -130,7 +126,7 @@ export const WHYSILICONVALUE = [
     icon: Users,
     title: "Trusted by Customers Worldwide",
     description:
-      "With over 60 regular customers from different countries, Silicon Value has built a reputation for reliability and excellence. Our commitment to quality and customer satisfaction has made us a preferred partner for businesses across multiple continents.",
+      "Silicon Value has built a strong reputation for reliability and excellence, earning the trust of businesses across various regions. Our commitment to high-quality standards and customer satisfaction has made us a preferred partner for companies around the world. With a focus on consistent performance and global reach, we continue to lead in the textile supply and recycling industry.",
   },
   {
     id: "fast-delivery",

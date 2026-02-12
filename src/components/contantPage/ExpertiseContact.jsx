@@ -220,57 +220,58 @@ Sent via SiliconValue.org Inquiry Portal
               </div>
             </div>
 
-            {/* Emails and Numbers Footer */}
-            <div className="mt-8 px-4 space-y-6">
-              <div className="flex flex-col gap-4 border-b border-slate-100 pb-6">
-                <div className="flex flex-wrap items-center gap-4">
-                  <Mail size={18} className="text-[#D4AF37]" />
-                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold text-slate-700">
-                    <span>info@siliconvalue.org</span>
-                    <span className="text-slate-300 hidden md:inline">|</span>
-                    <span>maryceo@siliconvalue.org</span>
-                    <span className="text-slate-300 hidden md:inline">|</span>
-                    <span>ademceo@siliconvalue.org</span>
+            <div className="mt-8 px-4 space-y-8">
+              {/* Email Section - Centered & Modernized */}
+              <div className="flex flex-col items-center justify-center border-b border-slate-100 pb-8">
+                <a
+                  href="mailto:info@siliconvalue.org"
+                  className="group relative flex items-center gap-3 px-6 py-3 bg-slate-50 rounded-2xl border border-slate-200 transition-all duration-300 hover:bg-white hover:border-[#D4AF37] hover:shadow-lg hover:shadow-[#D4AF37]/10 hover:-translate-y-1"
+                >
+                  {/* Icon with a subtle pulse */}
+                  <div className="relative">
+                    <Mail size={20} className="text-[#D4AF37] relative z-10" />
+                    <div className="absolute inset-0 bg-[#D4AF37]/20 blur-md rounded-full scale-0 group-hover:scale-150 transition-transform duration-500" />
                   </div>
-                </div>
+
+                  <span className="text-base md:text-lg font-bold text-slate-700 group-hover:text-[#003366] transition-colors">
+                    info@siliconvalue.org
+                  </span>
+
+                  {/* Subtle "Send Mail" hint that appears on hover */}
+                  <span className="ml-2 text-[10px] font-black uppercase tracking-widest text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-all transform translate-x-2 group-hover:translate-x-0">
+                    Send Mail
+                  </span>
+                </a>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div
-                  className="space-y-2 cursor-pointer group"
-                  onClick={() => openWhatsApp("+86 132 7223 4047")}
-                >
-                  <div className="flex items-center gap-2 text-[#003366]">
-                    <MapPin size={16} className="text-[#D4AF37]" />
-                    <p className="text-[10px] font-black uppercase tracking-widest">
-                      China HQ
-                    </p>
-                  </div>
-                  <p className="text-sm font-bold text-slate-700 group-hover:text-[#25D366] flex items-center gap-2 transition-colors">
-                    <Phone size={14} /> +86 132 7223 4047
-                  </p>
-                  <p className="text-[10px] text-slate-400 uppercase tracking-tighter">
-                    Tap for WhatsApp
-                  </p>
-                </div>
+              {/* WhatsApp Hubs (Kept consistent with the new style) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+                {[
+                  { label: "China HQ", phone: "+86 132 7223 4047" },
+                  { label: "Egypt Hub", phone: "+20 11 5859 5725" },
+                ].map((hub) => (
+                  <div
+                    key={hub.label}
+                    className="group cursor-pointer flex flex-col items-center text-center sm:items-start sm:text-left space-y-2"
+                    onClick={() => openWhatsApp(hub.phone)}
+                  >
+                    <div className="flex items-center gap-2">
+                      <MapPin size={16} className="text-[#D4AF37]" />
+                      <p className="text-[10px] font-black uppercase tracking-widest text-[#003366]">
+                        {hub.label}
+                      </p>
+                    </div>
 
-                <div
-                  className="space-y-2 cursor-pointer group"
-                  onClick={() => openWhatsApp("+20 11 5859 5725")}
-                >
-                  <div className="flex items-center gap-2 text-[#003366]">
-                    <MapPin size={16} className="text-[#D4AF37]" />
-                    <p className="text-[10px] font-black uppercase tracking-widest">
-                      Egypt Hub
+                    <div className="flex items-center gap-2 text-sm md:text-base font-bold text-slate-700 group-hover:text-[#25D366] transition-colors">
+                      <Phone size={14} />
+                      <span>{hub.phone}</span>
+                    </div>
+
+                    <p className="text-[9px] text-slate-400 uppercase font-bold tracking-tighter group-hover:text-slate-600">
+                      Click to chat
                     </p>
                   </div>
-                  <p className="text-sm font-bold text-slate-700 group-hover:text-[#25D366] flex items-center gap-2 transition-colors">
-                    <Phone size={14} /> +20 11 5859 5725
-                  </p>
-                  <p className="text-[10px] text-slate-400 uppercase tracking-tighter">
-                    Tap for WhatsApp
-                  </p>
-                </div>
+                ))}
               </div>
             </div>
           </div>

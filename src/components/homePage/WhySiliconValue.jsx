@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useIntersectionObserver } from "../../hooks";
 import { WHYSILICONVALUE } from "../../constants/siteData";
 

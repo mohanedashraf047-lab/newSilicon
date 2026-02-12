@@ -16,7 +16,7 @@ const Fabric = () => {
         highlightWord={data.hero.highlightWord}
         content={data.content}
       />
-      <ProductGrid products={data.products} />
+      <ProductGrid products={data.products} productsPage="fabricImages"/>
 
       <WhyChooseUs
         title={data.whyChoose.title}
@@ -36,6 +36,7 @@ const Fabric = () => {
         paragraphs={data.banner2.paragraphs}
         cards={data.banner2.cards}
       />
+
       <CustomerFeedback
         title={data.feedback.title}
         highlightWord={data.feedback.highlightWord}

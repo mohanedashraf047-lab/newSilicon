@@ -41,7 +41,7 @@ const CompanyVideo = () => {
       <div className="relative container mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 px-4">
-          Watch a 2-minute video to know why choose us
+        know why choose us
         </h2>
 
         {/* Main Content Row */}
@@ -90,13 +90,19 @@ const CompanyVideo = () => {
 
               <p className="text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
                 <strong>
-                  Silicon Value Co., Ltd is a highly regarded recycling company
-                  that exports used clothes, shoes, and bags to countries in
-                  Africa, Southeast Asia, and the Middle East. Our factory is
-                  huge, covering an area of almost 20,000 square meters, and we
-                  have 25 production lines and 400 employees. We use a
-                  standardized sorting process that has earned us regular
-                  customers from over 60 countries worldwide.
+                  Silicon Value is a prominent player in the textile industry,
+                  specializing in the supply and recycling of textiles. We
+                  operate three state-of-the-art factories: one dedicated to the
+                  production of new textiles, another focused on processing
+                  fabrics, and the third on recycling used clothing. Together,
+                  these factories span nearly 20,000 square meters and employ
+                  over 400 skilled workers across 25 production lines. Our
+                  standardized sorting process and commitment to quality have
+                  made us a trusted supplier to customers in over 60 countries,
+                  including regions in Africa, Southeast Asia, and the Middle
+                  East. We are proud to contribute to the global textile
+                  industry with sustainable solutions that meet the diverse
+                  needs of the market.
                 </strong>
               </p>
             </div>
@@ -114,8 +120,7 @@ const CompanyVideo = () => {
                 animationFillMode: "backwards",
               }}
             >
-              {/* Increased height by changing aspect-4/3 to aspect-[3/4] */}
-              <a href={image.link} className="block relative aspect-[5/6]">
+              <a href={image.link} className="block relative aspect-5/6">
                 <img
                   src={image.src}
                   alt={image.alt}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ArrowRight, Award, ChevronUp } from "lucide-react";
 
-const ProductGrid = ({ products = [] }) => {
+const ProductGrid = ({ products = [] , productsPage}) => {
   const INITIAL_COUNT = 7;
   const MAX_PRODUCTS = 35;
   const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
@@ -28,36 +28,50 @@ const ProductGrid = ({ products = [] }) => {
     <section id="product-grid-root" className="py-16 bg-slate-50 scroll-mt-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-          {displayedProducts.map((product) => (
-            <div
-              key={product.id}
-              className="group flex flex-col animate-fade-in"
-            >
-              <div className="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200">
-                {product.isPremium && (
-                  <div className="absolute top-3 right-3 z-20 bg-[#FFD700] text-slate-900 text-[10px] font-black uppercase px-2 py-1 rounded-lg flex items-center gap-1 shadow-md border border-yellow-400">
-                    <Award size={12} className="fill-current" />
-                    Premium
-                  </div>
-                )}
+          {displayedProducts.map((product) => {
+            // 1. Resolve the URL dynamically for each product
+            const imageUrl = new URL(
+              `../../assets/${productsPage}/${product.image}`,
+              import.meta.url,
+            ).href;
 
-                <div className="relative aspect-square overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                </div>
-                <div className="p-5 text-center bg-white">
-                  <h4 className="font-bold text-slate-800 text-lg group-hover:text-blue-600 transition-colors">
-                    {product.title}
-                  </h4>
+            return (
+              <div
+                key={product.id}
+                className="group flex flex-col animate-fade-in"
+              >
+                <div className="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200">
+                  {product.isPremium && (
+                    <div className="absolute top-3 right-3 z-20 bg-[#FFD700] text-slate-900 text-[10px] font-black uppercase px-2 py-1 rounded-lg flex items-center gap-1 shadow-md border border-yellow-400">
+                      <Award size={12} className="fill-current" />
+                      Premium
+                    </div>
+                  )}
+
+                  <div className="relative aspect-square overflow-hidden">
+                    <img
+                      // 2. Use the resolved imageUrl here
+                      src={imageUrl}
+                      alt={product.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
+                      // 3. Fallback for broken images
+                      onError={(e) => {
+                        e.target.src =
+                          "https://placehold.co/400x400?text=Image+Not+Found";
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  </div>
+                  <div className="p-5 text-center bg-white">
+                    <h4 className="font-bold text-slate-800 text-lg group-hover:text-blue-600 transition-colors">
+                      {product.title}
+                    </h4>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
 
           {/* CTA Box - Original Design Restored with Counter */}
           {hasMore ? (

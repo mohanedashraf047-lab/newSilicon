@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import companyInfo from "../../assets/companyInfo.jpeg";
 
 const CompanyInfo = () => {
   return (
@@ -35,28 +34,6 @@ const CompanyInfo = () => {
                 components.
               </p>
             </div>
-
-            <div className="mt-10">
-              <Link
-                to="/about"
-                className="group inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-300 bg-blue-600 rounded-lg hover:bg-blue-700 shadow-md hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Read More
-                <svg
-                  className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Link>
-            </div>
           </div>
 
           {/* Modern Animated Image Column */}
@@ -68,13 +45,17 @@ const CompanyInfo = () => {
               {/* Outer Glow Frame */}
               <div className="absolute inset-0 border-2 border-white/50 rounded-2xl scale-105 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              {/* The Image Container */}
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              {/* The Image Container - Controlled Width and Height */}
+              <div
+                className="relative overflow-hidden rounded-2xl shadow-2xl 
+                w-full max-w-5xl mx-auto 
+                aspect-video sm:h-[400px] lg:h-[500px]"
+              >
                 <img
                   loading="lazy"
-                  src="https://hissenglobal.com/wp-content/uploads/2025/06/1-2.webp"
+                  src={companyInfo}
                   alt="Silicon Value Advanced Manufacturing Facility"
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
 
                 {/* Shimmer/Shine Effect Overlay */}

@@ -11,6 +11,52 @@ import linenShirtImg from "../assets/Product/Linen-shirt.jpeg";
 import fleeceJacketImg from "../assets/Product/Fleece-jacket-newClothes.jpeg";
 
 export const PAGE_DATA = {
+  // Data for New Clothes page
+  newClothes: {
+    products: [
+      { id: 1, title: "Beanies", image: "Beanies.jpeg" },
+      {
+        id: 2,
+        title: "Activewear",
+        image: "Activewear (leggings, tank tops.jpeg",
+      },
+      { id: 3, title: "Blazers", image: "Blazers.jpeg", isPremium: true },
+      { id: 4, title: "Boots", image: "Boots.jpeg" },
+      { id: 5, title: "Button-down", image: "Button-down shirts.jpeg" },
+      { id: 6, title: "Cardigans", image: "Cardigans.jpeg" },
+      { id: 7, title: "Chinos", image: "Chinos.jpeg" },
+      { id: 8, title: "Coats", image: "Coats.jpeg" },
+      { id: 9, title: "Dresses", image: "Dresses.jpeg" },
+      { id: 10, title: "Flip-flops", image: "Flip-flops.jpeg" },
+      { id: 11, title: "Hoodies", image: "Hoodies.jpeg" },
+      { id: 12, title: "Jackets", image: "Jackets.jpeg" },
+      { id: 13, title: "Jeans", image: "Jeans.jpeg", isPremium: true },
+      { id: 14, title: "Jumpsuits", image: "Jumpsuits.jpeg" },
+      { id: 15, title: "Leggings", image: "Leggings.jpeg" },
+      { id: 16, title: "Maxi Dresses", image: "Maxi dresses.jpeg" },
+      { id: 17, title: "Mittens", image: "Mittens.jpeg" },
+      { id: 18, title: "Overalls", image: "Overalls.jpeg" },
+      { id: 19, title: "Pajamas", image: "Pajamas.jpeg" },
+      { id: 20, title: "Polo shirts", image: "Polo shirts.jpeg" },
+      { id: 21, title: "Rompers", image: "Rompers.jpeg" },
+      { id: 22, title: "Scarves", image: "Scarves.jpeg" },
+      { id: 23, title: "Shorts", image: "Shorts.jpeg" },
+      { id: 24, title: "Skirts", image: "Skirts.jpeg" },
+      { id: 25, title: "Sneakers", image: "Sneakers.jpeg" },
+      { id: 26, title: "Sports bras", image: "Sports bras.jpeg" },
+      { id: 27, title: "Suits", image: "Suits.jpeg" },
+      { id: 28, title: "Sweater dresses", image: "Sweater dresses2.jpeg" },
+      { id: 29, title: "Sweaters", image: "Sweaters.jpeg" },
+      { id: 30, title: "Sweatshirts", image: "Sweatshirts.jpeg" },
+      { id: 31, title: "T-shirts", image: "T-shirt.jpeg" },
+      { id: 32, title: "Tank tops", image: "Tank tops.jpeg" },
+      { id: 33, title: "Trousers", image: "Trousers.jpeg" },
+      { id: 34, title: "Tunic tops", image: "Tunic tops.jpeg" },
+      { id: 35, title: "Vests", image: "Vests.jpeg", isPremium: true },
+    ],
+  },
+
+  // Data for Used Clothes page
   usedClothes: {
     hero: {
       title: "Second Hand Clothes",
@@ -19,222 +65,65 @@ export const PAGE_DATA = {
     content: [
       'At <span class="font-bold text-blue-600">Silicon Value</span>, quality is our top priority. We understand that every product must meet strict performance standards, and we are committed to delivering products that exceed your expectations. All of our clothing undergoes rigorous quality checks to ensure they are fully functional and free from defects.',
       '<span class="font-bold text-slate-900">Quality</span> is always the most important factor in everything that we do. Used clothing is expected to be of high quality and we want to never disappoint our clients.',
-      'We follow a <span class="font-bold text-slate-900">detailed set of quality standards</span> that focus on ensuring each item is not only wearable but also durable and reliable. We ensure our products are — <span class="font-bold text-slate-900">no holes, tears, stains, consistent sizing, and sourced from trusted brands</span> like Nike, Adidas, Zara, and more, as well as high-quality emerging manufacturers.',
+      'We follow a <span class="font-bold text-slate-900">detailed set of quality standards</span> that focus on ensuring each item is not only wearable but also durable and reliable. We ensure our products are  <span class="font-bold text-slate-900">no holes, tears, stains, consistent sizing, and sourced from trusted brands</span> like Nike, Adidas, Zara, and more, as well as high-quality emerging manufacturers.',
       "As we continue to grow as a leading global supplier, Silicon Value remains dedicated to delivering superior products to our customers, ensuring their businesses are powered by the best second-hand clothing available.",
     ],
     products: [
-      {
-        id: 1,
-        title: "Used Mixed Clothes",
-        image:
-          "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=800",
-      },
+      { id: 1, title: "Used Backpacks", image: "Used Backpacks.jpeg" },
       {
         id: 2,
-        title: "Used Men's Wear",
-        image:
-          "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?q=80&w=800",
+        title: "Used Brand Clothes",
+        image: "Used Brand Clothes.jpeg",
       },
       {
         id: 3,
-        title: "Used Brand Clothes",
-        image:
-          "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800",
+        title: "Used Cargo Pants",
+        image: "Used Cargo Pants.jpeg",
         isPremium: true,
       },
       {
         id: 4,
-        title: "Used Winter Clothes",
-        image:
-          "https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=800",
+        title: "Used Cotton T-Shirts",
+        image: "Used Cotton T-Shirts.jpeg",
       },
-      {
-        id: 5,
-        title: "Used Ladies Wear",
-        image:
-          "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=800",
-      },
-      {
-        id: 6,
-        title: "Used Kids Clothes",
-        image:
-          "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?q=80&w=800",
-      },
-      {
-        id: 7,
-        title: "Used Summer Clothes",
-        image:
-          "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=800",
-      },
+      { id: 5, title: "Used Denim Jeans", image: "Used Denim Jeans.jpeg" },
+      { id: 6, title: "Used Dress Shirts", image: "Used Dress Shirts.jpeg" },
+      { id: 7, title: "Used Fashion Heels", image: "Used Fashion Heels.jpeg" },
       {
         id: 8,
-        title: "Used Mixed Shoes",
-        image:
-          "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800",
+        title: "Used Football Shoes",
+        image: "Used Football Shoes.jpeg",
       },
-      {
-        id: 9,
-        title: "Used Mixed Bags",
-        image:
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800",
-      },
-      {
-        id: 10,
-        title: "Used Denim Jeans",
-        image:
-          "https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=800",
-      },
-      {
-        id: 11,
-        title: "Used Cotton T-Shirts",
-        image:
-          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800",
-      },
-      {
-        id: 12,
-        title: "Used School Bags",
-        image:
-          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800",
-      },
+      { id: 9, title: "Used Handbags", image: "Used Handbags.jpeg" },
+      { id: 10, title: "Used Hoodies", image: "Used Hoodies.jpeg" },
+      { id: 11, title: "Used Jackets", image: "Used Jackets.jpeg" },
+      { id: 12, title: "Used Kids Clothes", image: "Used Kids Clothes.jpeg" },
       {
         id: 13,
-        title: "Used Sneakers",
-        image:
-          "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800",
+        title: "Used Kids Toys Mix",
+        image: "Used Kids Toys Mix.jpeg",
         isPremium: true,
       },
-      {
-        id: 14,
-        title: "Used Jackets",
-        image:
-          "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800",
-      },
-      {
-        id: 15,
-        title: "Used Sportswear",
-        image:
-          "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800",
-      },
-      {
-        id: 16,
-        title: "Used Kids Toys Mix",
-        image:
-          "https://images.unsplash.com/photo-1532330393533-443990a51d10?q=80&w=800",
-      },
-      {
-        id: 17,
-        title: "Used Caps & Hats",
-        image:
-          "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800",
-      },
-      {
-        id: 18,
-        title: "Used Hoodies",
-        image:
-          "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=800",
-      },
-      {
-        id: 19,
-        title: "Used Tropical Mix",
-        image:
-          "https://images.unsplash.com/photo-1523381294911-8d3ecaa40203?q=80&w=800",
-      },
-      {
-        id: 20,
-        title: "Used Silk Scarves",
-        image:
-          "https://images.unsplash.com/photo-1601994435812-df1740eab393?q=80&w=800",
-      },
-      {
-        id: 21,
-        title: "Used Curtains",
-        image:
-          "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=800",
-      },
-      {
-        id: 22,
-        title: "Used Bed Sheets",
-        image:
-          "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=800",
-      },
+      { id: 14, title: "Used Ladies Wear", image: "Used Ladies Wear.jpeg" },
+      { id: 15, title: "Used Men's Wear", image: "Used Men's Wear.jpeg" },
+      { id: 16, title: "Used Mixed Bags", image: "Used Mixed Bags.jpeg" },
+      { id: 17, title: "Used Mixed Clothes", image: "Used Mixed Clothes.jpeg" },
+      { id: 18, title: "Used Mixed Shoes", image: "Used Mixed Shoes.jpeg" },
+      { id: 19, title: "Used School Bags", image: "Used School Bags.jpeg" },
+      { id: 20, title: "Used Skirts", image: "Used Skirts.jpeg" },
+      { id: 21, title: "Used Sneakers", image: "Used Sneakers.jpeg" },
+      { id: 22, title: "Used Sportswear", image: "Used Sportswear.jpeg" },
       {
         id: 23,
-        title: "Used Blankets",
-        image:
-          "https://images.unsplash.com/photo-1580302200322-22440fa30d7b?q=80&w=800",
+        title: "Used Summer Clothes",
+        image: "Used Summer Clothes.jpeg",
       },
-      {
-        id: 24,
-        title: "Used Work Wear",
-        image:
-          "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=800",
-      },
-      {
-        id: 25,
-        title: "Used Dress Shirts",
-        image:
-          "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=800",
-      },
+      { id: 24, title: "Used Sweaters", image: "Used Sweaters.jpeg" },
+      { id: 25, title: "Used Tropical Mix", image: "Used Tropical Mix.jpeg" },
       {
         id: 26,
-        title: "Used Skirts",
-        image:
-          "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800",
-      },
-      {
-        id: 27,
-        title: "Used Cargo Pants",
-        image:
-          "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800",
-      },
-      {
-        id: 28,
-        title: "Used Sweaters",
-        image:
-          "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800",
-      },
-      {
-        id: 29,
-        title: "Used Polo Shirts",
-        image:
-          "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=800",
-      },
-      {
-        id: 30,
-        title: "Used Belts",
-        image:
-          "https://images.unsplash.com/photo-1624222247344-550fbadfd08d?q=80&w=800",
-      },
-      {
-        id: 31,
-        title: "Used Handbags",
-        image:
-          "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800",
-      },
-      {
-        id: 32,
-        title: "Used Football Shoes",
-        image:
-          "https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=800",
-      },
-      {
-        id: 33,
-        title: "Used Fashion Heels",
-        image:
-          "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?q=80&w=800",
-      },
-      {
-        id: 34,
-        title: "Used Backpacks",
-        image:
-          "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800",
-      },
-      {
-        id: 35,
-        title: "Used Winter Coats",
-        image:
-          "https://images.unsplash.com/photo-1539533397341-392751fa4e7c?q=80&w=800",
-        isPremium: true,
+        title: "Used Winter Clothes",
+        image: "Used Winter Clothes.jpeg",
       },
     ],
     categories: {
@@ -383,6 +272,7 @@ export const PAGE_DATA = {
     },
   },
 
+  // Fabric
   fabric: {
     hero: {
       title: "Fabric Quality at Silicon Value",
@@ -394,219 +284,76 @@ export const PAGE_DATA = {
       'Our commitment to <span class="font-bold text-blue-600">high-quality fabric</span> ensures that your customers receive garments they can trust and wear with confidence.',
     ],
     products: [
-      {
-        id: 1,
-        title: "Cotton Fabric",
-        image:
-          "https://images.unsplash.com/photo-1558171813-4c088753af8f?q=80&w=800",
-      },
+      { id: 1, title: "Cotton Fabric", image: "Cotton Fabric.jpeg" },
       {
         id: 2,
         title: "Polyester Blend",
-        image:
-          "https://images.unsplash.com/photo-1606722590583-6951b5ea92ad?q=80&w=800",
+        image: "Polyester Blend.jpeg",
       },
       {
         id: 3,
         title: "Premium Denim",
-        image:
-          "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=800",
+        image: "Premium Denim.jpeg",
         isPremium: true,
       },
       {
         id: 4,
         title: "Wool Material",
-        image:
-          "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=800",
+        image: "Wool Material.jpeg",
       },
-      {
-        id: 5,
-        title: "Silk Fabric",
-        image:
-          "https://images.unsplash.com/photo-1528459105426-b9548367069b?q=80&w=800",
-      },
-      {
-        id: 6,
-        title: "Linen Fabric",
-        image:
-          "https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800",
-      },
-      {
-        id: 7,
-        title: "Canvas Textile",
-        image:
-          "https://images.unsplash.com/photo-1582142407894-ec85a1260a46?q=80&w=800",
-      },
+      { id: 5, title: "Silk Fabric", image: "Silk Fabric.jpeg" },
+      { id: 6, title: "Linen Fabric", image: "Linen Fabric.jpeg" },
+      { id: 7, title: "Canvas Textile", image: "Canvas Textile.jpeg" },
       {
         id: 8,
         title: "Rayon Material",
-        image:
-          "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=800",
+        image: "Rayon Material.jpeg",
       },
-      {
-        id: 9,
-        title: "Spandex Fabric",
-        image:
-          "https://images.unsplash.com/photo-1560010991-380d3550e566?q=80&w=800",
-      },
-      {
-        id: 10,
-        title: "Velvet Textile",
-        image:
-          "https://images.unsplash.com/photo-1603201667141-5a2d4c673378?q=80&w=800",
-        isPremium: true,
-      },
-      {
-        id: 11,
-        title: "Chiffon Silk",
-        image:
-          "https://images.unsplash.com/photo-1551028150-64b9f398f678?q=80&w=800",
-      },
-      {
-        id: 12,
-        title: "Satin Finish",
-        image:
-          "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=800",
-      },
+      { id: 9, title: "Spandex Fabric", image: "Used Handbags.jpeg" },
+      { id: 10, title: "Velvet Textile", image: "Velvet Textile.jpeg" },
+      { id: 11, title: "Chiffon Silk", image: "Chiffon Silk.jpeg" },
+      { id: 12, title: "Satin Finish", image: "Satin Finish.jpeg" },
       {
         id: 13,
         title: "Tweed Material",
-        image:
-          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800",
+        image: "Tweed Material.jpeg",
+        isPremium: true,
       },
-      {
-        id: 14,
-        title: "Corduroy Fabric",
-        image:
-          "https://images.unsplash.com/photo-1603566160821-2d7ec521477c?q=80&w=800",
-      },
-      {
-        id: 15,
-        title: "Jersey Knit",
-        image:
-          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800",
-      },
-      {
-        id: 16,
-        title: "Fleece Lining",
-        image:
-          "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800",
-      },
-      {
-        id: 17,
-        title: "Georgette Fabric",
-        image:
-          "https://images.unsplash.com/photo-1582142839970-2b9e04b60f25?q=80&w=800",
-      },
-      {
-        id: 18,
-        title: "Taffeta Silk",
-        image:
-          "https://images.unsplash.com/photo-1528459105426-b9548367069b?q=80&w=800",
-      },
-      {
-        id: 19,
-        title: "Brocade Textile",
-        image:
-          "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800",
-      },
-      {
-        id: 20,
-        title: "Poplin Cotton",
-        image:
-          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800",
-      },
-      {
-        id: 21,
-        title: "Organic Hemp",
-        image:
-          "https://images.unsplash.com/photo-1582142407894-ec85a1260a46?q=80&w=800",
-      },
-      {
-        id: 22,
-        title: "Gabardine Wool",
-        image:
-          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800",
-      },
+      { id: 14, title: "Corduroy Fabric", image: "Corduroy Fabric.jpeg" },
+      { id: 15, title: "Jersey Knit", image: "Jersey Knit.jpeg" },
+      { id: 16, title: "Fleece Lining", image: "Fleece Lining.jpeg" },
+      { id: 17, title: "Georgette Fabric", image: "Georgette Fabric.jpeg" },
+      { id: 18, title: "Taffeta Silk", image: "Taffeta Silk.jpeg" },
+      { id: 19, title: "Brocade Textile", image: "Brocade Textile.jpeg" },
+      { id: 20, title: "Poplin Cotton", image: "Poplin Cotton.jpeg" },
+      { id: 21, title: "Flannel Plaid", image: "Flannel Plaid.jpeg" },
+      { id: 22, title: "Organza Fabric", image: "Organza Fabric.jpeg" },
       {
         id: 23,
-        title: "Flannel Plaid",
-        image:
-          "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800",
-      },
-      {
-        id: 24,
-        title: "Organza Fabric",
-        image:
-          "https://images.unsplash.com/photo-1551028150-64b9f398f678?q=80&w=800",
-      },
-      {
-        id: 25,
         title: "Bamboo Fiber",
-        image:
-          "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=800",
+        image: "Bamboo Fiber.jpeg",
       },
+      { id: 24, title: "Jacquard Weave", image: "Jacquard Weave.jpeg" },
+      { id: 25, title: "Muslin Cotton", image: "Muslin Cotton.jpeg" },
       {
         id: 26,
-        title: "Jacquard Weave",
-        image:
-          "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800",
+        title: "Faux Leather",
+        image: "Faux Leather.jpeg",
       },
       {
         id: 27,
-        title: "Muslin Cotton",
-        image:
-          "https://images.unsplash.com/photo-1558171813-4c088753af8f?q=80&w=800",
+        title: "Lace Trim",
+        image: "Lace Trim.jpeg",
       },
       {
         id: 28,
-        title: "Faux Leather",
-        image:
-          "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=800",
-      },
-      {
-        id: 29,
-        title: "Lace Trim",
-        image:
-          "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=800",
-      },
-      {
-        id: 30,
         title: "Nylon Mesh",
-        image:
-          "https://images.unsplash.com/photo-1606722590583-6951b5ea92ad?q=80&w=800",
+        image: "Nylon Mesh.jpeg",
       },
-      {
-        id: 31,
-        title: "Microfiber",
-        image:
-          "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=800",
-      },
-      {
-        id: 32,
-        title: "Terry Cloth",
-        image:
-          "https://images.unsplash.com/photo-1580302200322-22440fa30d7b?q=80&w=800",
-      },
-      {
-        id: 33,
-        title: "Seersucker",
-        image:
-          "https://images.unsplash.com/photo-1558171813-4c088753af8f?q=80&w=800",
-      },
-      {
-        id: 34,
-        title: "Cashmere Wool",
-        image:
-          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800",
-        isPremium: true,
-      },
-      {
-        id: 35,
-        title: "Stretch Denim",
-        image:
-          "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=800",
-      },
+      { id: 29, title: "Microfiber", image: "Microfiber.jpeg" },
+      { id: 30, title: "Terry Cloth", image: "Terry Cloth.jpeg" },
+      { id: 31, title: "Seersucker", image: "Seersucker.jpeg" },
+      { id: 32, title: "Cashmere Wool", image: "Cashmere Wool.jpeg" },
     ],
     categories: {
       title: "Browse Our Fabric Collection",
