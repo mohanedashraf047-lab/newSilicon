@@ -110,64 +110,7 @@ export const HERO_SLIDES = [
   },
 ];
 
-export const PRODUCT_CATEGORIES = [
-  {
-    id: "summer-clothes",
-    name: "Used Summer Clothes",
-    image:
-      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80",
-    path: "/used-summer-clothes",
-  },
-  {
-    id: "brand-shoes",
-    name: "Used Brand Shoes",
-    image:
-      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&q=80",
-    path: "/used-brand-shoes",
-  },
-  {
-    id: "bags",
-    name: "Used Bags",
-    image:
-      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80",
-    path: "/used-bags",
-  },
-  {
-    id: "winter-clothes",
-    name: "Used Winter Clothes",
-    image:
-      "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&q=80",
-    path: "/used-winter-clothes",
-  },
-  {
-    id: "mixed-shoes",
-    name: "Used Mixed Shoes",
-    image:
-      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&q=80",
-    path: "/used-mixed-shoes",
-  },
-  {
-    id: "washed-shoes",
-    name: "Used Washed Shoes",
-    image:
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80",
-    path: "/washed-shoes",
-  },
-  {
-    id: "cotton-rags",
-    name: "Cotton Rags",
-    image:
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=800&q=80",
-    path: "/cotton-rags",
-  },
-  {
-    id: "branded-clothes",
-    name: "Used Branded Clothes",
-    image:
-      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80",
-    path: "/used-branded-clothes",
-  },
-];
+
 
 export const WHYSILICONVALUE = [
   {

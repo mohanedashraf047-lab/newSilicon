@@ -1,5 +1,14 @@
 // constants/pageData.js
 // Centralized page-specific content for reusable components
+// Import the images at the top
+import cottonImg from "../assets/Product/Cotton-Fabric.jpeg";
+import polyesterImg from "../assets/Product/Polyester-Fabric.jpeg";
+import leatherShoesImg from "../assets/Product/Leather-shoes.jpeg";
+import canvasShoesImg from "../assets/Product/Canvas-shoes.jpeg";
+import nylonBagImg from "../assets/Product/Nylon-bag.jpeg";
+import leatherBagImg from "../assets/Product/Leather-bag.jpeg";
+import linenShirtImg from "../assets/Product/Linen-shirt.jpeg";
+import fleeceJacketImg from "../assets/Product/Fleece-jacket-newClothes.jpeg";
 
 export const PAGE_DATA = {
   usedClothes: {
@@ -735,3 +744,54 @@ export const PAGE_DATA = {
     },
   },
 };
+
+export const PRODUCT_CATEGORIES = [
+  {
+    id: "cotton",
+    name: "Cotton",
+    image: cottonImg, // Use the imported variable, not a string
+    path: "/cotton",
+  },
+  {
+    id: "Polyester",
+    name: "Polyester",
+    image: polyesterImg,
+    path: "/polyester",
+  },
+  {
+    id: "leather-shoes",
+    name: "Leather Shoes",
+    image: leatherShoesImg,
+    path: "/leather-shoes",
+  },
+  {
+    id: "canvas-shoes",
+    name: "Canvas Shoes",
+    image: canvasShoesImg,
+    path: "/canvas-shoes",
+  },
+  {
+    id: "nylon-bags",
+    name: "Nylon Bags",
+    image: nylonBagImg,
+    path: "/nylon-bags",
+  },
+  {
+    id: "Leather-bags",
+    name: "Leather Bags",
+    image: leatherBagImg,
+    path: "/Leather-bags",
+  },
+  {
+    id: "New Clothes",
+    name: "Linen shirt",
+    image: linenShirtImg,
+    path: "/linen-clothes",
+  },
+  {
+    id: "Fleece jacket",
+    name: "Fleece jacket",
+    image: fleeceJacketImg,
+    path: "/fleece-jacket",
+  },
+];

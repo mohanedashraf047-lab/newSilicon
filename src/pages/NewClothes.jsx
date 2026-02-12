@@ -8,7 +8,6 @@ import ServiceProcess from "../components/newClothesPage/ServiceProcess";
 const NewClothes = () => {
   return (
     <div className="pt-20 lg:pt-32">
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-center mt-5">New Clothes</h1>
       <Banner1 />
       <Products />
       <CompanyInfo />

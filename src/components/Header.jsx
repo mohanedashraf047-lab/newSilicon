@@ -38,7 +38,7 @@ const Header = () => {
             {/* Left - Tagline */}
             <div className="flex items-center">
               <span className="font-bold uppercase text-white tracking-wide">
-                TOP USED Clothes supplier in china
+                Top Textile Supplier in China
               </span>
             </div>
 

@@ -1,29 +1,32 @@
-import React from "react";
+// 1. Import your images at the top
+import factoryImg1 from "../../assets/companyVideo/img1.jpeg";
+import warehouseImg2 from "../../assets/companyVideo/img2.jpeg";
+import rackImg3 from "../../assets/companyVideo/img3.jpeg";
+import bagsImg4 from "../../assets/companyVideo/img4.jpeg";
 
 const CompanyVideo = () => {
   const images = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&q=80",
+      src: factoryImg1, // Use the variable, not the string
       alt: "Textile recycling facility",
       link: "/about",
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80",
+      src: warehouseImg2,
       alt: "Clothing warehouse",
       link: "/about",
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&q=80",
+      src: rackImg3,
       alt: "Clothing rack display",
       link: "/about",
     },
     {
       id: 4,
-      // New image focused on premium used handbags/bags
-      src: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=800&q=80",
+      src: bagsImg4,
       alt: "Wholesale mixed bags and handbags",
       link: "/about",
     },
