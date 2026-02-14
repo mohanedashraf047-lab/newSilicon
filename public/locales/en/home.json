@@ -96,10 +96,49 @@
         "label": "Eco-Friendly",
         "sub": "Sustainable Fashion"
       }
-    ]
+    ],
+    "cta": "Get Latest Wholesale Price List"
   },
   "whyChooseSection": {
     "title": "WHY CHOOSE SILICON VALUE",
     "description": "A trusted global supplier of high-quality apparel and fabrics. We prioritize quality and customer interests, backed by decades of export expertise."
+  },
+  "productCategories": {
+    "title": "Product Categories",
+    "description": "At Silicon Value, we specialize in exporting a wide variety of high-quality fabrics and both new and used clothing to meet the diverse needs of your business. Whether you're looking for premium fabrics for production or bulk quantities of new or gently used apparel, we ensure that every item is carefully inspected, clean, and ready for distribution. Our products are sourced with attention to quality and sustainability, offering you reliable, cost-effective solutions. We are committed to providing excellent service, competitive pricing, and timely delivery to help your business thrive.",
+    "categories": [
+      {
+        "id": "cotton",
+        "name": "Cotton"
+      },
+      {
+        "id": "Polyester",
+        "name": "Polyester"
+      },
+      {
+        "id": "leather-shoes",
+        "name": "Leather Shoes"
+      },
+      {
+        "id": "canvas-shoes",
+        "name": "Canvas Shoes"
+      },
+      {
+        "id": "nylon-bags",
+        "name": "Nylon Bags"
+      },
+      {
+        "id": "Leather-bags",
+        "name": "Leather Bags"
+      },
+      {
+        "id": "New Clothes",
+        "name": "Linen Shirt"
+      },
+      {
+        "id": "Fleece jacket",
+        "name": "Fleece Jacket"
+      }
+    ]
   }
 }

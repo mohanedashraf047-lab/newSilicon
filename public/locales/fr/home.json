@@ -70,5 +70,75 @@
       "number": "13+",
       "label": "Années d'expérience"
     }
-  ]
+  ],
+  "banner": {
+    "badge": "Leader mondial de la mode durable",
+    "heroTitle": "Solutions mondiales de textiles et de tissus Silicon Value",
+    "heroDescription": "Silicon Value est un exportateur et fabricant mondial leader de vêtements et de tissus, desservant les marchés mondiaux. Avec une forte présence dans des régions comme l'Afrique, l'Asie du Sud-Est, le Moyen-Orient, l'Europe et les Amériques, nous proposons des produits de haute qualité et abordables pour répondre à la demande croissante de solutions de mode durable. Notre usine ultramoderne assure des normes de production de premier ordre, et notre engagement envers la satisfaction des clients nous a valu un taux de réachat de 80%. Silicon Value est un partenaire fiable pour les entreprises cherchant des produits écologiques fiables pour divers marchés.",
+    "stats": [
+      {
+        "icon": "Factory",
+        "label": "Ultramoderne",
+        "sub": "Usine de production"
+      },
+      {
+        "icon": "Globe",
+        "label": "Présence mondiale",
+        "sub": "Pendant 5 continents"
+      },
+      {
+        "icon": "TrendingUp",
+        "label": "Taux de réachat 80%",
+        "sub": "Partenaire de confiance"
+      },
+      {
+        "icon": "Leaf",
+        "label": "Écologique",
+        "sub": "Mode durable"
+      }
+    ],
+    "cta": "Obtenir la dernière liste de prix de gros"
+  },
+  "whyChooseSection": {
+    "title": "POURQUOI CHOISIR SILICON VALUE",
+    "description": "Un fournisseur mondial de confiance d'appareils et de tissus de haute qualité. Nous privilégions la qualité et les intérêts des clients, soutenus par des décennies d'expertise en exportation."
+  },
+  "productCategories": {
+    "title": "Catégories de produits",
+    "description": "Chez Silicon Value, nous nous spécialisons dans l'exportation d'une grande variété de tissus de haute qualité et de vêtements neufs et d'occasion pour répondre aux besoins divers de votre entreprise. Que vous recherchiez des tissus haut de gamme pour la production ou des quantités en vrac de vêtements neufs ou légèrement portés, nous garantissons que chaque article est soigneusement contrôlé, propre et prêt à la distribution. Nos produits sont approvisionnés en tenant compte de la qualité et de la durabilité, vous offrant des solutions fiables et rentables. Nous nous engageons à fournir un excellent service, des prix compétitifs et une livraison opportune pour aider votre entreprise à prospérer.",
+    "categories": [
+      {
+        "id": "cotton",
+        "name": "Coton"
+      },
+      {
+        "id": "Polyester",
+        "name": "Polyester"
+      },
+      {
+        "id": "leather-shoes",
+        "name": "Chaussures en cuir"
+      },
+      {
+        "id": "canvas-shoes",
+        "name": "Chaussures en toile"
+      },
+      {
+        "id": "nylon-bags",
+        "name": "Sacs en nylon"
+      },
+      {
+        "id": "Leather-bags",
+        "name": "Sacs en cuir"
+      },
+      {
+        "id": "New Clothes",
+        "name": "Chemise en lin"
+      },
+      {
+        "id": "Fleece jacket",
+        "name": "Veste polaire"
+      }
+    ]
+  }
 }

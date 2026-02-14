@@ -1,8 +1,28 @@
 
 import { useIntersectionObserver } from "../../hooks";
-import { WHYSILICONVALUE } from "../../constants/siteData";
+import { useTranslation } from "react-i18next";
+import {
+  Zap,
+  CheckCircle,
+  Users,
+  Truck,
+  Globe,
+  BarChart3,
+} from "lucide-react";
 
 const WhySiliconValue = () => {
+  const { t } = useTranslation(["home"]);
+
+  const iconMap = {
+    "raw-materials": Zap,
+    "quality-control": CheckCircle,
+    "trusted-by-customers-worldwide": Users,
+    "fast-delivery": Truck,
+    "serving-customers-across-continents": Globe,
+    "global-reach": BarChart3,
+  };
+
+  const whySiliconValueItems = t("whySiliconValue", { returnObjects: true }) || [];
   // Ensure your hook returns an array [ref, isVisible]
   // and handle potential undefined state
   const [ref, isVisible] = useIntersectionObserver({
@@ -15,12 +35,10 @@ const WhySiliconValue = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-slate-900">
-            WHY CHOOSE SILICON VALUE
+            {t("whyChooseSection.title")}
           </h2>
           <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-            A trusted global supplier of high-quality apparel and fabrics. We
-            prioritize quality and customer interests, backed by decades of
-            export expertise.
+            {t("whyChooseSection.description")}
           </p>
         </div>
 
@@ -29,10 +47,10 @@ const WhySiliconValue = () => {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {/* 1. Added a safety check to ensure data exists before mapping */}
-          {WHYSILICONVALUE &&
-            WHYSILICONVALUE.map((item, index) => {
-              // 2. Destructure the icon so we can render it as a Component
-              const IconComponent = item.icon;
+          {whySiliconValueItems &&
+            whySiliconValueItems.map((item, index) => {
+              // 2. Get the icon component from iconMap using item.id
+              const IconComponent = iconMap[item.id];
 
               return (
                 <div

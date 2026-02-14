@@ -1,31 +1,30 @@
 import { useInView } from "react-intersection-observer";
 import { PRODUCT_CATEGORIES } from "../../constants/pageData";
+import { useTranslation } from "react-i18next";
 
 const ProductCategories = () => {
   const { ref, inView: isVisible } = useInView({
     threshold: 0.1,
     triggerOnce: true,
   });
+  const { t } = useTranslation(["home"]);
+
+  const categoryTranslations = t("productCategories.categories", { returnObjects: true }) || [];
+  const categoryNameMap = categoryTranslations.reduce((acc, cat) => {
+    acc[cat.id] = cat.name;
+    return acc;
+  }, {});
 
   return (
     <section className="py-16 lg:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
-            Product Categories
+            {t("productCategories.title")}
           </h2>
           <div className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-4xl mx-auto space-y-4">
             <p>
-              At Silicon Value, we specialize in exporting a wide variety of
-              high-quality fabrics and both new and used clothing to meet the
-              diverse needs of your business. Whether you're looking for premium
-              fabrics for production or bulk quantities of new or gently used
-              apparel, we ensure that every item is carefully inspected, clean,
-              and ready for distribution. Our products are sourced with
-              attention to quality and sustainability, offering you reliable,
-              cost-effective solutions. We are committed to providing excellent
-              service, competitive pricing, and timely delivery to help your
-              business thrive.
+              {t("productCategories.description")}
             </p>
           </div>
         </div>
@@ -45,13 +44,13 @@ const ProductCategories = () => {
               <div className="aspect-square overflow-hidden">
                 <img
                   src={product.image}
-                  alt={product.name}
+                  alt={categoryNameMap[product.id] || product.name}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 ease-in-out"
                 />
               </div>
               <div className="p-5 bg-white text-center">
                 <h3 className="font-extrabold text-slate-900 text-sm lg:text-base uppercase tracking-wider">
-                  {product.name}
+                  {categoryNameMap[product.id] || product.name}
                 </h3>
               </div>
             </div>
