@@ -1,0 +1,37 @@
+{
+  "topBar": {
+    "tagline": "Fournisseur textile principal en Chine",
+    "description": "Vêtements d'occasion en gros / Chaussures d'occasion en gros / Sacs d'occasion en gros / Chiffons de coton en gros"
+  },
+  "navigation": [
+    {
+      "id": 1,
+      "label": "Accueil",
+      "href": "/"
+    },
+    {
+      "id": 2,
+      "label": "Nouveaux vêtements",
+      "href": "/newClothes"
+    },
+    {
+      "id": 3,
+      "label": "Vêtements d'occasion",
+      "href": "/usedClothes"
+    },
+    {
+      "id": 4,
+      "label": "Tissu",
+      "href": "/fabric"
+    },
+    {
+      "id": 5,
+      "label": "Nous contacter",
+      "href": "/contact"
+    }
+  ],
+  "mobile": {
+    "menu": "Menu",
+    "close": "Fermer"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "title": "Vêtements d'occasion de qualité",
+    "highlightWord": "occasion"
+  },
+  "content": [
+    "Chez Silicon Value, la qualité est notre priorité absolue. Nous comprenons que chaque produit doit respecter des normes de performance strictes, et nous nous engageons à livrer des produits qui dépassent vos attentes. Tous nos vêtements subissent des contrôles de qualité rigoureux pour assurer qu'ils sont entièrement fonctionnels et sans défauts.",
+    "La qualité est toujours le facteur le plus important dans tout ce que nous faisons. Les vêtements d'occasion devraient être de haute qualité et nous ne voulons jamais décevoir nos clients.",
+    "Nous suivons un ensemble détaillé de normes de qualité qui se concentrent sur la garantie que chaque article soit non seulement portable mais aussi durable et fiable. Nous garantissons que nos produits n'ont pas de trous, déchirures, taches, tailles cohérentes et proviennent de marques de confiance comme Nike, Adidas, Zara, et plus encore, ainsi que de fabricants émergents de haute qualité.",
+    "Au fur et à mesure que nous continuons à croître en tant que fournisseur mondial leader, Silicon Value reste dédiée à la livraison de produits supérieurs à nos clients, garantissant que leurs entreprises sont alimentées par les meilleurs vêtements d'occasion disponibles."
+  ],
+  "categories": {
+    "title": "Parcourez nos catégories de produits",
+    "banner": {
+      "title": "Vêtements d'occasion, chaussures et sacs d'occasion",
+      "subtitle": "Qualité haut de gamme • Expédition mondiale"
+    },
+    "groups": [
+      {
+        "title": "Vêtements d'occasion",
+        "items": ["Vêtements d'été d'occasion", "Vêtements d'hiver d'occasion", "Vêtements pour femmes d'occasion", "Vêtements pour hommes d'occasion", "Vêtements pour enfants d'occasion"]
+      },
+      {
+        "title": "Chaussures d'occasion",
+        "items": ["Chaussures assorties d'occasion", "Vêtements de marque d'occasion", "Chaussures de football d'occasion", "Baskets d'occasion", "Chaussures pour femmes à la mode"]
+      },
+      {
+        "title": "Sacs d'occasion",
+        "items": ["Sacs mélangés d'occasion", "Sacs pour femmes d'occasion", "Cartables d'occasion", "Sacs de marque d'occasion", "Sac à dos d'occasion"]
+      },
+      {
+        "title": "Autres articles",
+        "items": ["Jouets d'occasion", "Rideau d'occasion", "Drap de lit d'occasion", "Couverture d'occasion", "Casquette d'occasion"]
+      }
+    ]
+  },
+  "banner2": {
+    "badge": "Partenaire industriel de confiance",
+    "heading": "Leader exportateur de",
+    "headingHighlight": "Vêtements d'occasion",
+    "paragraphs": [
+      "Nous comprenons que faire confiance à un fournisseur, surtout pour quelque chose d'aussi crucial que les vêtements d'occasion, peut être un processus complexe. Vous pouvez avoir des préoccupations concernant la qualité, la fiabilité ou si nous pouvons vraiment tenir nos promesses. Chez Silicon Value, nous sommes là pour vous montrer que nous sommes un partenaire de confiance qui peut répondre à vos besoins commerciaux, tout en restant dans votre budget.",
+      "Voici quelques-uns des avantages dont vous bénéficierez en choisissant Silicon Value:"
+    ],
+    "cards": [
+      {
+        "title": "Un exportateur expérimenté fiable",
+        "description": "Silicon Value est l'un des plus grands exportateurs de vêtements d'occasion en Chine. Avec deux grandes usines entièrement opérationnelles s'étendant sur plus de 20 000 mètres carrés, nous avons la capacité de répondre à vos besoins."
+      },
+      {
+        "title": "Expertise spécialisée en tri",
+        "description": "Nous avons une équipe dédiée spécialisée dans le tri des vêtements d'occasion. Notre expertise nous permet de manipuler les vêtements avec soin, en garantissant qu'ils répondent à des normes élevées et à vos exigences spécifiques."
+      }
+    ]
+  },
+  "feedback": {
+    "title": "Commentaires des",
+    "highlightWord": "clients",
+    "trustText": "Rejoint par plus de 500 partenaires commerciaux satisfaits dans le monde entier."
+  },
+  "whyChoose": {
+    "title": "Pourquoi choisir les vêtements d'occasion Silicon Value",
+    "highlightWord": "Silicon Value",
+    "subtitle": "Qualité en laquelle vous pouvez faire confiance, valeur que vous pouvez mesurer.",
+    "features": [
+      {
+        "id": 1,
+        "title": "Contrôle de la qualité",
+        "description": "Chez Silicon Value, nous maintenons des normes de qualité strictes pour assurer que chaque vêtement d'occasion que nous fournissons est non seulement bon mais aussi utile pour l'acheteur. Notre équipe inspecte chaque article avec soin, en s'assurant qu'il n'y a pas de trous, déchirures ou taches. Nous nous assurons également que les vêtements sont propres, en bon état et de tailles cohérentes, offrant une variété de marques, y compris à la fois les marques internationales bien connues et les marques locales de qualité."
+      },
+      {
+        "id": 2,
+        "title": "Emballage",
+        "description": "Nous pouvons emballer plus efficacement que la plupart des fournisseurs. Tandis que d'autres ne peuvent emballer que 900 sacs de vêtements d'occasion dans un conteneur de 40 pieds, nous pouvons emballer jusqu'à 1 050 sacs. Cette efficacité nous aide à réduire vos frais d'expédition. Compte tenu des défis de l'expédition internationale, nous nous assurons que nos emballages sont robustes et capables de résister au voyage pour assurer que vos vêtements arrivent en excellent état."
+      },
+      {
+        "id": 3,
+        "title": "Transport",
+        "description": "Comment nos vêtements d'occasion vous parviennent-ils? Nous travaillons avec toutes les grandes compagnies d'expédition pour assurer les meilleures options de transport aux tarifs les plus compétitifs. Grâce à nos partenariats profonds et à notre avantage de prix solide, nous vous aider à économiser sur les frais d'expédition. De plus, nous offrons des services de dédouanement dans plusieurs grands ports, en particulier en Afrique, vous économisant temps et effort."
+      },
+      {
+        "id": 4,
+        "title": "Service après-vente",
+        "description": "Notre équipe de vente professionnelle s'engage à fournir un soutien complet après-vente pour toutes vos commandes de vêtements d'occasion. De la production et du chargement à l'expédition et au dédouanement, nous nous assurons que l'ensemble du processus se déroule sans heurts. Pour votre tranquillité d'esprit, nous envoyons des rapports d'inspection de qualité quotidiens et des vidéos, vous gardant informés à chaque étape du processus."
+      }
+    ]
+  }
+}

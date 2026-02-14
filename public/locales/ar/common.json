@@ -1,0 +1,32 @@
+{
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية",
+    "selectLanguage": "اختر اللغة"
+  },
+  "buttons": {
+    "getLatestPrice": "احصل على أحدث قائمة الأسعار بالجملة",
+    "viewProducts": "عرض منتجاتنا",
+    "contactUs": "اتصل بنا",
+    "getInTouch": "تواصل معنا",
+    "learnMore": "اعرف أكثر",
+    "explore": "استكشف",
+    "backToTop": "العودة إلى الأعلى"
+  },
+  "common": {
+    "siliconValue": "Silicon Value",
+    "email": "البريد الإلكتروني",
+    "whatsApp": "واتس آب",
+    "phone": "الهاتف",
+    "location": "الموقع",
+    "description": "الرائدة في مجال بيع الملابس والأحذية والحقائب المستعملة بالجملة"
+  },
+  "contact": {
+    "emailAddress": "info@siliconvalue.com",
+    "whatsappNumber": "+86 134 1957 9731",
+    "whatsappNumber2": "+20 11 58595725",
+    "address1": "ووهان، الصين",
+    "address2": "القاهرة، مصر"
+  }
+}

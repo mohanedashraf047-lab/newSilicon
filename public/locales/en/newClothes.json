@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Premium New Clothing",
+    "subtitle": "Wholesale Quality Apparel"
+  },
+  "content": "Discover our extensive collection of new, premium clothing items sourced from leading manufacturers. Every piece is carefully selected and inspected to ensure the highest standards of quality, comfort, and style. Whether you're looking for everyday wear or specialty apparel, Silicon Value offers a diverse range of new clothing options to meet your wholesale needs.",
+  "features": [
+    {
+      "title": "Premium Quality",
+      "description": "All items are brand new and meet rigorous quality standards"
+    },
+    {
+      "title": "Diverse Selection",
+      "description": "Wide variety of styles, sizes, and materials to choose from"
+    },
+    {
+      "title": "Competitive Pricing",
+      "description": "Wholesale prices that maximize your profit margins"
+    },
+    {
+      "title": "Fast Delivery",
+      "description": "Efficient logistics and quick container loading"
+    }
+  ]
+}

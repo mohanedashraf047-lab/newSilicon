@@ -1,0 +1,56 @@
+{
+  "company": {
+    "name": "Silicon Value",
+    "description": "الرائدة في مجال بيع الملابس والأحذية والحقائب المستعملة بالجملة. نحن شركة إعادة تدوير معروفة جداً تصدر الملابس المستعملة إلى دول في أفريقيا وآسيا الجنوبية الشرقية والشرق الأوسط.",
+    "copyright": "© 2024 Silicon Value. جميع الحقوق محفوظة."
+  },
+  "links": {
+    "getHelp": {
+      "title": "احصل على مساعدة",
+      "items": [
+        { "label": "الرئيسية", "path": "/" },
+        { "label": "حول مؤسستنا", "path": "/about" },
+        { "label": "ماركاتنا", "path": "/our-brands" },
+        { "label": "عملاؤنا", "path": "/clients" },
+        { "label": "الأخبار", "path": "/news" }
+      ]
+    },
+    "products": {
+      "title": "المنتجات",
+      "items": [
+        { "label": "ملابس علامة تجارية مستعملة", "path": "/used-brand-clothes" },
+        { "label": "أحذية علامة تجارية مستعملة", "path": "/used-brand-shoes" },
+        { "label": "أحذية Nike مستعملة", "path": "/nike-shoes" },
+        { "label": "نعال مستعملة", "path": "/used-slipper" },
+        { "label": "أحذية مختلطة مستعملة", "path": "/mixed-shoes" },
+        { "label": "Zara مستعملة", "path": "/zara" },
+        { "label": "ملابس صيفية مستعملة", "path": "/summer-clothes" },
+        { "label": "ملابس شتوية مستعملة", "path": "/winter-clothes" },
+        { "label": "قطع مختلطة", "path": "/rags" }
+      ]
+    },
+    "legal": {
+      "title": "قانوني",
+      "items": [
+        { "label": "إعلان الشركة", "path": "/declaration" },
+        { "label": "سياسة الخصوصية", "path": "/privacy" },
+        { "label": "شروط الخدمة", "path": "/terms" },
+        { "label": "خدمة الشحن", "path": "/shipping" }
+      ]
+    }
+  },
+  "contact": {
+    "title": "معلومات الاتصال",
+    "email": "البريد الإلكتروني",
+    "whatsapp": "واتس آب",
+    "phone": "الهاتف",
+    "address": "العنوان"
+  },
+  "social": {
+    "followUs": "تابعنا",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  }
+}

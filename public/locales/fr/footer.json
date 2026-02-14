@@ -1,0 +1,56 @@
+{
+  "company": {
+    "name": "Silicon Value",
+    "description": "Leader de la vente en gros de vêtements, chaussures et sacs d'occasion. Nous sommes une entreprise de recyclage très réputée qui exporte des vêtements d'occasion vers des pays d'Afrique, d'Asie du Sud-Est et du Moyen-Orient.",
+    "copyright": "© 2024 Silicon Value. Tous droits réservés."
+  },
+  "links": {
+    "getHelp": {
+      "title": "Obtenir de l'aide",
+      "items": [
+        { "label": "Accueil", "path": "/" },
+        { "label": "À propos de nous", "path": "/about" },
+        { "label": "Nos marques", "path": "/our-brands" },
+        { "label": "Nos clients", "path": "/clients" },
+        { "label": "Actualités", "path": "/news" }
+      ]
+    },
+    "products": {
+      "title": "Produits",
+      "items": [
+        { "label": "Vêtements de marque d'occasion", "path": "/used-brand-clothes" },
+        { "label": "Chaussures de marque d'occasion", "path": "/used-brand-shoes" },
+        { "label": "Chaussures Nike d'occasion", "path": "/nike-shoes" },
+        { "label": "Pantoufles d'occasion", "path": "/used-slipper" },
+        { "label": "Chaussures d'occasion mélangées", "path": "/mixed-shoes" },
+        { "label": "Zara d'occasion", "path": "/zara" },
+        { "label": "Vêtements d'été d'occasion", "path": "/summer-clothes" },
+        { "label": "Vêtements d'hiver d'occasion", "path": "/winter-clothes" },
+        { "label": "Chiffons mélangés", "path": "/rags" }
+      ]
+    },
+    "legal": {
+      "title": "Légal",
+      "items": [
+        { "label": "Déclaration de l'entreprise", "path": "/declaration" },
+        { "label": "Politique de confidentialité", "path": "/privacy" },
+        { "label": "Conditions de service", "path": "/terms" },
+        { "label": "Service d'expédition", "path": "/shipping" }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Coordonnées",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "phone": "Téléphone",
+    "address": "Adresse"
+  },
+  "social": {
+    "followUs": "Suivez-nous",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  }
+}

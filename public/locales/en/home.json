@@ -1,0 +1,74 @@
+{
+  "hero": [
+    {
+      "id": 1,
+      "title": "Direct Second Hand Clothes & Shoes Factory",
+      "subtitle": "Wholesale to 110+ Countries",
+      "description": "Silicon Value specializes in exporting used clothes, used shoes, and used bags to regions like Africa, Southeast Asia, and the Middle East.",
+      "features": [
+        "🏭 20,000m² Factory",
+        "🌍 110+ Countries",
+        "📈 80% Repurchase",
+        "🔍 A-Grade Standard"
+      ],
+      "cta": "Get Latest Wholesale Price List"
+    },
+    {
+      "id": 2,
+      "title": "Provide Over 200 Kinds of Used Clothing Items",
+      "subtitle": "Standard Sorting for Global Markets",
+      "description": "Standard sorting ways help us gain regular customers over 110+ countries",
+      "cta": "View Our Products"
+    }
+  ],
+  "whySiliconValue": [
+    {
+      "id": "raw-materials",
+      "title": "Raw Materials",
+      "description": "Silicon Value upholds high standards in sourcing raw materials, ensuring quality at every step. Our materials are predominantly sourced from major first-tier cities, including Beijing, Guangzhou, Chongqing, Chengdu, and Wuhan, among others."
+    },
+    {
+      "id": "quality-control",
+      "title": "Quality Control",
+      "description": "Our trained quality inspectors perform random inspections on each batch of finished products to ensure the highest quality of both new and used clothing. This rigorous process guarantees that every item meets our strict standards."
+    },
+    {
+      "id": "trusted-by-customers-worldwide",
+      "title": "Trusted by Customers Worldwide",
+      "description": "Silicon Value has built a strong reputation for reliability and excellence, earning the trust of businesses across various regions. Our commitment to high-quality standards and customer satisfaction has made us a preferred partner for companies around the world. With a focus on consistent performance and global reach, we continue to lead in the textile supply and recycling industry."
+    },
+    {
+      "id": "fast-delivery",
+      "title": "Fast Loading & Delivery",
+      "description": "Thanks to our efficient sorting systems, fully equipped production facilities, experienced team, and reliable logistics partners, we can process orders quickly and efficiently. The fastest container loading time is just 7 days after the order is placed."
+    },
+    {
+      "id": "serving-customers-across-continents",
+      "title": "Serving Customers Across Continents",
+      "description": "Our extensive distribution network spans Africa, Southeast Asia, and the Middle East. We understand the unique needs of each market and tailor our services to meet regional demands, ensuring seamless international trade partnerships."
+    },
+    {
+      "id": "global-reach",
+      "title": "Global Reach and Distribution",
+      "description": "Operating from our 20,000 square meter facility with 25 production lines and 400 dedicated employees, we have the capacity to serve global markets efficiently. Our standardized sorting process and scalable operations enable us to meet growing demand worldwide."
+    }
+  ],
+  "stats": [
+    {
+      "number": "500+",
+      "label": "Projects Completed"
+    },
+    {
+      "number": "200+",
+      "label": "Happy Clients"
+    },
+    {
+      "number": "25",
+      "label": "Production Lines"
+    },
+    {
+      "number": "13+",
+      "label": "Years Experience"
+    }
+  ]
+}

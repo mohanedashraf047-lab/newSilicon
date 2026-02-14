@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "title": "Second Hand Clothes",
+    "highlightWord": "Hand"
+  },
+  "content": [
+    "At Silicon Value, quality is our top priority. We understand that every product must meet strict performance standards, and we are committed to delivering products that exceed your expectations. All of our clothing undergoes rigorous quality checks to ensure they are fully functional and free from defects.",
+    "Quality is always the most important factor in everything that we do. Used clothing is expected to be of high quality and we want to never disappoint our clients.",
+    "We follow a detailed set of quality standards that focus on ensuring each item is not only wearable but also durable and reliable. We ensure our products are no holes, tears, stains, consistent sizing, and sourced from trusted brands like Nike, Adidas, Zara, and more, as well as high-quality emerging manufacturers.",
+    "As we continue to grow as a leading global supplier, Silicon Value remains dedicated to delivering superior products to our customers, ensuring their businesses are powered by the best second-hand clothing available."
+  ],
+  "categories": {
+    "title": "Browse Our Product Categories",
+    "banner": {
+      "title": "Used Clothes & Used Shoes & Used Bags",
+      "subtitle": "Premium Grade Quality • Global Shipping"
+    },
+    "groups": [
+      {
+        "title": "Used Clothes",
+        "items": ["Used Summer Clothes", "Used Winter Clothes", "Used Ladies Clothes", "Used Men Clothes", "Used Kids Clothes"]
+      },
+      {
+        "title": "Used Shoes",
+        "items": ["Used Mix Shoes", "Used Branded Clothes", "Used Football Shoes", "Used Sneakers", "Used Fashion Lady Shoes"]
+      },
+      {
+        "title": "Used Bags",
+        "items": ["Used Mixed Bags", "Used Ladies Bags", "Used School Bags", "Used Branded Bags", "Used Backpack"]
+      },
+      {
+        "title": "Other Items",
+        "items": ["Used Toys", "Second Hand Curtain", "Used Bed Sheet", "Second Hand Blanket", "Second Hand Cap"]
+      }
+    ]
+  },
+  "banner2": {
+    "badge": "Trusted Industry Partner",
+    "heading": "The Leading Exporter of",
+    "headingHighlight": "Second Hand Clothes",
+    "paragraphs": [
+      "We understand that trusting a supplier, especially for something as crucial as second-hand clothing, can be a complex process. You may have concerns about quality, reliability, or whether we can truly deliver on our promises. At Silicon Value, we're here to show you that we're a trustworthy partner who can meet your business needs, all while fitting within your budget.",
+      "Here are some of the advantages you'll enjoy by choosing Silicon Value:"
+    ],
+    "cards": [
+      {
+        "title": "A Reliable Experienced Exporter",
+        "description": "Silicon Value is one of the top exporters of second-hand garments in China. With two large, fully operational factories spanning over 20,000 square meters, we have the capacity to meet your needs."
+      },
+      {
+        "title": "Specialized Sorting Expertise",
+        "description": "We have a dedicated team specializing in sorting used clothing. Our expertise allows us to handle garments carefully, ensuring they meet high standards and your specific requirements."
+      }
+    ]
+  },
+  "feedback": {
+    "title": "Customer",
+    "highlightWord": "Feedback",
+    "trustText": "Joined by 500+ satisfied business partners worldwide."
+  },
+  "whyChoose": {
+    "title": "Why Choose Silicon Value Used Clothes",
+    "highlightWord": "Silicon Value",
+    "subtitle": "Quality You Can Trust, Value You Can Measure.",
+    "features": [
+      {
+        "id": 1,
+        "title": "Quality Control",
+        "description": "At Silicon Value, we maintain strict quality standards to ensure that every piece of used clothing we provide is not only good but also useful for the buyer. Our team inspects each item carefully, ensuring there are no holes, tears, or stains. We also make sure that the clothes are clean, in good condition, and in consistent sizes, offering a variety of brands, including both well-known international labels and quality local brands."
+      },
+      {
+        "id": 2,
+        "title": "Packaging",
+        "description": "We can pack more efficiently than most suppliers. While others may only pack 900 bags of used clothes in a 40-foot container, we can pack up to 1,050 bags. This efficiency helps us reduce shipping costs for you. Given the challenges of international shipping, we ensure our packaging is sturdy and able to withstand the journey to ensure your clothes arrive in excellent condition."
+      },
+      {
+        "id": 3,
+        "title": "Transportation",
+        "description": "How do our used clothes reach you? We work with all major shipping companies to ensure the best transportation options at the most competitive rates. With our deep partnerships and a strong price advantage, we help you save on shipping costs. Additionally, we offer customs clearance services at several major ports, especially in Africa, saving you both time and effort."
+      },
+      {
+        "id": 4,
+        "title": "After Sales Service",
+        "description": "Our professional sales team is committed to providing full after sales support for all your used clothing orders. From production and loading to shipping and customs clearance, we make sure the entire process is seamless. For your peace of mind, we send daily quality inspection reports and videos, keeping you informed at every step of the process."
+      }
+    ]
+  }
+}

@@ -2,8 +2,11 @@ import { Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -17,13 +20,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navigation = [
-    { id: 1, label: "Home", href: "/" },
-    { id: 2, label: "New Clothes", href: "/newClothes" },
-    { id: 3, label: "Used Clothes", href: "/usedClothes" },
-    { id: 4, label: "Fabric", href: "/fabric" }, // fixed trailing space
-    { id: 5, label: "Contact Us", href: "/contact" },
-  ];
+  const navigation = t("navigation:navigation", { returnObjects: true });
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -38,7 +35,7 @@ const Header = () => {
             {/* Left - Tagline */}
             <div className="flex items-center">
               <span className="font-bold uppercase text-white tracking-wide">
-                Top Textile Supplier in China
+                {t("navigation:topBar.tagline")}
               </span>
             </div>
 
@@ -50,7 +47,7 @@ const Header = () => {
               >
                 <Mail className="w-4 h-4 shrink-0" />
                 <span className="text-xs font-semibold hidden xl:inline whitespace-nowrap">
-                  info@siliconvalue.com
+                  {t("common:contact.emailAddress")}
                 </span>
               </a>
 
@@ -62,7 +59,7 @@ const Header = () => {
               >
                 <FaWhatsapp className="w-4 h-4 shrink-0" />
                 <span className="text-xs font-semibold hidden xl:inline whitespace-nowrap">
-                  WhatsApp Us
+                  {t("common:buttons.contactUs")}
                 </span>
               </a>
             </div>
@@ -127,28 +124,31 @@ const Header = () => {
                 />
               </Link>
 
-              <nav>
-                <ul className="flex items-center space-x-1">
-                  {navigation.map((item) => (
-                    <li key={item.id}>
-                      <NavLink
-                        to={item.href}
-                        end
-                        className={({ isActive }) =>
-                          `block px-4 xl:px-5 py-3 font-semibold text-sm uppercase transition-all rounded-lg
-                          ${
-                            isActive
-                              ? "text-yellow-500"
-                              : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
-                          }`
-                        }
-                      >
-                        {item.label}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+              <div className="flex items-center gap-4">
+                <nav>
+                  <ul className="flex items-center space-x-1">
+                    {navigation.map((item) => (
+                      <li key={item.id}>
+                        <NavLink
+                          to={item.href}
+                          end
+                          className={({ isActive }) =>
+                            `block px-4 xl:px-5 py-3 font-semibold text-sm uppercase transition-all rounded-lg
+                            ${
+                              isActive
+                                ? "text-yellow-500"
+                                : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                            }`
+                          }
+                        >
+                          {item.label}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         </div>
@@ -178,6 +178,9 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
+              <div className="mt-4 pt-4 border-t border-gray-200">
+                <LanguageSwitcher />
+              </div>
             </nav>
           </div>
         )}

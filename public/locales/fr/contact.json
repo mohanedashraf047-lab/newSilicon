@@ -1,0 +1,29 @@
+{
+  "pageTitle": "Nous contacter",
+  "heroTitle": "Entrez en contact avec nous",
+  "heroDescription": "Nous aimerions vous entendre. Envoyez-nous un message et nous répondrons dès que possible.",
+  "contactMethods": {
+    "email": "Envoyez-nous un courriel",
+    "whatsapp": "WhatsApp",
+    "phone": "Appelez-nous",
+    "visit": "Visitez-nous"
+  },
+  "form": {
+    "name": "Votre nom",
+    "email": "Votre e-mail",
+    "phone": "Numéro de téléphone",
+    "message": "Message",
+    "submit": "Envoyer le message",
+    "required": "Ce champ est requis",
+    "success": "Message envoyé avec succès!",
+    "error": "Échec de l'envoi du message. Veuillez réessayer."
+  },
+  "info": {
+    "email": "Adresse e-mail",
+    "whatsapp": "Numéro WhatsApp",
+    "phone": "Numéro de téléphone",
+    "address": "Adresse",
+    "hours": "Heures d'ouverture",
+    "hoursText": "Lundi - Vendredi: 9h00 - 18h00<br/>Samedi - Dimanche: Fermé"
+  }
+}

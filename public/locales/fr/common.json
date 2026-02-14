@@ -1,0 +1,32 @@
+{
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية",
+    "selectLanguage": "Sélectionner la langue"
+  },
+  "buttons": {
+    "getLatestPrice": "Obtenir la dernière liste de prix de gros",
+    "viewProducts": "Voir nos produits",
+    "contactUs": "Nous contacter",
+    "getInTouch": "Prenez contact",
+    "learnMore": "En savoir plus",
+    "explore": "Explorer",
+    "backToTop": "Retour vers le haut"
+  },
+  "common": {
+    "siliconValue": "Silicon Value",
+    "email": "E-mail",
+    "whatsApp": "WhatsApp",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "description": "Leader de la vente en gros de vêtements, chaussures et sacs d'occasion"
+  },
+  "contact": {
+    "emailAddress": "info@siliconvalue.com",
+    "whatsappNumber": "+86 134 1957 9731",
+    "whatsappNumber2": "+20 11 58595725",
+    "address1": "Wuhan, Chine",
+    "address2": "Le Caire, Égypte"
+  }
+}

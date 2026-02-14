@@ -1,0 +1,56 @@
+{
+  "company": {
+    "name": "Silicon Value",
+    "description": "Leading the way in second-hand clothes, shoes, and bags wholesale. We are a highly regarded recycling company that exports used clothes to countries in Africa, Southeast Asia, and the Middle East.",
+    "copyright": "© 2024 Silicon Value. All rights reserved."
+  },
+  "links": {
+    "getHelp": {
+      "title": "Get Help",
+      "items": [
+        { "label": "Home", "path": "/" },
+        { "label": "About Us", "path": "/about" },
+        { "label": "Our Brands", "path": "/our-brands" },
+        { "label": "Our Clients", "path": "/clients" },
+        { "label": "News", "path": "/news" }
+      ]
+    },
+    "products": {
+      "title": "Products",
+      "items": [
+        { "label": "Used Branded Clothes", "path": "/used-brand-clothes" },
+        { "label": "Used Branded Shoes", "path": "/used-brand-shoes" },
+        { "label": "Second Hand Nike Shoes", "path": "/nike-shoes" },
+        { "label": "Used Slipper", "path": "/used-slipper" },
+        { "label": "Mixed Second hand Shoes", "path": "/mixed-shoes" },
+        { "label": "Second Hand Zara", "path": "/zara" },
+        { "label": "Used Summer Clothes", "path": "/summer-clothes" },
+        { "label": "Used Winter Clothes", "path": "/winter-clothes" },
+        { "label": "Mixed Rags", "path": "/rags" }
+      ]
+    },
+    "legal": {
+      "title": "Legal",
+      "items": [
+        { "label": "Company Declaration", "path": "/declaration" },
+        { "label": "Privacy Policy", "path": "/privacy" },
+        { "label": "Terms of Service", "path": "/terms" },
+        { "label": "Shipping Service", "path": "/shipping" }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Info",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "social": {
+    "followUs": "Follow Us",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  }
+}

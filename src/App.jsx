@@ -9,7 +9,10 @@ import { useScroll } from "./hooks";
 import { scrollToTop } from "./utils/helpers";
 import Layout from "./pages/Layout";
 import WhatsAppButton from "./components/WhatsAppButton";
+import FloatingLanguageButton from "./components/FloatingLanguageButton";
 import "./App.css";
+import "./i18n/config";
+import { Suspense } from "react";
 
 const BackToTop = () => {
   const { scrollY } = useScroll();
@@ -53,11 +56,12 @@ function App() {
   ]);
 
   return (
-    <>
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
       <RouterProvider router={routes} />
       <WhatsAppButton />
+      <FloatingLanguageButton />
       <BackToTop />
-    </>
+    </Suspense>
   );
 }
 

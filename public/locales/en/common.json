@@ -1,0 +1,32 @@
+{
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية",
+    "selectLanguage": "Select Language"
+  },
+  "buttons": {
+    "getLatestPrice": "Get Latest Wholesale Price List",
+    "viewProducts": "View Our Products",
+    "contactUs": "Contact Us",
+    "getInTouch": "Get In Touch",
+    "learnMore": "Learn More",
+    "explore": "Explore",
+    "backToTop": "Back to Top"
+  },
+  "common": {
+    "siliconValue": "Silicon Value",
+    "email": "Email",
+    "whatsApp": "WhatsApp",
+    "phone": "Phone",
+    "location": "Location",
+    "description": "Leading the way in second-hand clothes, shoes, and bags wholesale"
+  },
+  "contact": {
+    "emailAddress": "info@siliconvalue.com",
+    "whatsappNumber": "+86 134 1957 9731",
+    "whatsappNumber2": "+20 11 58595725",
+    "address1": "Wuhan, China",
+    "address2": "Cairo, Egypt"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "hero": [
+    {
+      "id": 1,
+      "title": "Usine directe de vêtements et chaussures d'occasion",
+      "subtitle": "Gros à plus de 110 pays",
+      "description": "Silicon Value se spécialise dans l'exportation de vêtements d'occasion, de chaussures et de sacs vers des régions comme l'Afrique, l'Asie du Sud-Est et le Moyen-Orient.",
+      "features": [
+        "🏭 Usine de 20 000 m²",
+        "🌍 Plus de 110 pays",
+        "📈 80% de réachat",
+        "🔍 Standard de qualité A"
+      ],
+      "cta": "Obtenir la dernière liste de prix de gros"
+    },
+    {
+      "id": 2,
+      "title": "Fournissez plus de 200 types d'articles de vêtements d'occasion",
+      "subtitle": "Tri standard pour les marchés mondiaux",
+      "description": "Les méthodes de tri standard nous aident à obtenir des clients réguliers dans plus de 110 pays",
+      "cta": "Voir nos produits"
+    }
+  ],
+  "whySiliconValue": [
+    {
+      "id": "raw-materials",
+      "title": "Matières premières",
+      "description": "Silicon Value maintient des normes élevées dans l'approvisionnement en matières premières, garantissant la qualité à chaque étape. Nos matériaux proviennent principalement des grandes villes de premier ordre, notamment Beijing, Guangzhou, Chongqing, Chengdu et Wuhan, entre autres."
+    },
+    {
+      "id": "quality-control",
+      "title": "Contrôle de la qualité",
+      "description": "Nos inspecteurs de qualité formés effectuent des inspections aléatoires sur chaque lot de produits finis pour assurer la plus haute qualité des vêtements neufs et d'occasion. Ce processus rigoureux garantit que chaque article répond à nos normes strictes."
+    },
+    {
+      "id": "trusted-by-customers-worldwide",
+      "title": "Digne de confiance des clients du monde entier",
+      "description": "Silicon Value s'est bâti une solide réputation de fiabilité et d'excellence, gagnant la confiance des entreprises du monde entier. Notre engagement envers les normes de haute qualité et la satisfaction des clients nous a fait préférer des partenaires pour les entreprises du monde entier. En mettant l'accent sur les performances constantes et la portée mondiale, nous continuons à être leader dans l'industrie de l'approvisionnement textile et du recyclage."
+    },
+    {
+      "id": "fast-delivery",
+      "title": "Chargement et livraison rapides",
+      "description": "Grâce à nos systèmes de tri efficaces, nos installations de production entièrement équipées, notre équipe expérimentée et nos partenaires logistiques fiables, nous pouvons traiter les commandes rapidement et efficacement. Le temps de chargement du conteneur le plus rapide est d'aussi peu que 7 jours après la commande."
+    },
+    {
+      "id": "serving-customers-across-continents",
+      "title": "Servir les clients sur les continents",
+      "description": "Notre vaste réseau de distribution s'étend à l'Afrique, l'Asie du Sud-Est et le Moyen-Orient. Nous comprenons les besoins uniques de chaque marché et adaptons nos services pour répondre aux demandes régionales, assurant des partenariats commerciaux internationaux harmonieux."
+    },
+    {
+      "id": "global-reach",
+      "title": "Portée mondiale et distribution",
+      "description": "Opérant à partir de notre installation de 20 000 mètres carrés avec 25 lignes de production et 400 employés dédiés, nous avons la capacité de servir les marchés mondiaux efficacement. Notre processus de tri standardisé et nos opérations évolutives nous permettent de répondre à la demande croissante dans le monde entier."
+    }
+  ],
+  "stats": [
+    {
+      "number": "500+",
+      "label": "Projets complétés"
+    },
+    {
+      "number": "200+",
+      "label": "Clients heureux"
+    },
+    {
+      "number": "25",
+      "label": "Lignes de production"
+    },
+    {
+      "number": "13+",
+      "label": "Années d'expérience"
+    }
+  ]
+}

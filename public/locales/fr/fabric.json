@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "title": "Qualité du tissu chez Silicon Value",
+    "highlightWord": "Qualité"
+  },
+  "content": [
+    "Chez Silicon Value, nous sommes très fiers de la variété et de la qualité de nos tissus. Nous sourçons des vêtements fabriqués à partir d'une large gamme de matériaux, y compris le coton, le polyester, la laine, le denim et plus encore, garantissant que nos clients reçoivent des options vestimentaires à la fois durables et confortables.",
+    "Chaque vêtement est soigneusement trié et inspecté pour maintenir l'intégrité du tissu, en veillant à ce qu'il n'y ait pas d'usure excessive ou de dommages au matériau. Que vous recherchiez des tissus doux et respirants pour les climats chauds ou des matériaux plus lourds pour les conditions froides, nous avons une sélection diversifiée pour répondre aux besoins de votre marché.",
+    "Notre engagement envers la qualité du tissu garantit que vos clients reçoivent des vêtements auxquels ils peuvent faire confiance et porter en confiance."
+  ],
+  "categories": {
+    "title": "Parcourez notre collection de tissus",
+    "banner": {
+      "title": "Coton, soie, lin et polyester",
+      "subtitle": "Tissus Premium • Sélection diversifiée"
+    },
+    "groups": [
+      {
+        "title": "Tissus naturels",
+        "items": ["Coton", "Lin", "Soie", "Laine", "Toile"]
+      },
+      {
+        "title": "Tissus synthétiques",
+        "items": ["Polyester", "Nylon", "Rayonne", "Spandex", "Molleton"]
+      },
+      {
+        "title": "Tissus tissés",
+        "items": ["Denim", "Tweed", "Taffetas", "Brocart", "Velours"]
+      },
+      {
+        "title": "Tissus spécialisés",
+        "items": ["Velours", "Mousseline", "Jersey", "Satin", "Georgette"]
+      }
+    ]
+  },
+  "banner2": {
+    "badge": "Fournisseur de tissu Premium",
+    "heading": "Qualité du tissu chez",
+    "headingHighlight": "Silicon Value",
+    "paragraphs": [
+      "Chez Silicon Value, nous sommes fiers d'offrir une grande variété de tissus de haute qualité pour répondre aux besoins divers de nos clients. Nous sourçons nos tissus à partir de fabricants et de fournisseurs de confiance, en veillant à ce que chaque matériau respecte des normes rigoureuses de durabilité, de confort et de style.",
+      "Que vous recherchiez des fibres naturelles comme le coton, le lin et la laine, ou des options synthétiques comme le polyester et le nylon, nous fournissons des tissus polyvalents, fiables et conçus pour durer. Nos tissus se présentent dans une gamme de textures, de couleurs et de poids, répondant aux besoins à la fois de la mode et des fonctions. Des matériaux légers et respirants idéaux pour les vêtements d'été aux tissus plus lourds parfaits pour les climats plus froids, nous offrons des options qui peuvent vous aider à donner vie à vos conceptions et à répondre aux demandes de votre marché."
+    ],
+    "cards": [
+      {
+        "title": "Directement des meilleures filatures textiles",
+        "description": "Nos tissus proviennent directement des meilleures filatures textiles de Guangzhou, Shenzhen et Shanghai, en veillant à une qualité premium à des prix compétitifs sans intermédiaires."
+      },
+      {
+        "title": "Inspection rigoureuse des tissus",
+        "description": "Chaque lot subit une inspection approfondie de la cohérence du tissage, de la solidité des couleurs et de la durabilité, garantissant que seuls les meilleurs matériaux atteignent votre chaîne de production."
+      }
+    ]
+  },
+  "feedback": {
+    "title": "Témoignages",
+    "highlightWord": "des clients",
+    "trustText": "Approuvé par plus de 300 entreprises de textile dans plus de 40 pays."
+  },
+  "whyChoose": {
+    "title": "Pourquoi choisir les tissus Silicon Value",
+    "highlightWord": "Silicon Value",
+    "subtitle": "Tissus Premium, Portée mondiale, Qualité inégalée.",
+    "features": [
+      {
+        "id": 1,
+        "title": "Matières premières de haute qualité",
+        "description": "Chez Silicon Value, nous sourçons nos tissus auprès de certains des meilleurs fabricants de textiles en Chine. Nos matières premières proviennent de fournisseurs de confiance dans des villes comme Guangzhou, Shenzhen et Shanghai, connues pour leurs capacités de fabrication avancées et leurs normes de production de haute qualité. Ces villes abritent des usines textiles de premier ordre, en veillant à ce que les tissus que nous offrons soient fabriqués à partir de matériaux premium et durables."
+      },
+      {
+        "id": 2,
+        "title": "Excellent contrôle de la qualité",
+        "description": "La qualité est l'épine dorsale des opérations de Silicon Value. Notre PDG attache une grande importance au maintien de normes élevées pour tous nos tissus. Notre équipe d'inspecteurs de qualité inspecte soigneusement chaque lot de tissu. Du contrôle du tissage et de la texture à la garantie qu'il n'y a pas de défauts tels que la décoloration des couleurs, les taches ou les irrégularités, nous veillons à ce que seuls les tissus de la plus haute qualité atteignent nos clients."
+      },
+      {
+        "id": 3,
+        "title": "Expérience du fret maritime",
+        "description": "L'équipe logistique de Silicon Value est expérimentée dans le fret maritime, avec une solide compréhension des politiques de dédouanement de plus de 60 pays. Nous travaillons avec les compagnies de fret maritime les plus fiables au monde, nous permettant de vous offrir des prix compétitifs sur l'expédition. Notre équipe est compétente dans la négociation de tarifs favorables, en veillant à ce que vos frais d'expédition soient minimisés tout en maintenant des délais de livraison rapides et sécurisés."
+      },
+      {
+        "id": 4,
+        "title": "Diverses options de tissus et de styles",
+        "description": "Chez Silicon Value, nous offrons une large sélection de nouveaux tissus pour convenir à diverses industries et applications. Que vous recherchiez du coton, du lin, de la soie, du polyester, de la laine ou des mélanges synthétiques, nous fournissons une gamme variée de tissus pour répondre à vos demandes de marché spécifiques. Nos tissus sont disponibles dans une variété de poids, de textures et de couleurs, vous donnant la flexibilité de créer le produit parfait pour vos clients."
+      },
+      {
+        "id": 5,
+        "title": "Chargement professionnel du conteneur",
+        "description": "Nos équipes de chargement efficaces de conteneurs maximisent l'espace pour vous assurer d'obtenir plus de valeur de chaque envoi. Nous pouvons charger jusqu'à 28,6 tonnes de tissu dans un conteneur de 40 pieds, 1,6 tonne de plus que de nombreux autres fournisseurs. Cela nous permet de réduire vos frais d'expédition, vous offrant encore plus d'économies sans compromettre la qualité du produit."
+      },
+      {
+        "id": 6,
+        "title": "Service après-vente",
+        "description": "Pour assurer une expérience transparente, nous fournissons un support complet après-vente. De la mise à jour en direct de la production aux inspections de tissu en temps réel et aux démonstrations de chargement, nous vous gardons informé à chaque étape du processus. Chez Silicon Value, notre objectif est de rendre l'ensemble du processus fluide et transparent, afin que vous puissiez vous concentrer sur la croissance de votre entreprise en toute confiance."
+      }
+    ]
+  }
+}

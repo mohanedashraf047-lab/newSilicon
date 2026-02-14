@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Vêtements Premium Nouveaux",
+    "subtitle": "Vêtements de qualité gros"
+  },
+  "content": "Découvrez notre vaste collection d'articles vestimentaires neufs et haut de gamme provenant des principaux fabricants. Chaque pièce est soigneusement sélectionnée et inspectée pour assurer les plus hauts standards de qualité, de confort et de style. Que vous recherchiez des vêtements de tous les jours ou des vêtements spécialisés, Silicon Value offre une gamme variée d'options de vêtements neufs pour répondre à vos besoins de gros.",
+  "features": [
+    {
+      "title": "Qualité Premium",
+      "description": "Tous les articles sont neufs et respectent les normes de qualité rigoureuses"
+    },
+    {
+      "title": "Sélection diversifiée",
+      "description": "Large gamme de styles, tailles et matériaux parmi lesquels choisir"
+    },
+    {
+      "title": "Prix compétitifs",
+      "description": "Tarifs de gros qui maximisent vos marges bénéficiaires"
+    },
+    {
+      "title": "Livraison rapide",
+      "description": "Logistique efficace et chargement rapide du conteneur"
+    }
+  ]
+}

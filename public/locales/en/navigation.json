@@ -1,0 +1,37 @@
+{
+  "topBar": {
+    "tagline": "Top Textile Supplier in China",
+    "description": "Wholesale Used Clothes / Wholesale Used Shoes / Wholesale Used Bags / Wholesale Cotton Rags"
+  },
+  "navigation": [
+    {
+      "id": 1,
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "id": 2,
+      "label": "New Clothes",
+      "href": "/newClothes"
+    },
+    {
+      "id": 3,
+      "label": "Used Clothes",
+      "href": "/usedClothes"
+    },
+    {
+      "id": 4,
+      "label": "Fabric",
+      "href": "/fabric"
+    },
+    {
+      "id": 5,
+      "label": "Contact Us",
+      "href": "/contact"
+    }
+  ],
+  "mobile": {
+    "menu": "Menu",
+    "close": "Close"
+  }
+}
