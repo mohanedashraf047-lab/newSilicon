@@ -70,5 +70,36 @@
       "number": "13+",
       "label": "Years Experience"
     }
-  ]
+  ],
+  "banner": {
+    "badge": "Global Leader in Sustainable Fashion",
+    "heroTitle": "Silicon Value Global Textile & Fabric Solutions",
+    "heroDescription": "Silicon Value is a leading global exporter and manufacturer of clothes and fabrics, catering to markets around the world. With a strong presence in regions such as Africa, Southeast Asia, the Middle East, Europe, and the Americas, we provide high-quality, affordable products to meet the growing demand for sustainable fashion solutions. Our state-of-the-art factory ensures top-notch production standards, and our commitment to customer satisfaction has earned us an 80% repeat business rate. Silicon Value is a trusted partner for businesses seeking reliable, eco-friendly products for diverse markets.",
+    "stats": [
+      {
+        "icon": "Factory",
+        "label": "State-of-the-art",
+        "sub": "Production Factory"
+      },
+      {
+        "icon": "Globe",
+        "label": "Global Presence",
+        "sub": "Across 5 Continents"
+      },
+      {
+        "icon": "TrendingUp",
+        "label": "80% Repeat Rate",
+        "sub": "Trusted Partner"
+      },
+      {
+        "icon": "Leaf",
+        "label": "Eco-Friendly",
+        "sub": "Sustainable Fashion"
+      }
+    ]
+  },
+  "whyChooseSection": {
+    "title": "WHY CHOOSE SILICON VALUE",
+    "description": "A trusted global supplier of high-quality apparel and fabrics. We prioritize quality and customer interests, backed by decades of export expertise."
+  }
 }
