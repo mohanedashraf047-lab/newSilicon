@@ -59,7 +59,13 @@ function App() {
   ]);
 
   return (
-    <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
+    <Suspense
+      fallback={
+        <div className="flex items-center justify-center min-h-screen">
+          Loading...
+        </div>
+      }
+    >
       <RouterProvider router={routes} />
       <WhatsAppButton />
       <FloatingLanguageButton />

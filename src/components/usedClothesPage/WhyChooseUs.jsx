@@ -45,7 +45,7 @@ const WhyChooseUs = ({ title, highlightWord, subtitle, features = [] }) => {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
-          {features.map((feature) => {
+          {(features && Array.isArray(features) ? features : []).map((feature) => {
             const IconComponent = ICON_MAP[feature.icon];
             return (
               <div

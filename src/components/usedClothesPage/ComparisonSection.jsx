@@ -33,7 +33,7 @@ const ComparisonSection = () => {
             </h3>
 
             <div className="space-y-8">
-              {siliconValueFeatures.map((f, i) => (
+              {(siliconValueFeatures && Array.isArray(siliconValueFeatures) ? siliconValueFeatures : []).map((f, i) => (
                 <ScrollRevealItem key={i}>
                   <div className="flex gap-4">
                     <div className="mt-1 bg-white/20 p-1 rounded-full h-fit">
@@ -57,7 +57,7 @@ const ComparisonSection = () => {
             </h3>
 
             <div className="space-y-8">
-              {otherSupplierFeatures.map((text, i) => (
+              {(otherSupplierFeatures && Array.isArray(otherSupplierFeatures) ? otherSupplierFeatures : []).map((text, i) => (
                 <div key={i} className="flex gap-4 opacity-60">
                   <div className="mt-1 bg-slate-200 p-1 rounded-full h-fit">
                     <XCircle size={18} className="text-slate-400" />

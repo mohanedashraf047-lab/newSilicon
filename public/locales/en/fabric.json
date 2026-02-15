@@ -64,31 +64,37 @@
     "features": [
       {
         "id": 1,
+        "icon": "Gem",
         "title": "High-Quality Raw Materials",
         "description": "At Silicon Value, we source our fabrics from some of the best textile manufacturers in China. Our raw materials come from trusted suppliers in cities like Guangzhou, Shenzhen, and Shanghai, known for their advanced manufacturing capabilities and high-quality production standards. These cities are home to top-tier textile factories, ensuring that the fabrics we offer are made from premium, sustainable materials."
       },
       {
         "id": 2,
+        "icon": "ShieldCheck",
         "title": "Excellent Quality Control",
         "description": "Quality is the backbone of Silicon Value's operations. Our CEO places immense importance on maintaining high standards for all our fabrics. Our team of quality inspectors carefully inspects each batch of fabric. From checking the weave and texture to ensuring there are no defects such as color fading, stains, or irregularities, we ensure that only the highest quality fabrics reach our customers."
       },
       {
         "id": 3,
+        "icon": "Ship",
         "title": "Experienced in Sea Freight",
         "description": "Silicon Value's logistics team is experienced in sea freight, with a strong understanding of the customs clearance policies of over 60 countries. We work with the most reliable sea freight companies worldwide, enabling us to offer you competitive prices on shipping. Our team is skilled in negotiating favorable rates, ensuring that your shipping costs are minimized while maintaining fast and secure delivery times."
       },
       {
         "id": 4,
+        "icon": "Palette",
         "title": "Various Fabrics and Styles",
         "description": "At Silicon Value, we offer a wide selection of new fabrics to suit various industries and applications. Whether you're looking for cotton, linen, silk, polyester, wool, or synthetic blends, we provide a diverse range of fabrics to meet your specific market demands. Our fabrics come in a variety of weights, textures, and colors, giving you the flexibility to create the perfect product for your customers."
       },
       {
         "id": 5,
+        "icon": "Box",
         "title": "Professional Container Loading",
         "description": "Our efficient container loading teams maximize space to ensure you get the most value from every shipment. We can load up to 28.6 tons of fabric into a 40-foot container, 1.6 tons more than many other suppliers. This enables us to reduce shipping costs, offering you even greater savings without compromising on product quality."
       },
       {
         "id": 6,
+        "icon": "MessageSquare",
         "title": "After-Sales Service",
         "description": "To ensure a seamless experience, we provide comprehensive after-sales support. From live production updates to real-time fabric inspections and loading demonstrations, we keep you informed every step of the way. At Silicon Value, our goal is to make the entire process smooth and transparent, so you can focus on growing your business with confidence."
       }

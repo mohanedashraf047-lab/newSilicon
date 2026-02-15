@@ -65,21 +65,25 @@
     "features": [
       {
         "id": 1,
+        "icon": "ShieldCheck",
         "title": "Quality Control",
         "description": "At Silicon Value, we maintain strict quality standards to ensure that every piece of used clothing we provide is not only good but also useful for the buyer. Our team inspects each item carefully, ensuring there are no holes, tears, or stains. We also make sure that the clothes are clean, in good condition, and in consistent sizes, offering a variety of brands, including both well-known international labels and quality local brands."
       },
       {
         "id": 2,
+        "icon": "Box",
         "title": "Packaging",
         "description": "We can pack more efficiently than most suppliers. While others may only pack 900 bags of used clothes in a 40-foot container, we can pack up to 1,050 bags. This efficiency helps us reduce shipping costs for you. Given the challenges of international shipping, we ensure our packaging is sturdy and able to withstand the journey to ensure your clothes arrive in excellent condition."
       },
       {
         "id": 3,
+        "icon": "Globe",
         "title": "Transportation",
         "description": "How do our used clothes reach you? We work with all major shipping companies to ensure the best transportation options at the most competitive rates. With our deep partnerships and a strong price advantage, we help you save on shipping costs. Additionally, we offer customs clearance services at several major ports, especially in Africa, saving you both time and effort."
       },
       {
         "id": 4,
+        "icon": "MessageSquare",
         "title": "After Sales Service",
         "description": "Our professional sales team is committed to providing full after sales support for all your used clothing orders. From production and loading to shipping and customs clearance, we make sure the entire process is seamless. For your peace of mind, we send daily quality inspection reports and videos, keeping you informed at every step of the process."
       }

@@ -65,21 +65,25 @@
     "features": [
       {
         "id": 1,
+        "icon": "ShieldCheck",
         "title": "Contrôle de la qualité",
         "description": "Chez Silicon Value, nous maintenons des normes de qualité strictes pour assurer que chaque vêtement d'occasion que nous fournissons est non seulement bon mais aussi utile pour l'acheteur. Notre équipe inspecte chaque article avec soin, en s'assurant qu'il n'y a pas de trous, déchirures ou taches. Nous nous assurons également que les vêtements sont propres, en bon état et de tailles cohérentes, offrant une variété de marques, y compris à la fois les marques internationales bien connues et les marques locales de qualité."
       },
       {
         "id": 2,
+        "icon": "Box",
         "title": "Emballage",
         "description": "Nous pouvons emballer plus efficacement que la plupart des fournisseurs. Tandis que d'autres ne peuvent emballer que 900 sacs de vêtements d'occasion dans un conteneur de 40 pieds, nous pouvons emballer jusqu'à 1 050 sacs. Cette efficacité nous aide à réduire vos frais d'expédition. Compte tenu des défis de l'expédition internationale, nous nous assurons que nos emballages sont robustes et capables de résister au voyage pour assurer que vos vêtements arrivent en excellent état."
       },
       {
         "id": 3,
+        "icon": "Globe",
         "title": "Transport",
         "description": "Comment nos vêtements d'occasion vous parviennent-ils? Nous travaillons avec toutes les grandes compagnies d'expédition pour assurer les meilleures options de transport aux tarifs les plus compétitifs. Grâce à nos partenariats profonds et à notre avantage de prix solide, nous vous aider à économiser sur les frais d'expédition. De plus, nous offrons des services de dédouanement dans plusieurs grands ports, en particulier en Afrique, vous économisant temps et effort."
       },
       {
         "id": 4,
+        "icon": "MessageSquare",
         "title": "Service après-vente",
         "description": "Notre équipe de vente professionnelle s'engage à fournir un soutien complet après-vente pour toutes vos commandes de vêtements d'occasion. De la production et du chargement à l'expédition et au dédouanement, nous nous assurons que l'ensemble du processus se déroule sans heurts. Pour votre tranquillité d'esprit, nous envoyons des rapports d'inspection de qualité quotidiens et des vidéos, vous gardant informés à chaque étape du processus."
       }
