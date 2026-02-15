@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ShieldCheck, Leaf, Truck, Headset, Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -9,27 +10,15 @@ const ContactSection = () => {
     message: "",
   });
 
-  const valueProps = [
-    {
-      icon: <ShieldCheck className="w-8 h-8 text-orange-500" />,
-      title: "Excellent Quality Control",
-      desc: "Strict 3-tier inspection ensuring 98% A-grade quality.",
-    },
-    {
-      icon: <Leaf className="w-8 h-8 text-green-500" />,
-      title: "High Quality Raw Materials",
-      desc: "Sourced from top-tier recycling networks in China.",
-    },
-    {
-      icon: <Truck className="w-8 h-8 text-blue-500" />,
-      title: "Professional Services",
-      desc: "Expert loading & logistics to save 10% on freight.",
-    },
-    {
-      icon: <Headset className="w-8 h-8 text-indigo-500" />,
-      title: "Excellent After-sales Service",
-      desc: "Dedicated support team responding within 12 hours.",
-    },
+  const { t } = useTranslation(["usedClothes"]);
+  const valueProps = t("contactSection.valueProps", { returnObjects: true }) || [];
+
+  // Map icons to translated items
+  const icons = [
+    <ShieldCheck className="w-8 h-8 text-orange-500" />,
+    <Leaf className="w-8 h-8 text-green-500" />,
+    <Truck className="w-8 h-8 text-blue-500" />,
+    <Headset className="w-8 h-8 text-indigo-500" />,
   ];
 
   return (
@@ -40,9 +29,9 @@ const ContactSection = () => {
           <div className="w-full lg:w-1/2">
             <h2 className="text-4xl md:text-5xl font-black mb-8">
               <span className="text-orange-500 uppercase tracking-tight">
-                Get in
+                {t("contactSection.titleHighlight")}
               </span>{" "}
-              <span className="text-slate-900 uppercase">Touch Now</span>
+              <span className="text-slate-900 uppercase">{t("contactSection.titleRest")}</span>
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -52,7 +41,7 @@ const ContactSection = () => {
                   className="group p-6 rounded-2xl border border-slate-50 bg-slate-50 hover:bg-white hover:shadow-xl hover:border-orange-100 transition-all duration-300"
                 >
                   <div className="mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                    {prop.icon}
+                    {icons[index]}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-2">
                     {prop.title}
@@ -73,42 +62,42 @@ const ContactSection = () => {
 
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                  Contact Us
+                  {t("contactSection.formTitle")}
                 </h3>
                 <p className="text-slate-500 mb-8 text-sm">
-                  Our sales team will reply within 12 hours.
+                  {t("contactSection.formSubtitle")}
                 </p>
 
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input
                       type="text"
-                      placeholder="Your Name*"
+                      placeholder={t("contactSection.placeholders.name")}
                       className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                       required
                     />
                     <input
                       type="email"
-                      placeholder="Your Email"
+                      placeholder={t("contactSection.placeholders.email")}
                       className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                     />
                   </div>
 
                   <input
                     type="text"
-                    placeholder="Your Whatsapp*"
+                    placeholder={t("contactSection.placeholders.whatsapp")}
                     className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                     required
                   />
 
                   <textarea
-                    placeholder="Your message"
+                    placeholder={t("contactSection.placeholders.message")}
                     rows="4"
                     className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                   ></textarea>
 
                   <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 rounded-xl shadow-lg hover:shadow-orange-200 transition-all flex items-center justify-center gap-2 group">
-                    Order Now
+                    {t("contactSection.submitButton")}
                     <Send
                       size={18}
                       className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"

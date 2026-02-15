@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 import {
   Package,
@@ -16,6 +17,17 @@ import {
 } from "lucide-react";
 
 const ExpertiseContact = () => {
+  const { t } = useTranslation(["contact"]);
+  const features = t("expertise.features", { returnObjects: true }) || [];
+
+  // Map icons to translated items
+  const icons = [
+    <Package className="w-10 h-10 text-[#D4AF37]" />,
+    <ShieldCheck className="w-10 h-10 text-[#003366]" />,
+    <Layers className="w-10 h-10 text-[#D4AF37]" />,
+    <Clock className="w-10 h-10 text-[#003366]" />,
+  ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -46,11 +58,11 @@ const ExpertiseContact = () => {
     e.preventDefault();
 
     Swal.fire({
-      title: "Request Ready!",
-      text: "Opening your email client to notify our executive team...",
+      title: t("expertise.swalTitle"),
+      text: t("expertise.swalText"),
       icon: "success",
       confirmButtonColor: "#003366",
-      confirmButtonText: "Proceed to Email",
+      confirmButtonText: t("expertise.swalButton"),
       timer: 3000,
       timerProgressBar: true,
     }).then(() => {
@@ -79,29 +91,6 @@ Sent via SiliconValue.org Inquiry Portal
     });
   };
 
-  const features = [
-    {
-      icon: <Package className="w-10 h-10 text-[#D4AF37]" />,
-      title: "Steady Supply",
-      desc: "Leveraging Silicon Value's global network for uninterrupted inventory flow.",
-    },
-    {
-      icon: <ShieldCheck className="w-10 h-10 text-[#003366]" />,
-      title: "Stable Quality",
-      desc: "Our rigorous inspection protocols ensure every shipment meets our premium standard.",
-    },
-    {
-      icon: <Layers className="w-10 h-10 text-[#D4AF37]" />,
-      title: "Multi-category",
-      desc: "A vast portfolio of high-demand categories tailored for international markets.",
-    },
-    {
-      icon: <Clock className="w-10 h-10 text-[#003366]" />,
-      title: "7×24 Service",
-      desc: "Dedicated account managers available across all time zones for elite support.",
-    },
-  ];
-
   return (
     <div className="bg-white font-sans overflow-x-hidden">
       {/* HERO SECTION - Enhanced Top Padding for visibility */}
@@ -111,9 +100,9 @@ Sent via SiliconValue.org Inquiry Portal
 
         <div className="relative z-10 w-full max-w-5xl text-center">
           <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-tight animate-fade-in">
-            Trusted Because Of{" "}
+            {t("expertise.heroTitle")}{" "}
             <span className="text-[#D4AF37] block mt-2 animate-shimmer bg-gradient-to-r from-[#D4AF37] via-[#f1d57a] to-[#D4AF37] bg-[length:200%_auto] bg-clip-text text-transparent">
-              Professionalism
+              {t("expertise.heroHighlight")}
             </span>
           </h1>
           <div className="mt-6 w-16 md:w-24 h-1.5 bg-[#D4AF37] mx-auto rounded-full shadow-lg animate-width-grow"></div>
@@ -126,9 +115,9 @@ Sent via SiliconValue.org Inquiry Portal
           <div className="w-full lg:w-1/2 space-y-10">
             <div className="space-y-6">
               <h2 className="text-4xl md:text-5xl font-extrabold text-[#003366] leading-tight">
-                Our expertise is here <br className="hidden sm:block" />
+                {t("expertise.heading")} <br className="hidden sm:block" />
                 <span className="text-[#D4AF37] inline-flex items-center gap-3">
-                  to serve you{" "}
+                  {t("expertise.headingHighlight")}{" "}
                   <Globe
                     size={32}
                     className="animate-spin-slow text-[#D4AF37]"
@@ -136,8 +125,7 @@ Sent via SiliconValue.org Inquiry Portal
                 </span>
               </h2>
               <p className="text-slate-600 text-lg border-l-4 border-[#D4AF37] pl-6 max-w-xl italic">
-                Silicon Value is committed to professional logistics and quality
-                assurance for our global partners.
+                {t("expertise.subtitle")}
               </p>
             </div>
 
@@ -148,7 +136,7 @@ Sent via SiliconValue.org Inquiry Portal
                   className="group p-6 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300"
                 >
                   <div className="mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                    {item.icon}
+                    {icons[index]}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-1">
                     {item.title}
@@ -176,7 +164,7 @@ Sent via SiliconValue.org Inquiry Portal
                     <input
                       name="name"
                       onChange={handleChange}
-                      placeholder="Name*"
+                      placeholder={t("expertise.formPlaceholders.name")}
                       className="w-full px-5 py-4 rounded-xl bg-slate-50 border-2 border-transparent focus:border-[#D4AF37] outline-none transition-all"
                       required
                     />
@@ -184,21 +172,21 @@ Sent via SiliconValue.org Inquiry Portal
                       name="email"
                       onChange={handleChange}
                       type="email"
-                      placeholder="Email"
+                      placeholder={t("expertise.formPlaceholders.email")}
                       className="w-full px-5 py-4 rounded-xl bg-slate-50 border-2 border-transparent focus:border-[#D4AF37] outline-none transition-all"
                     />
                   </div>
                   <input
                     name="whatsapp"
                     onChange={handleChange}
-                    placeholder="WhatsApp/Phone*"
+                    placeholder={t("expertise.formPlaceholders.whatsapp")}
                     className="w-full px-5 py-4 rounded-xl bg-slate-50 border-2 border-transparent focus:border-[#D4AF37] outline-none transition-all"
                     required
                   />
                   <textarea
                     name="message"
                     onChange={handleChange}
-                    placeholder="Tell us about your requirements..."
+                    placeholder={t("expertise.formPlaceholders.message")}
                     rows="4"
                     className="w-full px-5 py-4 rounded-xl bg-slate-50 border-2 border-transparent focus:border-[#D4AF37] outline-none transition-all resize-none"
                     required
@@ -209,7 +197,7 @@ Sent via SiliconValue.org Inquiry Portal
                     className="w-full bg-[#003366] hover:bg-[#001f3d] text-white font-bold py-5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-3 group"
                   >
                     <span className="uppercase tracking-widest">
-                      Get Price Now
+                      {t("expertise.submitButton")}
                     </span>
                     <Send
                       size={18}
@@ -239,7 +227,7 @@ Sent via SiliconValue.org Inquiry Portal
 
                   {/* Subtle "Send Mail" hint that appears on hover */}
                   <span className="ml-2 text-[10px] font-black uppercase tracking-widest text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-all transform translate-x-2 group-hover:translate-x-0">
-                    Send Mail
+                    {t("expertise.sendMail")}
                   </span>
                 </a>
               </div>
@@ -247,8 +235,8 @@ Sent via SiliconValue.org Inquiry Portal
               {/* WhatsApp Hubs (Kept consistent with the new style) */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
                 {[
-                  { label: "China HQ", phone: "+86 132 7223 4047" },
-                  { label: "Egypt Hub", phone: "+20 11 5859 5725" },
+                  { label: t("expertise.chinaHQ"), phone: "+86 132 7223 4047" },
+                  { label: t("expertise.egyptHub"), phone: "+20 11 5859 5725" },
                 ].map((hub) => (
                   <div
                     key={hub.label}
@@ -268,7 +256,7 @@ Sent via SiliconValue.org Inquiry Portal
                     </div>
 
                     <p className="text-[9px] text-slate-400 uppercase font-bold tracking-tighter group-hover:text-slate-600">
-                      Click to chat
+                      {t("expertise.clickToChat")}
                     </p>
                   </div>
                 ))}

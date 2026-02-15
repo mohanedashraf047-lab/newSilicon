@@ -25,5 +25,32 @@
     "address": "Address",
     "hours": "Business Hours",
     "hoursText": "Monday - Friday: 9:00 AM - 6:00 PM<br/>Saturday - Sunday: Closed"
+  },
+  "expertise": {
+    "heroTitle": "Trusted Because Of",
+    "heroHighlight": "Professionalism",
+    "heading": "Our expertise is here",
+    "headingHighlight": "to serve you",
+    "subtitle": "Silicon Value is committed to professional logistics and quality assurance for our global partners.",
+    "features": [
+      { "title": "Steady Supply", "desc": "Leveraging Silicon Value's global network for uninterrupted inventory flow." },
+      { "title": "Stable Quality", "desc": "Our rigorous inspection protocols ensure every shipment meets our premium standard." },
+      { "title": "Multi-category", "desc": "A vast portfolio of high-demand categories tailored for international markets." },
+      { "title": "7\u00d724 Service", "desc": "Dedicated account managers available across all time zones for elite support." }
+    ],
+    "formPlaceholders": {
+      "name": "Name*",
+      "email": "Email",
+      "whatsapp": "WhatsApp/Phone*",
+      "message": "Tell us about your requirements..."
+    },
+    "submitButton": "Get Price Now",
+    "chinaHQ": "China HQ",
+    "egyptHub": "Egypt Hub",
+    "sendMail": "Send Mail",
+    "clickToChat": "Click to chat",
+    "swalTitle": "Request Ready!",
+    "swalText": "Opening your email client to notify our executive team...",
+    "swalButton": "Proceed to Email"
   }
 }

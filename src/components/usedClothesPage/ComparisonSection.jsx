@@ -1,37 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CheckCircle2, XCircle, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ComparisonSection = () => {
-  const siliconValueFeatures = [
-    {
-      title: "Premium Raw Materials",
-      desc: "High-quality materials from China with brighter colors tailored for the African & Middle Eastern markets.",
-    },
-    {
-      title: "Professional Sorting",
-      desc: "Up to 150 categories handled by staff with 5+ years of expertise for stable quality.",
-    },
-    {
-      title: "Rigorous Inspection",
-      desc: "3-tier quality checks ensuring a 98% A-Grade rate (no holes, no defects).",
-    },
-    {
-      title: "Efficient Logistics",
-      desc: "12 balers processing 280 tons daily. Single containers shipped within 3 days.",
-    },
-    {
-      title: "Professional Loading",
-      desc: "Expert packing allows for 10% more volume per container, saving you significant freight costs.",
-    },
-  ];
-
-  const otherSupplierFeatures = [
-    "Expensive materials from Europe/US with duller, single colors.",
-    "Limited categories that don't meet specific market demands.",
-    "Loose quality control; B-grade goods often mixed with A-grade.",
-    "Slow shipping; containers often take 15+ days to depart.",
-    "Inexperienced loading; 40ft containers often under-filled at 26 tons.",
-  ];
+  const { t } = useTranslation(["usedClothes"]);
+  const siliconValueFeatures = t("comparison.siliconValueFeatures", { returnObjects: true }) || [];
+  const otherSupplierFeatures = t("comparison.otherSupplierFeatures", { returnObjects: true }) || [];
 
   return (
     <section className="py-20 bg-white overflow-hidden">
@@ -39,10 +13,10 @@ const ComparisonSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-4">
-            The <span className="text-blue-600">Difference</span>
+            {t("comparison.title")} <span className="text-blue-600">{t("comparison.titleHighlight")}</span>
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">
-            Why Silicon Value remains the trusted choice over general suppliers.
+            {t("comparison.subtitle")}
           </p>
         </div>
 
@@ -55,7 +29,7 @@ const ComparisonSection = () => {
 
             <h3 className="text-3xl font-bold mb-10 flex items-center gap-3">
               <CheckCircle2 className="text-blue-200" />
-              Silicon Value
+              {t("comparison.siliconValueLabel")}
             </h3>
 
             <div className="space-y-8">
@@ -79,7 +53,7 @@ const ComparisonSection = () => {
           <div className="w-full lg:w-1/2 bg-slate-50 p-8 md:p-12 text-slate-600">
             <h3 className="text-3xl font-bold mb-10 text-slate-400 flex items-center gap-3">
               <XCircle />
-              Other Suppliers
+              {t("comparison.otherSuppliersLabel")}
             </h3>
 
             <div className="space-y-8">
@@ -96,8 +70,7 @@ const ComparisonSection = () => {
             {/* Warning Box */}
             <div className="mt-12 p-6 bg-amber-50 rounded-2xl border border-amber-100">
               <p className="text-amber-800 text-sm font-medium italic">
-                "Common issues include delayed delivery, poor communication
-                after payment, and inconsistent sorting."
+                {t("comparison.warningText")}
               </p>
             </div>
           </div>

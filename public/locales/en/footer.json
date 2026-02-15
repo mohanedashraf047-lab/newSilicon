@@ -52,5 +52,31 @@
     "twitter": "Twitter",
     "linkedin": "LinkedIn",
     "instagram": "Instagram"
-  }
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "placeholders": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message"
+    },
+    "submitButton": "Send Message",
+    "sending": "Opening your email client..."
+  },
+  "quickLinks": {
+    "title": "Quick Links",
+    "items": [
+      { "name": "New Clothes", "path": "/newClothes" },
+      { "name": "Used Clothes", "path": "/usedClothes" },
+      { "name": "Fabric", "path": "/fabric" },
+      { "name": "Contact Support", "path": "/contact" }
+    ]
+  },
+  "contactBar": {
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "locationLabel": "Location"
+  },
+  "allRightsReserved": "All rights reserved.",
+  "description": "Leading the way in second-hand clothes, shoes, and bags wholesale."
 }

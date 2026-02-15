@@ -3,31 +3,30 @@ import factoryImg1 from "../../assets/companyVideo/img1.jpeg";
 import warehouseImg2 from "../../assets/companyVideo/img2.jpeg";
 import rackImg3 from "../../assets/companyVideo/img3.jpeg";
 import bagsImg4 from "../../assets/companyVideo/img4.jpeg";
+import { useTranslation } from "react-i18next";
 
 const CompanyVideo = () => {
+  const { t } = useTranslation(["home"]);
+
   const images = [
     {
       id: 1,
       src: factoryImg1, // Use the variable, not the string
-      alt: "Textile recycling facility",
       link: "/about",
     },
     {
       id: 2,
       src: warehouseImg2,
-      alt: "Clothing warehouse",
       link: "/about",
     },
     {
       id: 3,
       src: rackImg3,
-      alt: "Clothing rack display",
       link: "/about",
     },
     {
       id: 4,
       src: bagsImg4,
-      alt: "Wholesale mixed bags and handbags",
       link: "/about",
     },
   ];
@@ -41,7 +40,7 @@ const CompanyVideo = () => {
       <div className="relative container mx-auto px-4">
         {/* Section Title */}
         <h2 className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 px-4">
-        know why choose us
+        {t("companyVideo.sectionTitle")}
         </h2>
 
         {/* Main Content Row */}
@@ -63,7 +62,7 @@ const CompanyVideo = () => {
                   aria-label="Play video"
                 >
                   <svg
-                    className="w-10 h-10 lg:w-12 lg:h-12 text-blue-600 ml-1"
+                    className="w-10 h-10 lg:w-12 lg:h-12 text-blue-600 ms-1"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -85,24 +84,12 @@ const CompanyVideo = () => {
           <div className="lg:col-span-4">
             <div className="h-full flex flex-col justify-center">
               <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-6 text-center lg:text-left">
-                Silicon Value
+                {t("companyVideo.companyName")}
               </h2>
 
               <p className="text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
                 <strong>
-                  Silicon Value is a prominent player in the textile industry,
-                  specializing in the supply and recycling of textiles. We
-                  operate three state-of-the-art factories: one dedicated to the
-                  production of new textiles, another focused on processing
-                  fabrics, and the third on recycling used clothing. Together,
-                  these factories span nearly 20,000 square meters and employ
-                  over 400 skilled workers across 25 production lines. Our
-                  standardized sorting process and commitment to quality have
-                  made us a trusted supplier to customers in over 60 countries,
-                  including regions in Africa, Southeast Asia, and the Middle
-                  East. We are proud to contribute to the global textile
-                  industry with sustainable solutions that meet the diverse
-                  needs of the market.
+                  {t("companyVideo.description")}
                 </strong>
               </p>
             </div>
@@ -123,9 +110,9 @@ const CompanyVideo = () => {
               <a href={image.link} className="block relative aspect-5/6">
                 <img
                   src={image.src}
-                  alt={image.alt}
+                  alt=""
                   loading="lazy"
-                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 
+                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110
             ${image.id === 3 ? "object-top" : "object-center"}`}
                   /* If it's the 3rd image, show the top. Otherwise, keep it centered like normal */
                 />

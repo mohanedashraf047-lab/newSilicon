@@ -33,10 +33,10 @@ const FloatingLanguageButton = () => {
   if (!scrolled) return null;
 
   return (
-    <div className={`fixed bottom-20 z-40 ${isRTL ? 'left-4 sm:left-6 md:left-8' : 'right-4 sm:right-6 md:right-8'}`}>
+    <div className={`fixed bottom-20 z-40 ${isRTL ? 'right-4 sm:right-6 md:right-8' : 'left-4 sm:left-6 md:left-8'}`}>
       {/* Language Options */}
       {isOpen && (
-        <div className={`absolute bottom-16 ${isRTL ? 'left-0' : 'right-0'} bg-white border-2 border-gray-300 rounded-full shadow-2xl p-3 flex flex-col gap-2 animate-fadeIn w-16`}>
+        <div className={`absolute bottom-16 ${isRTL ? 'right-0' : 'left-0'} bg-white border-2 border-gray-300 rounded-full shadow-2xl p-3 flex flex-col gap-2 animate-fadeIn w-16`}>
           {languages
             .filter((lang) => lang.code !== i18n.language)
             .map((lang) => (

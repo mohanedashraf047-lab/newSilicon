@@ -13,14 +13,17 @@ import FloatingLanguageButton from "./components/FloatingLanguageButton";
 import "./App.css";
 import "./i18n/config";
 import { Suspense } from "react";
+import { useTranslation } from "react-i18next";
 
 const BackToTop = () => {
   const { scrollY } = useScroll();
+  const { i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
   if (scrollY < 300) return null;
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 bg-gray-400 hover:bg-blue-400 hover:cursor-pointer text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-primary-700 active:scale-95 transition-all animate-fadeIn z-50"
+      className={`fixed bottom-4 z-50 ${isRTL ? "left-4 sm:left-6 md:left-8" : "right-4 sm:right-6 md:right-8"} bg-gray-400 hover:bg-blue-400 hover:cursor-pointer text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-primary-700 active:scale-95 transition-all animate-fadeIn`}
       aria-label="Back to top"
     >
       <svg

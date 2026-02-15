@@ -84,5 +84,46 @@
         "description": "Notre équipe de vente professionnelle s'engage à fournir un soutien complet après-vente pour toutes vos commandes de vêtements d'occasion. De la production et du chargement à l'expédition et au dédouanement, nous nous assurons que l'ensemble du processus se déroule sans heurts. Pour votre tranquillité d'esprit, nous envoyons des rapports d'inspection de qualité quotidiens et des vidéos, vous gardant informés à chaque étape du processus."
       }
     ]
+  },
+  "comparison": {
+    "title": "La",
+    "titleHighlight": "Différence",
+    "subtitle": "Pourquoi Silicon Value reste le choix de confiance par rapport aux fournisseurs généraux.",
+    "siliconValueLabel": "Silicon Value",
+    "otherSuppliersLabel": "Autres fournisseurs",
+    "siliconValueFeatures": [
+      { "title": "Matières premières premium", "desc": "Matériaux de haute qualité de Chine avec des couleurs plus vives adaptées aux marchés africains et moyen-orientaux." },
+      { "title": "Tri professionnel", "desc": "Jusqu'à 150 catégories gérées par du personnel avec 5+ ans d'expertise pour une qualité stable." },
+      { "title": "Inspection rigoureuse", "desc": "Contrôles qualité à 3 niveaux assurant un taux de 98% de grade A (pas de trous, pas de défauts)." },
+      { "title": "Logistique efficace", "desc": "12 presses traitant 280 tonnes par jour. Conteneurs expédiés en 3 jours." },
+      { "title": "Chargement professionnel", "desc": "Un emballage expert permet 10% de volume en plus par conteneur, vous économisant des frais de fret significatifs." }
+    ],
+    "otherSupplierFeatures": [
+      "Matériaux coûteux d'Europe/États-Unis avec des couleurs ternes.",
+      "Catégories limitées ne répondant pas aux demandes spécifiques du marché.",
+      "Contrôle qualité laxiste ; produits de grade B souvent mélangés avec le grade A.",
+      "Expédition lente ; les conteneurs prennent souvent 15+ jours pour partir.",
+      "Chargement inexpérimenté ; conteneurs de 40 pieds souvent sous-remplis à 26 tonnes."
+    ],
+    "warningText": "Les problèmes courants incluent les retards de livraison, une mauvaise communication après le paiement et un tri incohérent."
+  },
+  "contactSection": {
+    "titleHighlight": "Entrez en",
+    "titleRest": "contact maintenant",
+    "valueProps": [
+      { "title": "Excellent contrôle qualité", "desc": "Inspection stricte à 3 niveaux assurant une qualité de grade A à 98%." },
+      { "title": "Matières premières de haute qualité", "desc": "Provenant de réseaux de recyclage de premier ordre en Chine." },
+      { "title": "Services professionnels", "desc": "Chargement expert et logistique pour économiser 10% sur le fret." },
+      { "title": "Excellent service après-vente", "desc": "Équipe de support dédiée répondant dans les 12 heures." }
+    ],
+    "formTitle": "Contactez-nous",
+    "formSubtitle": "Notre équipe commerciale répondra dans les 12 heures.",
+    "placeholders": {
+      "name": "Votre nom*",
+      "email": "Votre e-mail",
+      "whatsapp": "Votre WhatsApp*",
+      "message": "Votre message"
+    },
+    "submitButton": "Commander maintenant"
   }
 }

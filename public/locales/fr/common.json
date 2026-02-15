@@ -28,5 +28,20 @@
     "whatsappNumber2": "+20 11 58595725",
     "address1": "Wuhan, Chine",
     "address2": "Le Caire, Égypte"
-  }
+  },
+  "whatsapp": {
+    "tooltip": "Discutez avec nous !",
+    "getPrice": "Obtenir le prix",
+    "defaultMessage": "Bonjour, je suis intéressé par vos produits"
+  },
+  "productGrid": {
+    "exploreMore": "Explorer plus",
+    "categories": "Catégories",
+    "hideAll": "Tout masquer",
+    "products": "Produits",
+    "collectionComplete": "Collection complète",
+    "premium": "Premium"
+  },
+  "premiumQualityStandards": "Normes de qualité supérieure",
+  "trustFooter": "Efficacité • Qualité • Fiabilité"
 }

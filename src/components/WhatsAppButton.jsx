@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { COMPANY_INFO } from "../constants/siteData";
+import { useTranslation } from "react-i18next";
 
 const WhatsAppButton = () => {
+  const { t, i18n } = useTranslation(["common"]);
   const [showTooltip, setShowTooltip] = useState(true);
+  const isRTL = i18n.language === "ar";
 
   useEffect(() => {
     const duration = showTooltip ? 4000 : 6000;
@@ -13,23 +16,38 @@ const WhatsAppButton = () => {
 
   const whatsappNumber = COMPANY_INFO.whatsapp[0].replace(/[^0-9]/g, "");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    "Hello, I am interested in your products"
+    t("whatsapp.defaultMessage")
   )}`;
 
   return (
-    <div className="fixed bottom-20 right-4 sm:bottom-22 sm:right-6 md:bottom-24 md:right-8 z-50">
+    <div
+      className={`fixed bottom-20 z-50 ${
+        isRTL
+          ? "left-4 sm:left-6 md:left-8"
+          : "right-4 sm:right-6 md:right-8"
+      }`}
+    >
       {/* Tooltip */}
       <div
-        className={`absolute bottom-full right-0 mb-3 transition-all duration-500 ${
+        className={`absolute bottom-full mb-3 transition-all duration-500 ${
+          isRTL ? "left-0" : "right-0"
+        } ${
           showTooltip
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-2 pointer-events-none"
         }`}
       >
         <div className="relative bg-white text-blue-800 text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 rounded-lg shadow-lg whitespace-nowrap border border-gray-100">
-          <strong className="font-semibold text-[#FFD700] mr-1 bg-blue-700 p-1 rounded-full cursor-pointer">Get Price</strong>, Chat with us!
+          <strong className="font-semibold text-[#FFD700] me-1 bg-blue-700 p-1 rounded-full cursor-pointer">
+            {t("whatsapp.getPrice")}
+          </strong>
+          , {t("whatsapp.tooltip")}
           {/* Arrow pointing down */}
-          <div className="absolute -bottom-1.5 right-5 w-3 h-3 bg-white border-r border-b border-gray-100 rotate-45" />
+          <div
+            className={`absolute -bottom-1.5 w-3 h-3 bg-white border-r border-b border-gray-100 rotate-45 ${
+              isRTL ? "left-5" : "right-5"
+            }`}
+          />
         </div>
       </div>
 

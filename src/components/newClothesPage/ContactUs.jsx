@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, Copy, Check } from "lucide-react"; // Added Copy/Check icons
 import { FaWhatsapp } from "react-icons/fa";
 import { COMPANY_INFO } from "../../constants/siteData";
+import { useTranslation } from "react-i18next";
 
 const ContactUs = () => {
+  const { t } = useTranslation(["newClothes"]);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -62,14 +65,14 @@ const ContactUs = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-12">
-          Get in Touch Now
+          {t("contactUs.sectionTitle")}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
           {/* Left Column: Form */}
           <div className="bg-white p-8 lg:p-12">
             <h3 className="text-3xl font-bold text-slate-900 mb-8 border-l-4 border-blue-600 pl-4">
-              Get a Quote
+              {t("contactUs.formTitle")}
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               {/* ... (Your existing input fields stay exactly the same) ... */}
@@ -78,7 +81,7 @@ const ContactUs = () => {
                   type="text"
                   name="name"
                   value={formData.name}
-                  placeholder="Your Name *"
+                  placeholder={t("contactUs.placeholders.name")}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 outline-none"
                   onChange={handleChange}
@@ -87,7 +90,7 @@ const ContactUs = () => {
                   type="email"
                   name="email"
                   value={formData.email}
-                  placeholder="Your Email *"
+                  placeholder={t("contactUs.placeholders.email")}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 outline-none"
                   onChange={handleChange}
@@ -98,7 +101,7 @@ const ContactUs = () => {
                   type="tel"
                   name="whatsapp"
                   value={formData.whatsapp}
-                  placeholder="Your WhatsApp *"
+                  placeholder={t("contactUs.placeholders.whatsapp")}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 outline-none"
                   onChange={handleChange}
@@ -107,7 +110,7 @@ const ContactUs = () => {
                   type="text"
                   name="previousSource"
                   value={formData.previousSource}
-                  placeholder="Previous Source?"
+                  placeholder={t("contactUs.placeholders.previousSource")}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 outline-none"
                   onChange={handleChange}
                 />
@@ -115,7 +118,7 @@ const ContactUs = () => {
               <textarea
                 name="message"
                 value={formData.message}
-                placeholder="Your Message"
+                placeholder={t("contactUs.placeholders.message")}
                 rows="4"
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 outline-none resize-none"
                 onChange={handleChange}
@@ -124,7 +127,7 @@ const ContactUs = () => {
                 type="submit"
                 className="w-full py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 group"
               >
-                Get Price Now{" "}
+                {t("contactUs.submitButton")}{" "}
                 <Send
                   size={18}
                   className="group-hover:translate-x-1 transition-transform"
@@ -144,7 +147,7 @@ const ContactUs = () => {
 
             <div className="relative z-10">
               <h3 className="text-3xl font-bold mb-6 flex items-center gap-3">
-                Welcome to visit our factory
+                {t("contactUs.rightTitle")}
                 <span className="block h-1 w-12 bg-[#FFD700]"></span>
               </h3>
 

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { ArrowRight, Award, ChevronUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ProductGrid = ({ products = [] , productsPage}) => {
+  const { t } = useTranslation(["common"]);
   const INITIAL_COUNT = 7;
   const MAX_PRODUCTS = 35;
   const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
@@ -44,7 +46,7 @@ const ProductGrid = ({ products = [] , productsPage}) => {
                   {product.isPremium && (
                     <div className="absolute top-3 right-3 z-20 bg-[#FFD700] text-slate-900 text-[10px] font-black uppercase px-2 py-1 rounded-lg flex items-center gap-1 shadow-md border border-yellow-400">
                       <Award size={12} className="fill-current" />
-                      Premium
+                      {t("productGrid.premium")}
                     </div>
                   )}
 
@@ -78,11 +80,11 @@ const ProductGrid = ({ products = [] , productsPage}) => {
             <div onClick={handleShowMore} className="group cursor-pointer">
               <div className="bg-blue-500 rounded-2xl aspect-square flex flex-col items-center justify-center p-8 text-center transition-all duration-300 hover:bg-blue-700 shadow-md">
                 <h3 className="text-white text-2xl font-black mb-2 leading-tight">
-                  Explore More <br /> Categories
+                  {t("productGrid.exploreMore")} <br /> {t("productGrid.categories")}
                 </h3>
                 {/* Progress Counter */}
                 <p className="text-[#FFD700] text-xs font-bold uppercase tracking-widest mb-6">
-                  {visibleCount} / {limitedProducts.length} Products
+                  {visibleCount} / {limitedProducts.length} {t("productGrid.products")}
                 </p>
                 <div className="w-14 h-14 bg-[#FFD700] rounded-full flex items-center justify-center text-slate-900 group-hover:rotate-45 transition-transform duration-300">
                   <ArrowRight size={28} />
@@ -93,10 +95,10 @@ const ProductGrid = ({ products = [] , productsPage}) => {
             <div onClick={handleHideAll} className="group cursor-pointer">
               <div className="bg-slate-900 rounded-2xl aspect-square flex flex-col items-center justify-center p-8 text-center transition-all duration-300 hover:bg-slate-700 shadow-md">
                 <h3 className="text-white text-2xl font-black mb-2 leading-tight">
-                  Hide All <br /> Products
+                  {t("productGrid.hideAll")} <br /> {t("productGrid.products")}
                 </h3>
                 <p className="text-[#FFD700] text-xs font-bold uppercase tracking-widest mb-6">
-                  Collection Complete
+                  {t("productGrid.collectionComplete")}
                 </p>
                 <div className="w-14 h-14 bg-[#FFD700] rounded-full flex items-center justify-center text-slate-900 group-hover:-translate-y-1 transition-transform duration-300">
                   <ChevronUp size={28} />

@@ -1,6 +1,9 @@
 import companyInfo from "../../assets/companyInfo.jpeg";
+import { useTranslation } from "react-i18next";
 
 const CompanyInfo = () => {
+  const { t } = useTranslation(["newClothes"]);
+
   return (
     <section className="py-16 lg:py-24 bg-[#FFD700] overflow-hidden my-12 rounded-2xl shadow-xl shadow-blue-300">
       <div className="container mx-auto px-4">
@@ -8,30 +11,26 @@ const CompanyInfo = () => {
           {/* Text Content Column */}
           <div className="order-2 lg:order-1 animate-fade-in-left">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-8 leading-tight">
-              Company Introduction
+              {t("companyInfo.title")}
             </h2>
 
             <div className="space-y-6 text-slate-800 text-lg lg:text-xl leading-relaxed">
               <p>
                 <span className="font-bold text-slate-900 border-b-2 border-blue-600">
-                  Silicon Value
+                  {t("companyInfo.companyName")}
                 </span>{" "}
-                is one of the top providers of high-quality, full-container
-                export services in the global tech sector.
+                {t("companyInfo.description1")}
               </p>
 
               <p>
-                We have{" "}
-                <strong className="text-slate-900">3 large facilities</strong>{" "}
-                in China, covering a total area of over{" "}
-                <strong className="text-blue-600">20,000 square meters</strong>.
+                {t("companyInfo.weHave")}{" "}
+                <strong className="text-slate-900">{t("companyInfo.facilities")}</strong>{" "}
+                {t("companyInfo.inChina")}{" "}
+                <strong className="text-blue-600">{t("companyInfo.area")}</strong>.
               </p>
 
               <p>
-                Our state of the art manufacturing capabilities allow us to
-                produce a significant volume of products daily, from
-                semiconductors and integrated circuits to cutting-edge tech
-                components.
+                {t("companyInfo.description2")}
               </p>
             </div>
           </div>
@@ -47,8 +46,8 @@ const CompanyInfo = () => {
 
               {/* The Image Container - Controlled Width and Height */}
               <div
-                className="relative overflow-hidden rounded-2xl shadow-2xl 
-                w-full max-w-5xl mx-auto 
+                className="relative overflow-hidden rounded-2xl shadow-2xl
+                w-full max-w-5xl mx-auto
                 aspect-video sm:h-[400px] lg:h-[500px]"
               >
                 <img

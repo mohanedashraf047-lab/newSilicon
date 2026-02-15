@@ -52,5 +52,31 @@
     "twitter": "Twitter",
     "linkedin": "LinkedIn",
     "instagram": "Instagram"
-  }
+  },
+  "form": {
+    "title": "أرسل لنا رسالة",
+    "placeholders": {
+      "name": "اسمك",
+      "email": "بريدك الإلكتروني",
+      "message": "رسالتك"
+    },
+    "submitButton": "إرسال الرسالة",
+    "sending": "فتح عميل البريد الإلكتروني..."
+  },
+  "quickLinks": {
+    "title": "روابط سريعة",
+    "items": [
+      { "name": "ملابس جديدة", "path": "/newClothes" },
+      { "name": "ملابس مستعملة", "path": "/usedClothes" },
+      { "name": "أقمشة", "path": "/fabric" },
+      { "name": "دعم التواصل", "path": "/contact" }
+    ]
+  },
+  "contactBar": {
+    "emailLabel": "البريد الإلكتروني",
+    "whatsappLabel": "واتس آب",
+    "locationLabel": "الموقع"
+  },
+  "allRightsReserved": "جميع الحقوق محفوظة.",
+  "description": "الرائدة في مجال بيع الملابس والأحذية والحقائب المستعملة بالجملة."
 }

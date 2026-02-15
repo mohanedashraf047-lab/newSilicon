@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Banner1 = () => {
+  const { t } = useTranslation(["newClothes"]);
+
   return (
     <section
       className="relative min-h-75 lg:min-h-75 flex items-center justify-center bg-cover bg-center bg-no-repeat   "
@@ -17,9 +20,9 @@ const Banner1 = () => {
         {/* Main Heading */}
         <div className="text-start mb-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 tracking-tight leading-tight uppercase drop-shadow-lg">
-            New
-            <span className="relative inline-block ml-3">
-              <span className="text-[#D4AF37]">Clothes</span>
+            {t("banner.title")}
+            <span className="relative inline-block ms-3">
+              <span className="text-[#D4AF37]">{t("banner.titleHighlight")}</span>
               <span className="absolute -bottom-2 left-0 w-full h-1.5 bg-[#D4AF37] rounded-full"></span>
             </span>
           </h1>
@@ -37,12 +40,12 @@ const Banner1 = () => {
             to="/"
             className="text-[#D4AF37] hover:text-[#FFD700] transition-colors duration-300 uppercase"
           >
-            Home
+            {t("banner.breadcrumbHome")}
           </Link>
 
           <span className="text-white/50">/</span>
 
-          <span className="text-white/80 uppercase">New Clothes</span>
+          <span className="text-white/80 uppercase">{t("banner.breadcrumbCurrent")}</span>
         </nav>
       </div>
     </section>

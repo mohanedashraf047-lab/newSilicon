@@ -7,41 +7,42 @@ import CustomerFeedback from "../components/usedClothesPage/CustomerFeedback";
 import ComparisonSection from "../components/usedClothesPage/ComparisonSection";
 import ContactSection from "../components/usedClothesPage/ContactSection";
 import { PAGE_DATA } from "../constants/pageData";
-
-const data = PAGE_DATA.usedClothes;
+import { useTranslation } from "react-i18next";
 
 const UsedClothes = () => {
+  const { t } = useTranslation(["usedClothes"]);
+
   return (
     <div className="pt-20 lg:pt-32">
       <SecondHandShoes
-        title={data.hero.title}
-        highlightWord={data.hero.highlightWord}
-        content={data.content}
+        title={t("hero.title")}
+        highlightWord={t("hero.highlightWord")}
+        content={t("content", { returnObjects: true }) || []}
       />
-      <ProductGrid products={data.products} productsPage="usedClothesImages" />
+      <ProductGrid products={PAGE_DATA.usedClothes.products} productsPage="usedClothesImages" />
       <WhyChooseUs
-        title={data.whyChoose.title}
-        highlightWord={data.whyChoose.highlightWord}
-        subtitle={data.whyChoose.subtitle}
-        features={data.whyChoose.features}
+        title={t("whyChoose.title")}
+        highlightWord={t("whyChoose.highlightWord")}
+        subtitle={t("whyChoose.subtitle")}
+        features={t("whyChoose.features", { returnObjects: true }) || []}
       />
       <CategoryBrowser
-        title={data.categories.title}
-        banner={data.categories.banner}
-        groups={data.categories.groups}
+        title={t("categories.title")}
+        banner={t("categories.banner", { returnObjects: true })}
+        groups={t("categories.groups", { returnObjects: true }) || []}
       />
       <Banner2
-        badge={data.banner2.badge}
-        heading={data.banner2.heading}
-        headingHighlight={data.banner2.headingHighlight}
-        paragraphs={data.banner2.paragraphs}
-        cards={data.banner2.cards}
+        badge={t("banner2.badge")}
+        heading={t("banner2.heading")}
+        headingHighlight={t("banner2.headingHighlight")}
+        paragraphs={t("banner2.paragraphs", { returnObjects: true }) || []}
+        cards={t("banner2.cards", { returnObjects: true }) || []}
       />
       <CustomerFeedback
-        title={data.feedback.title}
-        highlightWord={data.feedback.highlightWord}
-        trustText={data.feedback.trustText}
-        testimonials={data.feedback.testimonials}
+        title={t("feedback.title")}
+        highlightWord={t("feedback.highlightWord")}
+        trustText={t("feedback.trustText")}
+        testimonials={t("feedback.testimonials", { returnObjects: true }) || []}
       />
       <ComparisonSection />
       <ContactSection />

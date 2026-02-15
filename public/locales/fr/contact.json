@@ -25,5 +25,32 @@
     "address": "Adresse",
     "hours": "Heures d'ouverture",
     "hoursText": "Lundi - Vendredi: 9h00 - 18h00<br/>Samedi - Dimanche: Fermé"
+  },
+  "expertise": {
+    "heroTitle": "De confiance grâce au",
+    "heroHighlight": "Professionnalisme",
+    "heading": "Notre expertise est là",
+    "headingHighlight": "pour vous servir",
+    "subtitle": "Silicon Value s'engage dans la logistique professionnelle et l'assurance qualité pour nos partenaires mondiaux.",
+    "features": [
+      { "title": "Approvisionnement stable", "desc": "Exploitation du réseau mondial de Silicon Value pour un flux d'inventaire ininterrompu." },
+      { "title": "Qualité stable", "desc": "Nos protocoles d'inspection rigoureux garantissent que chaque envoi répond à notre norme premium." },
+      { "title": "Multi-catégories", "desc": "Un vaste portefeuille de catégories à forte demande adaptées aux marchés internationaux." },
+      { "title": "Service 7\u00d724", "desc": "Gestionnaires de comptes dédiés disponibles dans tous les fuseaux horaires pour un support d'élite." }
+    ],
+    "formPlaceholders": {
+      "name": "Nom*",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp/Téléphone*",
+      "message": "Parlez-nous de vos besoins..."
+    },
+    "submitButton": "Obtenir le prix maintenant",
+    "chinaHQ": "Siège Chine",
+    "egyptHub": "Bureau Égypte",
+    "sendMail": "Envoyer un e-mail",
+    "clickToChat": "Cliquez pour discuter",
+    "swalTitle": "Demande prête !",
+    "swalText": "Ouverture de votre client e-mail pour notifier notre équipe...",
+    "swalButton": "Procéder à l'e-mail"
   }
 }

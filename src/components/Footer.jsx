@@ -1,16 +1,13 @@
 // components/layout/Footer.jsx
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { COMPANY_INFO } from "../constants/siteData";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
-  const footerLinks = [
-    { name: "New Clothes", path: "/newClothes" },
-    { name: "Used Clothes", path: "/usedClothes" },
-    { name: "Fabric", path: "/fabric" },
-    { name: "Contact Support", path: "/contact" },
-  ];
+  const { t } = useTranslation(["footer"]);
+  const footerLinks = t("quickLinks.items", { returnObjects: true }) || [];
 
   const [formData, setFormData] = useState({
     name: "",
@@ -37,7 +34,7 @@ const Footer = () => {
 
     window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
 
-    setFormStatus("Opening your email client...");
+    setFormStatus(t("form.sending"));
     setTimeout(() => {
       setFormData({ name: "", email: "", message: "" });
       setFormStatus("");
@@ -57,14 +54,14 @@ const Footer = () => {
               className="w-40 sm:w-48 lg:w-56 object-contain mb-4"
             />
             <p className="text-gray-800 text-xs sm:text-sm text-center sm:text-left leading-relaxed">
-              Leading the way in second-hand clothes, shoes, and bags wholesale.
+              {t("description")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="lg:col-span-3">
             <h4 className="font-bold mb-4 text-base sm:text-lg text-blue-600 pb-2 border-b-2 border-blue-600/30">
-              Quick Links
+              {t("quickLinks.title")}
             </h4>
             <ul className="space-y-2.5">
               {footerLinks.map((link, index) => (
@@ -88,7 +85,7 @@ const Footer = () => {
           {/* Contact Form */}
           <div className="sm:col-span-2 lg:col-span-6">
             <h4 className="font-bold mb-4 text-base sm:text-lg text-blue-600 pb-2 border-b-2 border-blue-600/30">
-              Send Us a Message
+              {t("form.title")}
             </h4>
             <form onSubmit={handleSubmit} className="space-y-3">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -97,7 +94,7 @@ const Footer = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your Name"
+                  placeholder={t("form.placeholders.name")}
                   required
                   className="w-full px-4 py-2.5 text-sm rounded-lg bg-white/80 text-gray-900 placeholder-gray-500 border border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all"
                 />
@@ -106,7 +103,7 @@ const Footer = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="Your Email"
+                  placeholder={t("form.placeholders.email")}
                   required
                   className="w-full px-4 py-2.5 text-sm rounded-lg bg-white/80 text-gray-900 placeholder-gray-500 border border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all"
                 />
@@ -115,7 +112,7 @@ const Footer = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Your Message"
+                placeholder={t("form.placeholders.message")}
                 required
                 rows="3"
                 className="w-full px-4 py-2.5 text-sm rounded-lg bg-white/80 text-gray-900 placeholder-gray-500 border border-gray-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 outline-none transition-all resize-none"
@@ -124,7 +121,7 @@ const Footer = () => {
                 type="submit"
                 className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-8 rounded-lg transition-all duration-300 active:scale-95 text-sm"
               >
-                Send Message
+                {t("form.submitButton")}
               </button>
               {formStatus && (
                 <p className="text-blue-700 text-xs sm:text-sm font-medium">
@@ -143,7 +140,7 @@ const Footer = () => {
               <span className="text-lg sm:text-xl shrink-0 mt-0.5">📧</span>
               <div className="space-y-1">
                 <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
-                  Email
+                  {t("contactBar.emailLabel")}
                 </p>
                 {COMPANY_INFO.email.map((email) => (
                   <a
@@ -162,7 +159,7 @@ const Footer = () => {
               <FaWhatsapp className="w-5 h-5 shrink-0 mt-0.5 text-blue-700" />
               <div className="space-y-1">
                 <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
-                  WhatsApp
+                  {t("contactBar.whatsappLabel")}
                 </p>
                 {COMPANY_INFO.whatsapp.map((phone) => (
                   <a
@@ -183,7 +180,7 @@ const Footer = () => {
               <span className="text-lg sm:text-xl shrink-0 mt-0.5">📍</span>
               <div className="space-y-1">
                 <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
-                  Location
+                  {t("contactBar.locationLabel")}
                 </p>
                 {COMPANY_INFO.address.map((addr) => (
                   <p key={addr} className="text-gray-800 text-sm">
@@ -198,8 +195,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t-2 border-blue-600/30 pt-6">
           <p className="text-center text-sm sm:text-base text-gray-800">
-            &copy; {new Date().getFullYear()} {COMPANY_INFO.name}. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} {COMPANY_INFO.name}. {t("allRightsReserved")}
           </p>
         </div>
       </div>

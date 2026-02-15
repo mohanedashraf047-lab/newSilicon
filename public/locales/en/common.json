@@ -28,5 +28,20 @@
     "whatsappNumber2": "+20 11 58595725",
     "address1": "Wuhan, China",
     "address2": "Cairo, Egypt"
-  }
+  },
+  "whatsapp": {
+    "tooltip": "Chat with us!",
+    "getPrice": "Get Price",
+    "defaultMessage": "Hello, I am interested in your products"
+  },
+  "productGrid": {
+    "exploreMore": "Explore More",
+    "categories": "Categories",
+    "hideAll": "Hide All",
+    "products": "Products",
+    "collectionComplete": "Collection Complete",
+    "premium": "Premium"
+  },
+  "premiumQualityStandards": "Premium Quality Standards",
+  "trustFooter": "Efficiency \u2022 Quality \u2022 Reliability"
 }

@@ -21,5 +21,77 @@
       "title": "Livraison rapide",
       "description": "Logistique efficace et chargement rapide du conteneur"
     }
-  ]
+  ],
+  "banner": {
+    "title": "Nouveaux",
+    "titleHighlight": "Vêtements",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbCurrent": "Nouveaux Vêtements"
+  },
+  "companyInfo": {
+    "title": "Présentation de l'entreprise",
+    "companyName": "Silicon Value",
+    "description1": "est l'un des principaux fournisseurs de services d'exportation de conteneurs complets de haute qualité dans le secteur technologique mondial.",
+    "weHave": "Nous disposons de",
+    "facilities": "3 grandes installations",
+    "inChina": "en Chine, couvrant une superficie totale de plus de",
+    "area": "20 000 mètres carrés",
+    "description2": "Nos capacités de fabrication de pointe nous permettent de produire un volume important de produits quotidiennement, des semi-conducteurs et circuits intégrés aux composants technologiques de pointe."
+  },
+  "advantages": {
+    "sectionTitle": "Nos avantages",
+    "items": [
+      {
+        "title": "Matières premières de haute qualité",
+        "description": "Chez Silicon Value, nous sommes fiers de ne sourcer que les matières premières de la plus haute qualité pour nos composants technologiques. Nos installations de fabrication en Chine sont équipées de technologies de pointe pour garantir que nous travaillons avec les meilleurs semi-conducteurs, métaux et matériaux avancés, directement sourcés auprès de fournisseurs de confiance. Cela nous permet de livrer des produits stables et fiables avec des performances et une longévité supérieures."
+      },
+      {
+        "title": "Variété",
+        "description": "Silicon Value offre une large gamme de composants technologiques avec des catégories de produits de haute qualité, y compris des semi-conducteurs, des circuits imprimés, des puces et des matériaux électroniques avancés. Cette grande variété est très appréciée de nos clients car elle permet des solutions personnalisées adaptées aux besoins spécifiques de chaque projet."
+      },
+      {
+        "title": "Expérience en fret maritime",
+        "description": "Chez Silicon Value, nous avons établi des partenariats solides avec un large éventail de compagnies de transport maritimes fiables, nous donnant un avantage significatif en matière de coûts de transport. Cet avantage concurrentiel nous permet d'offrir des solutions plus rentables par rapport aux autres fournisseurs."
+      },
+      {
+        "title": "Qualité excellente",
+        "description": "Chez Silicon Value, nous nous engageons à fournir les composants technologiques de la plus haute qualité, provenant des meilleurs fournisseurs de l'industrie. Cette base solide nous donne un avantage concurrentiel sur de nombreux autres acteurs du marché."
+      },
+      {
+        "title": "Chargement professionnel de conteneurs",
+        "description": "Chez Silicon Value, nous possédons une expertise approfondie dans l'optimisation du chargement des conteneurs d'expédition, garantissant que chaque envoi est emballé efficacement et en toute sécurité. Notre équipe de chargement expérimentée peut maximiser la capacité des conteneurs."
+      },
+      {
+        "title": "Service après-vente",
+        "description": "Chez Silicon Value, nous priorisons la satisfaction de nos clients en offrant un support après-vente exceptionnel. Pour garantir une expérience fluide, nous fournissons des services en temps réel tels que le suivi de production en direct, l'inspection en direct et le chargement en direct."
+      }
+    ]
+  },
+  "serviceProcess": {
+    "badge": "Processus",
+    "title": "Service",
+    "titleHighlight": "Processus",
+    "subtitle": "Notre flux de travail optimisé garantit la transparence et l'efficacité de la demande initiale à la livraison finale.",
+    "steps": [
+      { "id": "01", "title": "Étape 1", "desc": "Confirmer les catégories de produits" },
+      { "id": "02", "title": "Étape 2", "desc": "Confirmer les quantités de commande conteneur complet" },
+      { "id": "03", "title": "Étape 3", "desc": "Discussion sur les petites commandes" },
+      { "id": "04", "title": "Étape 4", "desc": "Confirmer la quantité" },
+      { "id": "05", "title": "Étape 5", "desc": "Discuter des prix et remises avec notre équipe commerciale" },
+      { "id": "06", "title": "Étape 6", "desc": "Confirmer le PI et les paiements" }
+    ]
+  },
+  "contactUs": {
+    "sectionTitle": "Contactez-nous maintenant",
+    "formTitle": "Obtenir un devis",
+    "placeholders": {
+      "name": "Votre nom *",
+      "email": "Votre e-mail *",
+      "whatsapp": "Votre WhatsApp *",
+      "previousSource": "Source précédente ?",
+      "message": "Votre message"
+    },
+    "submitButton": "Obtenir le prix maintenant",
+    "rightTitle": "Bienvenue pour visiter notre usine"
+  }
 }

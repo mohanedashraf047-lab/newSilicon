@@ -52,5 +52,31 @@
     "twitter": "Twitter",
     "linkedin": "LinkedIn",
     "instagram": "Instagram"
-  }
+  },
+  "form": {
+    "title": "Envoyez-nous un message",
+    "placeholders": {
+      "name": "Votre nom",
+      "email": "Votre e-mail",
+      "message": "Votre message"
+    },
+    "submitButton": "Envoyer le message",
+    "sending": "Ouverture de votre client e-mail..."
+  },
+  "quickLinks": {
+    "title": "Liens rapides",
+    "items": [
+      { "name": "Nouveaux vêtements", "path": "/newClothes" },
+      { "name": "Vêtements d'occasion", "path": "/usedClothes" },
+      { "name": "Tissus", "path": "/fabric" },
+      { "name": "Support contact", "path": "/contact" }
+    ]
+  },
+  "contactBar": {
+    "emailLabel": "E-mail",
+    "whatsappLabel": "WhatsApp",
+    "locationLabel": "Emplacement"
+  },
+  "allRightsReserved": "Tous droits réservés.",
+  "description": "Leader de la vente en gros de vêtements, chaussures et sacs d'occasion."
 }

@@ -7,6 +7,7 @@ import {
   Ship,
   Palette,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ICON_MAP = {
   ShieldCheck,
@@ -19,6 +20,7 @@ const ICON_MAP = {
 };
 
 const WhyChooseUs = ({ title, highlightWord, subtitle, features = [] }) => {
+  const { t } = useTranslation(["common"]);
   const titleParts = highlightWord ? title.split(highlightWord) : [title, ""];
 
   return (
@@ -74,7 +76,7 @@ const WhyChooseUs = ({ title, highlightWord, subtitle, features = [] }) => {
         <div className="mt-20 flex flex-col items-center justify-center space-y-4">
           <div className="h-px w-full max-w-lg bg-linear-to-r from-transparent via-slate-300 to-transparent"></div>
           <p className="text-slate-400 font-bold uppercase tracking-[0.3em] text-xs">
-            Efficiency • Quality • Reliability
+            {t("trustFooter")}
           </p>
         </div>
       </div>

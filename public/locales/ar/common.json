@@ -28,5 +28,20 @@
     "whatsappNumber2": "+20 11 58595725",
     "address1": "ووهان، الصين",
     "address2": "القاهرة، مصر"
-  }
+  },
+  "whatsapp": {
+    "tooltip": "تحدث معنا!",
+    "getPrice": "احصل على السعر",
+    "defaultMessage": "مرحبًا، أنا مهتم بمنتجاتكم"
+  },
+  "productGrid": {
+    "exploreMore": "استكشف المزيد",
+    "categories": "الفئات",
+    "hideAll": "إخفاء الكل",
+    "products": "المنتجات",
+    "collectionComplete": "المجموعة مكتملة",
+    "premium": "مميز"
+  },
+  "premiumQualityStandards": "معايير الجودة الفائقة",
+  "trustFooter": "الكفاءة \u2022 الجودة \u2022 الموثوقية"
 }

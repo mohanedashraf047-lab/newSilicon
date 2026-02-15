@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 
 const SecondHandShoes = ({
   title,
@@ -11,6 +12,8 @@ const SecondHandShoes = ({
   brandGold = "text-[#D4AF37]", // Classic Metallic Gold
   accentBorder = "border-[#D4AF37]",
 }) => {
+  const { t } = useTranslation(["common"]);
+
   const { ref: heroRef, inView: heroVisible } = useInView({
     threshold: 0.1,
     triggerOnce: true,
@@ -93,7 +96,7 @@ const SecondHandShoes = ({
             {/* Signature Accent */}
             <div className="mt-16 flex justify-center">
               <div className="px-6 py-2 border border-slate-200 rounded-full text-[10px] uppercase tracking-[0.3em] text-slate-400 font-bold">
-                Premium Quality Standards
+                {t("premiumQualityStandards")}
               </div>
             </div>
           </div>

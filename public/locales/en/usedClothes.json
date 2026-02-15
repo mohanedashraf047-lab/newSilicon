@@ -84,5 +84,46 @@
         "description": "Our professional sales team is committed to providing full after sales support for all your used clothing orders. From production and loading to shipping and customs clearance, we make sure the entire process is seamless. For your peace of mind, we send daily quality inspection reports and videos, keeping you informed at every step of the process."
       }
     ]
+  },
+  "comparison": {
+    "title": "The",
+    "titleHighlight": "Difference",
+    "subtitle": "Why Silicon Value remains the trusted choice over general suppliers.",
+    "siliconValueLabel": "Silicon Value",
+    "otherSuppliersLabel": "Other Suppliers",
+    "siliconValueFeatures": [
+      { "title": "Premium Raw Materials", "desc": "High-quality materials from China with brighter colors tailored for the African & Middle Eastern markets." },
+      { "title": "Professional Sorting", "desc": "Up to 150 categories handled by staff with 5+ years of expertise for stable quality." },
+      { "title": "Rigorous Inspection", "desc": "3-tier quality checks ensuring a 98% A-Grade rate (no holes, no defects)." },
+      { "title": "Efficient Logistics", "desc": "12 balers processing 280 tons daily. Single containers shipped within 3 days." },
+      { "title": "Professional Loading", "desc": "Expert packing allows for 10% more volume per container, saving you significant freight costs." }
+    ],
+    "otherSupplierFeatures": [
+      "Expensive materials from Europe/US with duller, single colors.",
+      "Limited categories that don't meet specific market demands.",
+      "Loose quality control; B-grade goods often mixed with A-grade.",
+      "Slow shipping; containers often take 15+ days to depart.",
+      "Inexperienced loading; 40ft containers often under-filled at 26 tons."
+    ],
+    "warningText": "Common issues include delayed delivery, poor communication after payment, and inconsistent sorting."
+  },
+  "contactSection": {
+    "titleHighlight": "Get in",
+    "titleRest": "Touch Now",
+    "valueProps": [
+      { "title": "Excellent Quality Control", "desc": "Strict 3-tier inspection ensuring 98% A-grade quality." },
+      { "title": "High Quality Raw Materials", "desc": "Sourced from top-tier recycling networks in China." },
+      { "title": "Professional Services", "desc": "Expert loading & logistics to save 10% on freight." },
+      { "title": "Excellent After-sales Service", "desc": "Dedicated support team responding within 12 hours." }
+    ],
+    "formTitle": "Contact Us",
+    "formSubtitle": "Our sales team will reply within 12 hours.",
+    "placeholders": {
+      "name": "Your Name*",
+      "email": "Your Email",
+      "whatsapp": "Your Whatsapp*",
+      "message": "Your message"
+    },
+    "submitButton": "Order Now"
   }
 }
