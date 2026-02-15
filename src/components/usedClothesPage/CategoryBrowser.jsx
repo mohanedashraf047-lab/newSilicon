@@ -57,9 +57,9 @@ const CategoryBrowser = ({ title, banner, groups = [] }) => {
                   {cat.items.map((item, i) => (
                     <button
                       key={i}
-                      className="group flex items-center justify-between p-3 rounded-xl  border border-transparent transition-all duration-200 text-left"
+                      className="group flex items-center justify-between p-3 rounded-xl  border border-transparent transition-all duration-200 text-start"
                     >
-                      <span className="text-slate-600  font-medium transition-colors pl-6">
+                      <span className="text-slate-600  font-medium transition-colors ps-6">
                         {item}
                       </span>
                     </button>

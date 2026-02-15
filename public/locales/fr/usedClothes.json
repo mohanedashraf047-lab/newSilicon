@@ -56,7 +56,30 @@
   "feedback": {
     "title": "Commentaires des",
     "highlightWord": "clients",
-    "trustText": "Rejoint par plus de 500 partenaires commerciaux satisfaits dans le monde entier."
+    "trustText": "Rejoint par plus de 500 partenaires commerciaux satisfaits dans le monde entier.",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Ahmed Al-Farsi",
+        "image": "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "Les chaussures d'occasion de Silicon Value sont de très bonne qualité. Nous travaillons ensemble depuis trois ans dans nos magasins de Dubaï et ils ne m'ont jamais déçu. Leur constance est inégalée.",
+        "role": "Gulf Retail Group"
+      },
+      {
+        "id": 2,
+        "name": "Fatima Mansour",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "L'équipe de Silicon Value est très digne de confiance. Seulement 3 jours après le paiement, notre conteneur pour le Caire a été chargé et expédié. Cette efficacité a parfaitement résolu nos besoins urgents en inventaire.",
+        "role": "North Africa Logistics"
+      },
+      {
+        "id": 3,
+        "name": "Yousef El-Sayed",
+        "image": "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "J'ai acheté auprès d'autres usines avant Silicon Value, mais j'ai été déçu à chaque fois. Les choisir nous a apporté de grands avantages sur le marché saoudien ; la qualité stable est quelque chose que d'autres ne peuvent pas atteindre.",
+        "role": "Jeddah Trade House"
+      }
+    ]
   },
   "whyChoose": {
     "title": "Pourquoi choisir les vêtements d'occasion Silicon Value",

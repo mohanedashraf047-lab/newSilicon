@@ -70,7 +70,7 @@ const HeroBanner = () => {
               className="group relative inline-flex items-center justify-center px-10 py-4 font-bold text-white transition-all duration-200 bg-blue-600 rounded-xl hover:bg-blue-700 shadow-2xl active:scale-95"
             >
               {t("banner.cta")}
-              <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-5 h-5 ms-2 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

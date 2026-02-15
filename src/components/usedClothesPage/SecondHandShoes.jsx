@@ -56,9 +56,9 @@ const SecondHandShoes = ({
             >
               {titleParts[0]}
               {highlightWord && (
-                <span className="relative inline-block ml-2 mr-2">
+                <span className="relative inline-block ms-2 me-2">
                   <span className={brandGold}>{highlightWord}</span>
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#D4AF37] opacity-30 rounded-full"></span>
+                  <span className="absolute -bottom-2 start-0 w-full h-1 bg-[#D4AF37] opacity-30 rounded-full"></span>
                 </span>
               )}
               {titleParts[1]}

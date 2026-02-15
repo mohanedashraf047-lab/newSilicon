@@ -55,7 +55,30 @@
   "feedback": {
     "title": "Témoignages",
     "highlightWord": "des clients",
-    "trustText": "Approuvé par plus de 300 entreprises de textile dans plus de 40 pays."
+    "trustText": "Approuvé par plus de 300 entreprises de textile dans plus de 40 pays.",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Hassan Ibrahim",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "Les tissus en coton de Silicon Value sont exceptionnels. Nous nous approvisionnons auprès d'eux pour notre usine de vêtements à Lagos et la qualité est constamment exceptionnelle. Notre gaspillage de production a diminué de 15 % depuis que nous avons opté pour leurs matériaux.",
+        "role": "West Africa Textiles Ltd"
+      },
+      {
+        "id": 2,
+        "name": "Amira Khalil",
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "Ce qui nous a le plus impressionnés, c'est la variété. De la soie au denim, Silicon Value a livré exactement ce dont nous avions besoin pour notre ligne de mode à Amman. La cohérence des couleurs d'un lot à l'autre est quelque chose que nous trouvons rarement avec d'autres fournisseurs.",
+        "role": "Middle East Fashion House"
+      },
+      {
+        "id": 3,
+        "name": "Omar Diallo",
+        "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "L'équipe logistique de Silicon Value a tout géré parfaitement. De la sélection des tissus au dédouanement à Dakar, tout le processus a été sans faille. Leurs mélanges de polyester sont maintenant notre matériau le plus vendu sur le marché sénégalais.",
+        "role": "Dakar Import Trading Co."
+      }
+    ]
   },
   "whyChoose": {
     "title": "Pourquoi choisir les tissus Silicon Value",

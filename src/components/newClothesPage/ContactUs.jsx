@@ -71,7 +71,7 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-2xl">
           {/* Left Column: Form */}
           <div className="bg-white p-8 lg:p-12">
-            <h3 className="text-3xl font-bold text-slate-900 mb-8 border-l-4 border-blue-600 pl-4">
+            <h3 className="text-3xl font-bold text-slate-900 mb-8 border-s-4 border-blue-600 ps-4">
               {t("contactUs.formTitle")}
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">

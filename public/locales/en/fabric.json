@@ -55,7 +55,30 @@
   "feedback": {
     "title": "Client",
     "highlightWord": "Testimonials",
-    "trustText": "Trusted by 300+ textile businesses across 40+ countries."
+    "trustText": "Trusted by 300+ textile businesses across 40+ countries.",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Hassan Ibrahim",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "The cotton fabrics from Silicon Value are exceptional. We've been sourcing from them for our garment factory in Lagos and the quality has been consistently outstanding. Our production waste dropped by 15% since switching to their materials.",
+        "role": "West Africa Textiles Ltd"
+      },
+      {
+        "id": 2,
+        "name": "Amira Khalil",
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "What impressed us most was the variety. From silk to denim, Silicon Value delivered exactly what we needed for our fashion line in Amman. The color consistency across batches is something we rarely find with other suppliers.",
+        "role": "Middle East Fashion House"
+      },
+      {
+        "id": 3,
+        "name": "Omar Diallo",
+        "image": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?q=80&w=200&h=200&auto=format&fit=crop",
+        "text": "Silicon Value's logistics team handled everything perfectly. From fabric selection to customs clearance in Dakar, the entire process was seamless. Their polyester blends are now our best-selling material in the Senegalese market.",
+        "role": "Dakar Import Trading Co."
+      }
+    ]
   },
   "whyChoose": {
     "title": "Why Choose Silicon Value Fabrics",

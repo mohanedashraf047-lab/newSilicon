@@ -124,7 +124,7 @@ Sent via SiliconValue.org Inquiry Portal
                   />
                 </span>
               </h2>
-              <p className="text-slate-600 text-lg border-l-4 border-[#D4AF37] pl-6 max-w-xl italic">
+              <p className="text-slate-600 text-lg border-s-4 border-[#D4AF37] ps-6 max-w-xl italic">
                 {t("expertise.subtitle")}
               </p>
             </div>
@@ -226,7 +226,7 @@ Sent via SiliconValue.org Inquiry Portal
                   </span>
 
                   {/* Subtle "Send Mail" hint that appears on hover */}
-                  <span className="ml-2 text-[10px] font-black uppercase tracking-widest text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-all transform translate-x-2 group-hover:translate-x-0">
+                  <span className="ms-2 text-[10px] font-black uppercase tracking-widest text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-all transform translate-x-2 group-hover:translate-x-0">
                     {t("expertise.sendMail")}
                   </span>
                 </a>
@@ -240,7 +240,7 @@ Sent via SiliconValue.org Inquiry Portal
                 ].map((hub) => (
                   <div
                     key={hub.label}
-                    className="group cursor-pointer flex flex-col items-center text-center sm:items-start sm:text-left space-y-2"
+                    className="group cursor-pointer flex flex-col items-center text-center sm:items-start sm:text-start space-y-2"
                     onClick={() => openWhatsApp(hub.phone)}
                   >
                     <div className="flex items-center gap-2">

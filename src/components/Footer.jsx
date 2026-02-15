@@ -53,7 +53,7 @@ const Footer = () => {
               alt="Silicon Value Logo"
               className="w-40 sm:w-48 lg:w-56 object-contain mb-4"
             />
-            <p className="text-gray-800 text-xs sm:text-sm text-center sm:text-left leading-relaxed">
+            <p className="text-gray-800 text-xs sm:text-sm text-center sm:text-start leading-relaxed">
               {t("description")}
             </p>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                     to={link.path}
                     className="text-gray-800 text-sm sm:text-base hover:text-blue-700 transition-all duration-200 flex items-center group"
                   >
-                    <span className="mr-2 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="me-2 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
                       ›
                     </span>
                     <span className="group-hover:translate-x-1 transition-transform">

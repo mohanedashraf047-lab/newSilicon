@@ -83,7 +83,7 @@ const CompanyVideo = () => {
           {/* Company Info Column */}
           <div className="lg:col-span-4">
             <div className="h-full flex flex-col justify-center">
-              <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-6 text-center lg:text-left">
+              <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-6 text-center lg:text-start">
                 {t("companyVideo.companyName")}
               </h2>
 
