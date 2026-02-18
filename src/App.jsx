@@ -23,7 +23,7 @@ const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 z-50 ${isRTL ? "left-4 sm:left-6 md:left-8" : "right-4 sm:right-6 md:right-8"} bg-gray-400 hover:bg-blue-400 hover:cursor-pointer text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-primary-700 active:scale-95 transition-all animate-fadeIn`}
+      className={`fixed bottom-4 z-50 ${isRTL ? "left-4 sm:left-6 md:left-8" : "right-4 sm:right-6 md:right-8"} bg-gradient-to-br from-[#003366] to-blue-700 hover:from-[#FFD700] hover:to-[#D4AF37] text-white p-3 sm:p-4 rounded-full shadow-lg hover:shadow-xl active:scale-95 transition-all duration-300 animate-fadeIn border-2 border-white`}
       aria-label="Back to top"
     >
       <svg
@@ -31,11 +31,11 @@ const BackToTop = () => {
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
+        strokeWidth={3}
       >
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          strokeWidth={2}
           d="M5 10l7-7m0 0l7 7m-7-7v18"
         />
       </svg>

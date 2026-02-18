@@ -56,11 +56,6 @@
 /* RTL Support for Arabic */
 html[dir="rtl"] {
   direction: rtl;
-  text-align: right;
-}
-
-html[dir="rtl"] * {
-  text-align: inherit;
 }
 
 /* Icon flipping for RTL */

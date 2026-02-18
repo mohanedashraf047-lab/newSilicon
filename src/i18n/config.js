@@ -1,33 +1,36 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// Import all translation files from public/locales
-import enCommon from '../../public/locales/en/common.json';
-import enNavigation from '../../public/locales/en/navigation.json';
-import enHome from '../../public/locales/en/home.json';
-import enNewClothes from '../../public/locales/en/newClothes.json';
-import enUsedClothes from '../../public/locales/en/usedClothes.json';
-import enFabric from '../../public/locales/en/fabric.json';
-import enContact from '../../public/locales/en/contact.json';
-import enFooter from '../../public/locales/en/footer.json';
+// Import all translation files from src/locales
+import enCommon from '../locales/en/common.json';
+import enNavigation from '../locales/en/navigation.json';
+import enHome from '../locales/en/home.json';
+import enNewClothes from '../locales/en/newClothes.json';
+import enUsedClothes from '../locales/en/usedClothes.json';
+import enFabric from '../locales/en/fabric.json';
+import enContact from '../locales/en/contact.json';
+import enFooter from '../locales/en/footer.json';
+import enProducts from '../locales/en/products.json';
 
-import frCommon from '../../public/locales/fr/common.json';
-import frNavigation from '../../public/locales/fr/navigation.json';
-import frHome from '../../public/locales/fr/home.json';
-import frNewClothes from '../../public/locales/fr/newClothes.json';
-import frUsedClothes from '../../public/locales/fr/usedClothes.json';
-import frFabric from '../../public/locales/fr/fabric.json';
-import frContact from '../../public/locales/fr/contact.json';
-import frFooter from '../../public/locales/fr/footer.json';
+import frCommon from '../locales/fr/common.json';
+import frNavigation from '../locales/fr/navigation.json';
+import frHome from '../locales/fr/home.json';
+import frNewClothes from '../locales/fr/newClothes.json';
+import frUsedClothes from '../locales/fr/usedClothes.json';
+import frFabric from '../locales/fr/fabric.json';
+import frContact from '../locales/fr/contact.json';
+import frFooter from '../locales/fr/footer.json';
+import frProducts from '../locales/fr/products.json';
 
-import arCommon from '../../public/locales/ar/common.json';
-import arNavigation from '../../public/locales/ar/navigation.json';
-import arHome from '../../public/locales/ar/home.json';
-import arNewClothes from '../../public/locales/ar/newClothes.json';
-import arUsedClothes from '../../public/locales/ar/usedClothes.json';
-import arFabric from '../../public/locales/ar/fabric.json';
-import arContact from '../../public/locales/ar/contact.json';
-import arFooter from '../../public/locales/ar/footer.json';
+import arCommon from '../locales/ar/common.json';
+import arNavigation from '../locales/ar/navigation.json';
+import arHome from '../locales/ar/home.json';
+import arNewClothes from '../locales/ar/newClothes.json';
+import arUsedClothes from '../locales/ar/usedClothes.json';
+import arFabric from '../locales/ar/fabric.json';
+import arContact from '../locales/ar/contact.json';
+import arFooter from '../locales/ar/footer.json';
+import arProducts from '../locales/ar/products.json';
 
 // Define resources
 const resources = {
@@ -40,6 +43,7 @@ const resources = {
     fabric: enFabric,
     contact: enContact,
     footer: enFooter,
+    products: enProducts,
   },
   fr: {
     common: frCommon,
@@ -50,6 +54,7 @@ const resources = {
     fabric: frFabric,
     contact: frContact,
     footer: frFooter,
+    products: frProducts,
   },
   ar: {
     common: arCommon,
@@ -60,6 +65,7 @@ const resources = {
     fabric: arFabric,
     contact: arContact,
     footer: arFooter,
+    products: arProducts,
   },
 };
 
@@ -87,7 +93,7 @@ i18n
     resources,
     lng: defaultLanguage,
     fallbackLng: 'en',
-    ns: ['common', 'navigation', 'home', 'newClothes', 'usedClothes', 'fabric', 'contact', 'footer'],
+    ns: ['common', 'navigation', 'home', 'newClothes', 'usedClothes', 'fabric', 'contact', 'footer', 'products'],
     defaultNS: 'common',
     interpolation: {
       escapeValue: false, // React already safeguards against XSS

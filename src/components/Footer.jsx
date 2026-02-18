@@ -194,8 +194,8 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t-2 border-blue-600/30 pt-6">
-          <p className="text-center text-sm sm:text-base text-gray-800">
-            &copy; {new Date().getFullYear()} {COMPANY_INFO.name}. {t("allRightsReserved")}
+          <p className="text-center text-sm sm:text-base text-gray-800 w-full flex justify-center">
+            <span>&copy; {new Date().getFullYear()} {COMPANY_INFO.name}. {t("allRightsReserved")}</span>
           </p>
         </div>
       </div>

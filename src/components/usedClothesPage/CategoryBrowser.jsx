@@ -19,9 +19,9 @@ const CategoryBrowser = ({ title, banner, groups = [] }) => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-black text-slate-900 mb-4">{title}</h2>
-          <div className="w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+        <div className="text-center mb-12 flex flex-col items-center">
+          <h2 className="text-3xl font-black text-slate-900 mb-4 text-center w-full">{title}</h2>
+          <div className="w-16 h-1 bg-indigo-600 rounded-full"></div>
         </div>
 
         {/* Hero Banner for Categories */}

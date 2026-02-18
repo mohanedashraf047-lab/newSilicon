@@ -3,7 +3,7 @@ import { ArrowRight, Award, ChevronUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ProductGrid = ({ products = [] , productsPage}) => {
-  const { t } = useTranslation(["common"]);
+  const { t } = useTranslation(["common", "products"]);
   const INITIAL_COUNT = 7;
   const MAX_PRODUCTS = 35;
   const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
@@ -67,7 +67,7 @@ const ProductGrid = ({ products = [] , productsPage}) => {
                   </div>
                   <div className="p-5 text-center bg-white">
                     <h4 className="font-bold text-slate-800 text-lg group-hover:text-blue-600 transition-colors">
-                      {product.title}
+                      {t(product.title, { ns: "products" })}
                     </h4>
                   </div>
                 </div>

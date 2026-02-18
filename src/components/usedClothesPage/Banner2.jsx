@@ -1,11 +1,20 @@
-import { Factory, CheckCircle, ShieldCheck } from "lucide-react";
+import { Factory, CheckCircle, ShieldCheck, Globe, Layers, Gem, SearchCheck } from "lucide-react";
 import { useState } from "react";
 
 const ICON_MAP = {
   Factory,
   CheckCircle,
   ShieldCheck,
+  Globe,
+  Layers,
+  Gem,
+  SearchCheck,
 };
+
+const CARD_STYLES = [
+  { bg: "bg-[#FFD700]", text: "text-blue-900", shadow: "shadow-[0_10px_30px_rgba(255,215,0,0.3)]" },
+  { bg: "bg-white/20", text: "text-[#FFD700]", shadow: "shadow-[0_10px_30px_rgba(255,255,255,0.1)]" },
+];
 
 const generateParticles = (count) => {
   return [...Array(count)].map((_, i) => ({
@@ -124,7 +133,7 @@ const Banner2 = ({
                   <div className="absolute inset-0 rounded-[2.5rem] bg-[#FFD700]/0 group-hover:bg-[#FFD700]/5 transition-colors duration-500" />
 
                   <div className="relative z-10 space-y-6">
-                    <div className="w-16 h-16 bg-[#FFD700] rounded-2xl flex items-center justify-center text-blue-900 shadow-[0_10px_30px_rgba(255,215,0,0.3)] group-hover:rotate-15 group-hover:scale-110 transition-transform duration-300">
+                    <div className={`w-16 h-16 ${CARD_STYLES[idx % CARD_STYLES.length].bg} rounded-2xl flex items-center justify-center ${CARD_STYLES[idx % CARD_STYLES.length].text} ${CARD_STYLES[idx % CARD_STYLES.length].shadow} group-hover:rotate-15 group-hover:scale-110 transition-transform duration-300`}>
                       {IconComponent && <IconComponent size={32} />}
                     </div>
 

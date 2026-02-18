@@ -11,6 +11,7 @@
   "categories": {
     "title": "Parcourez notre collection de tissus",
     "banner": {
+      "image": "/src/assets/fabricImages/Cotton Fabric.jpeg",
       "title": "Coton, soie, lin et polyester",
       "subtitle": "Tissus Premium • Sélection diversifiée"
     },
@@ -43,10 +44,12 @@
     ],
     "cards": [
       {
+        "icon": "Gem",
         "title": "Directement des meilleures filatures textiles",
         "description": "Nos tissus proviennent directement des meilleures filatures textiles de Guangzhou, Shenzhen et Shanghai, en veillant à une qualité premium à des prix compétitifs sans intermédiaires."
       },
       {
+        "icon": "SearchCheck",
         "title": "Inspection rigoureuse des tissus",
         "description": "Chaque lot subit une inspection approfondie de la cohérence du tissage, de la solidité des couleurs et de la durabilité, garantissant que seuls les meilleurs matériaux atteignent votre chaîne de production."
       }

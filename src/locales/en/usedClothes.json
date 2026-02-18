@@ -12,6 +12,7 @@
   "categories": {
     "title": "Browse Our Product Categories",
     "banner": {
+      "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop",
       "title": "Used Clothes & Used Shoes & Used Bags",
       "subtitle": "Premium Grade Quality • Global Shipping"
     },
@@ -44,10 +45,12 @@
     ],
     "cards": [
       {
+        "icon": "Globe",
         "title": "A Reliable Experienced Exporter",
         "description": "Silicon Value is one of the top exporters of second-hand garments in China. With two large, fully operational factories spanning over 20,000 square meters, we have the capacity to meet your needs."
       },
       {
+        "icon": "Layers",
         "title": "Specialized Sorting Expertise",
         "description": "We have a dedicated team specializing in sorting used clothing. Our expertise allows us to handle garments carefully, ensuring they meet high standards and your specific requirements."
       }

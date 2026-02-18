@@ -3,7 +3,6 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -124,31 +123,28 @@ const Header = () => {
                 />
               </Link>
 
-              <div className="flex items-center gap-4">
-                <nav>
-                  <ul className="flex items-center space-x-1">
-                    {navigation.map((item) => (
-                      <li key={item.id}>
-                        <NavLink
-                          to={item.href}
-                          end
-                          className={({ isActive }) =>
-                            `block px-4 xl:px-5 py-3 font-semibold text-sm uppercase transition-all rounded-lg
-                            ${
-                              isActive
-                                ? "text-yellow-500"
-                                : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
-                            }`
-                          }
-                        >
-                          {item.label}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-                <LanguageSwitcher />
-              </div>
+              <nav>
+                <ul className="flex items-center space-x-1">
+                  {navigation.map((item) => (
+                    <li key={item.id}>
+                      <NavLink
+                        to={item.href}
+                        end
+                        className={({ isActive }) =>
+                          `block px-4 xl:px-5 py-3 font-semibold text-sm uppercase transition-all rounded-lg
+                          ${
+                            isActive
+                              ? "text-yellow-500"
+                              : "text-gray-700 hover:text-blue-600 hover:bg-blue-50"
+                          }`
+                        }
+                      >
+                        {item.label}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -178,9 +174,6 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 pt-4 border-t border-gray-200">
-                <LanguageSwitcher />
-              </div>
             </nav>
           </div>
         )}

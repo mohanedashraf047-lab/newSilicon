@@ -12,6 +12,7 @@
   "categories": {
     "title": "Parcourez nos catégories de produits",
     "banner": {
+      "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop",
       "title": "Vêtements d'occasion, chaussures et sacs d'occasion",
       "subtitle": "Qualité haut de gamme • Expédition mondiale"
     },
@@ -44,10 +45,12 @@
     ],
     "cards": [
       {
+        "icon": "Globe",
         "title": "Un exportateur expérimenté fiable",
         "description": "Silicon Value est l'un des plus grands exportateurs de vêtements d'occasion en Chine. Avec deux grandes usines entièrement opérationnelles s'étendant sur plus de 20 000 mètres carrés, nous avons la capacité de répondre à vos besoins."
       },
       {
+        "icon": "Layers",
         "title": "Expertise spécialisée en tri",
         "description": "Nous avons une équipe dédiée spécialisée dans le tri des vêtements d'occasion. Notre expertise nous permet de manipuler les vêtements avec soin, en garantissant qu'ils répondent à des normes élevées et à vos exigences spécifiques."
       }

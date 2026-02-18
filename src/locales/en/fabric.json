@@ -11,6 +11,7 @@
   "categories": {
     "title": "Browse Our Fabric Collection",
     "banner": {
+      "image": "/src/assets/fabricImages/Cotton Fabric.jpeg",
       "title": "Cotton & Silk & Linen & Polyester",
       "subtitle": "Premium Fabrics • Diverse Selection"
     },
@@ -43,10 +44,12 @@
     ],
     "cards": [
       {
+        "icon": "Gem",
         "title": "Direct From Top Textile Mills",
         "description": "Our fabrics are sourced directly from leading textile mills in Guangzhou, Shenzhen, and Shanghai, ensuring premium quality at competitive prices with no middlemen involved."
       },
       {
+        "icon": "SearchCheck",
         "title": "Rigorous Fabric Inspection",
         "description": "Every batch undergoes thorough inspection for weave consistency, color fastness, and durability, guaranteeing that only the finest materials reach your production line."
       }
