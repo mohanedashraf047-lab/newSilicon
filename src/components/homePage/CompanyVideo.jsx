@@ -1,7 +1,7 @@
 // 1. Import your images at the top
 import factoryImg1 from "../../assets/companyVideo/img1.jpeg";
 import warehouseImg2 from "../../assets/companyVideo/img2.jpeg";
-import rackImg3 from "../../assets/companyVideo/img3.jpeg";
+import rackImg33 from "../../assets/companyVideo/img3.3.jpeg";
 import bagsImg4 from "../../assets/companyVideo/img4.jpeg";
 import { useTranslation } from "react-i18next";
 
@@ -21,7 +21,7 @@ const CompanyVideo = () => {
     },
     {
       id: 3,
-      src: rackImg3,
+      src: rackImg33,
       link: "/about",
     },
     {
@@ -32,7 +32,7 @@ const CompanyVideo = () => {
   ];
 
   return (
-    <section className="relative py-16 lg:py-20 bg-linear-to-br from-blue-400 via-purple-500 to-blue-800">
+    <section className="relative py-16 lg:py-20 bg-blue-500">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/30"></div>
 

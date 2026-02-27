@@ -14,35 +14,46 @@ export const PAGE_DATA = {
   // Data for New Clothes page
   newClothes: {
     products: [
+      { id: 6, title: "Cardigans", image: "Cardigans.jpeg" },
+      { id: 12, title: "Jackets", image: "Jackets.jpeg" },
+      { id: 8, title: "Coats", image: "Coats.jpeg" },
+      { id: 11, title: "Hoodies", image: "Hoodies.jpeg" },
+      { id: 14, title: "Jumpsuits", image: "Jumpsuits.jpeg" },
+      { id: 20, title: "Polo shirts", image: "Polo shirts.jpeg" },
+      { id: 21, title: "Rompers", image: "Rompers.jpeg" },
       { id: 1, title: "Beanies", image: "Beanies.jpeg" },
       {
         id: 2,
         title: "Activewear",
         image: "Activewear (leggings, tank tops.jpeg",
       },
-      { id: 3, title: "Blazers", image: "Blazers.jpeg",
+      {
+        id: 3,
+        title: "Blazers",
+        image: "Blazers.jpeg",
         //  isPremium: true,
-         },
+      },
       { id: 4, title: "Boots", image: "Boots.jpeg" },
       { id: 5, title: "Button-down", image: "Button-down shirts.jpeg" },
-      { id: 6, title: "Cardigans", image: "Cardigans.jpeg" },
+
       { id: 7, title: "Chinos", image: "Chinos.jpeg" },
-      { id: 8, title: "Coats", image: "Coats.jpeg" },
+
       { id: 9, title: "Dresses", image: "Dresses.jpeg" },
       { id: 10, title: "Flip-flops", image: "Flip-flops.jpeg" },
-      { id: 11, title: "Hoodies", image: "Hoodies.jpeg" },
-      { id: 12, title: "Jackets", image: "Jackets.jpeg" },
-      { id: 13, title: "Jeans", image: "Jeans.jpeg",
+
+      {
+        id: 13,
+        title: "Jeans",
+        image: "Jeans.jpeg",
         //  isPremium: true,
-         },
-      { id: 14, title: "Jumpsuits", image: "Jumpsuits.jpeg" },
+      },
+
       { id: 15, title: "Leggings", image: "Leggings.jpeg" },
       { id: 16, title: "Maxi Dresses", image: "Maxi dresses.jpeg" },
       { id: 17, title: "Mittens", image: "Mittens.jpeg" },
       { id: 18, title: "Overalls", image: "Overalls.jpeg" },
       { id: 19, title: "Pajamas", image: "Pajamas.jpeg" },
-      { id: 20, title: "Polo shirts", image: "Polo shirts.jpeg" },
-      { id: 21, title: "Rompers", image: "Rompers.jpeg" },
+
       { id: 22, title: "Scarves", image: "Scarves.jpeg" },
       { id: 23, title: "Shorts", image: "Shorts.jpeg" },
       { id: 24, title: "Skirts", image: "Skirts.jpeg" },
@@ -56,9 +67,12 @@ export const PAGE_DATA = {
       { id: 32, title: "Tank tops", image: "Tank tops.jpeg" },
       { id: 33, title: "Trousers", image: "Trousers.jpeg" },
       { id: 34, title: "Tunic tops", image: "Tunic tops.jpeg" },
-      { id: 35, title: "Vests", image: "Vests.jpeg",
+      {
+        id: 35,
+        title: "Vests",
+        image: "Vests.jpeg",
         //  isPremium: true,
-         },
+      },
     ],
   },
 
@@ -75,12 +89,24 @@ export const PAGE_DATA = {
       "As we continue to grow as a leading global supplier, Silicon Value remains dedicated to delivering superior products to our customers, ensuring their businesses are powered by the best second-hand clothing available.",
     ],
     products: [
-      { id: 1, title: "Used Backpacks", image: "Used Backpacks.jpeg" },
+      { id: 6, title: "Used Dress Shirts", image: "Used Dress Shirts.jpeg" },
       {
         id: 2,
         title: "Used Brand Clothes",
         image: "Used Brand Clothes.jpeg",
       },
+
+      { id: 21, title: "Used Sneakers", image: "Used Sneakers.jpeg" },
+      {
+        id: 26,
+        title: "Used Winter Clothes",
+        image: "Used Winter Clothes.jpeg",
+      },
+      { id: 20, title: "Used Skirts", image: "Used Skirts.jpeg" },
+
+      { id: 15, title: "Used Men's Wear", image: "Used Men's Wear.jpeg" },
+      { id: 12, title: "Used Kids Clothes", image: "Used Kids Clothes.jpeg" },
+      { id: 1, title: "Used Backpacks", image: "Used Backpacks.jpeg" },
       {
         id: 3,
         title: "Used Cargo Pants",
@@ -93,7 +119,7 @@ export const PAGE_DATA = {
         image: "Used Cotton T-Shirts.jpeg",
       },
       { id: 5, title: "Used Denim Jeans", image: "Used Denim Jeans.jpeg" },
-      { id: 6, title: "Used Dress Shirts", image: "Used Dress Shirts.jpeg" },
+
       { id: 7, title: "Used Fashion Heels", image: "Used Fashion Heels.jpeg" },
       {
         id: 8,
@@ -103,7 +129,7 @@ export const PAGE_DATA = {
       { id: 9, title: "Used Handbags", image: "Used Handbags.jpeg" },
       { id: 10, title: "Used Hoodies", image: "Used Hoodies.jpeg" },
       { id: 11, title: "Used Jackets", image: "Used Jackets.jpeg" },
-      { id: 12, title: "Used Kids Clothes", image: "Used Kids Clothes.jpeg" },
+
       {
         id: 13,
         title: "Used Kids Toys Mix",
@@ -111,13 +137,12 @@ export const PAGE_DATA = {
         // isPremium: true,
       },
       { id: 14, title: "Used Ladies Wear", image: "Used Ladies Wear.jpeg" },
-      { id: 15, title: "Used Men's Wear", image: "Used Men's Wear.jpeg" },
+
       { id: 16, title: "Used Mixed Bags", image: "Used Mixed Bags.jpeg" },
       { id: 17, title: "Used Mixed Clothes", image: "Used Mixed Clothes.jpeg" },
       { id: 18, title: "Used Mixed Shoes", image: "Used Mixed Shoes.jpeg" },
       { id: 19, title: "Used School Bags", image: "Used School Bags.jpeg" },
-      { id: 20, title: "Used Skirts", image: "Used Skirts.jpeg" },
-      { id: 21, title: "Used Sneakers", image: "Used Sneakers.jpeg" },
+
       { id: 22, title: "Used Sportswear", image: "Used Sportswear.jpeg" },
       {
         id: 23,
@@ -126,17 +151,12 @@ export const PAGE_DATA = {
       },
       { id: 24, title: "Used Sweaters", image: "Used Sweaters.jpeg" },
       { id: 25, title: "Used Tropical Mix", image: "Used Tropical Mix.jpeg" },
-      {
-        id: 26,
-        title: "Used Winter Clothes",
-        image: "Used Winter Clothes.jpeg",
-      },
     ],
     categories: {
       title: "Browse Our Product Categories",
       banner: {
         image:
-          "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1685875018148-6ac6d41b7c4e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         title: "Used Clothes & Used Shoes & Used Bags",
         subtitle: "Premium Grade Quality • Global Shipping",
       },
@@ -365,7 +385,7 @@ export const PAGE_DATA = {
       title: "Browse Our Fabric Collection",
       banner: {
         image:
-          "https://images.unsplash.com/photo-1558171813-4c088753af8f?q=80&w=1200&auto=format&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1700655741485-92035b5f94aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q290dG9uJTIwJTI2JTIwU2lsayUyMCUyNiUyMExpbmVuJTIwJTI2JTIwUG9seWVzdGVyfGVufDB8fDB8fHww",
         title: "Cotton & Silk & Linen & Polyester",
         subtitle: "Premium Fabrics • Diverse Selection",
       },

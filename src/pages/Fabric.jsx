@@ -26,7 +26,10 @@ const Fabric = () => {
       />
       <CategoryBrowser
         title={t("categories.title")}
-        banner={t("categories.banner", { returnObjects: true })}
+        banner={{
+    ...t("categories.banner", { returnObjects: true }),
+    image: PAGE_DATA.fabric.categories.banner.image,
+  }}
         groups={t("categories.groups", { returnObjects: true }) || []}
       />
       <Banner2

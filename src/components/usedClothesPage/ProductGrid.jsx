@@ -55,7 +55,7 @@ const ProductGrid = ({ products = [] , productsPage}) => {
                       // 2. Use the resolved imageUrl here
                       src={imageUrl}
                       alt={product.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-full  transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                       // 3. Fallback for broken images
                       onError={(e) => {

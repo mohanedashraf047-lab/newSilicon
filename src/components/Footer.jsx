@@ -53,9 +53,6 @@ const Footer = () => {
               alt="Silicon Value Logo"
               className="w-40 sm:w-48 lg:w-56 object-contain mb-4"
             />
-            <p className="text-gray-800 text-xs sm:text-sm text-center sm:text-start leading-relaxed">
-              {t("description")}
-            </p>
           </div>
 
           {/* Quick Links */}
@@ -195,7 +192,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t-2 border-blue-600/30 pt-6">
           <p className="text-center text-sm sm:text-base text-gray-800 w-full flex justify-center">
-            <span>&copy; {new Date().getFullYear()} {COMPANY_INFO.name}. {t("allRightsReserved")}</span>
+            <span>&copy;  {COMPANY_INFO.name}. {t("allRightsReserved")}</span>
           </p>
         </div>
       </div>

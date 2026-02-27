@@ -19,7 +19,10 @@ const UsedClothes = () => {
         highlightWord={t("hero.highlightWord")}
         content={t("content", { returnObjects: true }) || []}
       />
-      <ProductGrid products={PAGE_DATA.usedClothes.products} productsPage="usedClothesImages" />
+      <ProductGrid
+        products={PAGE_DATA.usedClothes.products}
+        productsPage="usedClothesImages"
+      />
       <WhyChooseUs
         title={t("whyChoose.title")}
         highlightWord={t("whyChoose.highlightWord")}
@@ -28,7 +31,10 @@ const UsedClothes = () => {
       />
       <CategoryBrowser
         title={t("categories.title")}
-        banner={t("categories.banner", { returnObjects: true })}
+        banner={{
+          ...t("categories.banner", { returnObjects: true }),
+          image: PAGE_DATA.usedClothes.categories.banner.image,
+        }}
         groups={t("categories.groups", { returnObjects: true }) || []}
       />
       <Banner2

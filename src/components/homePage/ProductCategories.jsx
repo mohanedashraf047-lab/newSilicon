@@ -45,7 +45,7 @@ const ProductCategories = () => {
                 <img
                   src={product.image}
                   alt={categoryNameMap[product.id] || product.name}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 ease-in-out"
+                  className="w-full h-full  hover:scale-110 transition-transform duration-700 ease-in-out"
                 />
               </div>
               <div className="p-5 bg-white text-center">
