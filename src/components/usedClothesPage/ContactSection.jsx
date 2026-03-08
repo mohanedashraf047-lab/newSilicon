@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ShieldCheck, Leaf, Truck, Headset, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { COMPANY_INFO } from "../../constants/siteData";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,21 @@ const ContactSection = () => {
 
   const { t } = useTranslation(["usedClothes"]);
   const valueProps = t("contactSection.valueProps", { returnObjects: true }) || [];
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const toEmail = COMPANY_INFO.email[0];
+    const subject = encodeURIComponent(`Used Clothes Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nWhatsApp: ${formData.whatsapp}\n\nMessage:\n${formData.message}`,
+    );
+    window.location.href = `mailto:${toEmail}?subject=${subject}&body=${body}`;
+  };
 
   // Map icons to translated items
   const icons = [
@@ -68,16 +84,22 @@ const ContactSection = () => {
                   {t("contactSection.formSubtitle")}
                 </p>
 
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder={t("contactSection.placeholders.name")}
                       className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                       required
                     />
                     <input
                       type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder={t("contactSection.placeholders.email")}
                       className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                     />
@@ -85,18 +107,24 @@ const ContactSection = () => {
 
                   <input
                     type="text"
+                    name="whatsapp"
+                    value={formData.whatsapp}
+                    onChange={handleChange}
                     placeholder={t("contactSection.placeholders.whatsapp")}
                     className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                     required
                   />
 
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder={t("contactSection.placeholders.message")}
                     rows="4"
                     className="w-full px-5 py-4 rounded-xl bg-slate-50 border-transparent focus:bg-white focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
                   ></textarea>
 
-                  <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 rounded-xl shadow-lg hover:shadow-orange-200 transition-all flex items-center justify-center gap-2 group">
+                  <button type="submit" className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 rounded-xl shadow-lg hover:shadow-orange-200 transition-all flex items-center justify-center gap-2 group">
                     {t("contactSection.submitButton")}
                     <Send
                       size={18}
