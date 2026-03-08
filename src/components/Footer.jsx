@@ -158,17 +158,14 @@ const Footer = () => {
                 <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
                   {t("contactBar.whatsappLabel")}
                 </p>
-                {COMPANY_INFO.whatsapp.map((phone) => (
-                  <a
-                    key={phone}
-                    href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-gray-800 hover:text-blue-700 transition-colors text-sm"
-                  >
-                    {phone}
-                  </a>
-                ))}
+                <a
+                  href={`https://wa.me/${COMPANY_INFO.whatsapp[0].replace(/[^0-9]/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-800 hover:text-blue-700 transition-colors text-sm"
+                >
+                  {COMPANY_INFO.whatsapp[0]}
+                </a>
               </div>
             </div>
 
@@ -179,11 +176,9 @@ const Footer = () => {
                 <p className="text-xs font-bold text-gray-900 uppercase tracking-wide">
                   {t("contactBar.locationLabel")}
                 </p>
-                {COMPANY_INFO.address.map((addr) => (
-                  <p key={addr} className="text-gray-800 text-sm">
-                    {addr}
-                  </p>
-                ))}
+                <p className="text-gray-800 text-sm">
+                  {COMPANY_INFO.address[0]}
+                </p>
               </div>
             </div>
           </div>

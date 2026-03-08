@@ -11,7 +11,7 @@ const CompanyVideo = () => {
   const images = [
     {
       id: 1,
-      src: factoryImg1, // Use the variable, not the string
+      src: factoryImg1,
       link: "/about",
     },
     {
@@ -32,90 +32,80 @@ const CompanyVideo = () => {
   ];
 
   return (
-    <section className="relative py-16 lg:py-20 bg-blue-500">
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black/30"></div>
+    <section className="relative py-20 lg:py-28 bg-linear-to-br from-blue-900 via-blue-500 to-indigo-900">
+      {/* Decorative Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
+      </div>
 
       {/* Content */}
-      <div className="relative container mx-auto px-4">
+      <div className="relative container mx-auto px-6">
         {/* Section Title */}
-        <h2 className="text-center text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 px-4">
-        {t("companyVideo.sectionTitle")}
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            {t("companyVideo.sectionTitle")}
+          </h2>
+          <div className="w-24 h-1 bg-linear-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
+        </div>
 
-        {/* Main Content Row */}
-        <div className="grid lg:grid-cols-12 gap-8 mb-12">
-          {/* Video Column */}
-          <div className="lg:col-span-8">
-            <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-2xl group">
-              {/* Video Thumbnail */}
-              <img
-                src="https://static.kingswayvideo.com/101299836586060892225/vod/ce7e399065/cover.jpg"
-                alt="Company Video"
-                className="w-full h-full object-cover object-top"
-              />
-
-              {/* Play Button Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/50 transition-all duration-300">
-                <button
-                  className="w-20 h-20 lg:w-24 lg:h-24 bg-white/90 rounded-full flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300 shadow-2xl"
-                  aria-label="Play video"
-                >
-                  <svg
-                    className="w-10 h-10 lg:w-12 lg:h-12 text-blue-600 ms-1"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-              </div>
-
-              {/* Video Duration */}
-              <div className="absolute bottom-4 left-4">
-                <span className="px-3 py-1 bg-black/70 text-white text-sm rounded-full backdrop-blur-sm">
-                  02:15
-                </span>
-              </div>
+        {/* Company Info Card */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="relative bg-white/10 backdrop-blur-lg rounded-2xl p-8 sm:p-10 lg:p-12 border border-white/20 shadow-2xl">
+            {/* Decorative Quote Icon */}
+            <div className="absolute top-6 right-6 text-white/20">
+              <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+              </svg>
             </div>
-          </div>
 
-          {/* Company Info Column */}
-          <div className="lg:col-span-4">
-            <div className="h-full flex flex-col justify-center">
-              <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-6 text-center lg:text-start">
-                {t("companyVideo.companyName")}
-              </h2>
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6">
+              {t("companyVideo.companyName")}
+            </h3>
 
-              <p className="text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
-                <strong>
-                  {t("companyVideo.description")}
-                </strong>
-              </p>
+            <p className="text-base sm:text-lg lg:text-xl text-blue-100/90 leading-relaxed">
+              <strong>{t("companyVideo.description")}</strong>
+            </p>
+
+            {/* Decorative Bottom Line */}
+            <div className="mt-8 flex items-center gap-2">
+              <div className="w-12 h-0.5 bg-linear-to-r from-blue-400 to-transparent"></div>
+              <div className="flex gap-1">
+                <span className="w-2 h-2 rounded-full bg-blue-400"></span>
+                <span className="w-2 h-2 rounded-full bg-indigo-400"></span>
+                <span className="w-2 h-2 rounded-full bg-purple-400"></span>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Image Gallery Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-8">
           {images.map((image, index) => (
             <div
               key={image.id}
-              className="group relative rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fade-in-left overflow-hidden"
+              className="group relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/30"
               style={{
                 animationDelay: `${index * 0.1}s`,
                 animationFillMode: "backwards",
               }}
             >
-              <a href={image.link} className="block relative aspect-5/6">
+              <a className="block relative aspect-5/6">
                 <img
                   src={image.src}
-                  alt=""
+                  alt="Company Visualization"
                   loading="lazy"
-                  className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110
-            ${image.id === 3 ? "object-top" : "object-center"}`}
-                  /* If it's the 3rd image, show the top. Otherwise, keep it centered like normal */
+                  className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110
+                    ${image.id === 3 ? "object-top" : "object-center"}`}
                 />
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-linear-to-t from-blue-900/90 via-blue-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                  <span className="text-white text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    
+                  </span>
+                </div>
+                {/* Border Glow */}
+                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-blue-400/50 transition-colors duration-300"></div>
               </a>
             </div>
           ))}

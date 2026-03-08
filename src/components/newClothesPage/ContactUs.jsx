@@ -96,21 +96,13 @@ const ContactUs = () => {
                   onChange={handleChange}
                 />
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="">
                 <input
                   type="tel"
                   name="whatsapp"
                   value={formData.whatsapp}
                   placeholder={t("contactUs.placeholders.whatsapp")}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 outline-none"
-                  onChange={handleChange}
-                />
-                <input
-                  type="text"
-                  name="previousSource"
-                  value={formData.previousSource}
-                  placeholder={t("contactUs.placeholders.previousSource")}
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 outline-none"
                   onChange={handleChange}
                 />
@@ -158,15 +150,12 @@ const ContactUs = () => {
                     <Mail size={24} />
                   </div>
                   <div className="space-y-1 pt-2">
-                    {COMPANY_INFO.email.map((email) => (
-                      <a
-                        key={email}
-                        href={`mailto:${email}`}
-                        className="block text-lg hover:text-[#FFD700] transition-colors"
-                      >
-                        {email}
-                      </a>
-                    ))}
+                    <a
+                      href={`mailto:${COMPANY_INFO.email[0]}`}
+                      className="block text-lg hover:text-[#FFD700] transition-colors"
+                    >
+                      {COMPANY_INFO.email[0]}
+                    </a>
                   </div>
                 </div>
 
@@ -176,17 +165,14 @@ const ContactUs = () => {
                     <FaWhatsapp size={24} />
                   </div>
                   <div className="space-y-1 pt-2">
-                    {COMPANY_INFO.whatsapp.map((phone) => (
-                      <a
-                        key={phone}
-                        href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block text-lg hover:text-[#FFD700] transition-colors"
-                      >
-                        {phone}
-                      </a>
-                    ))}
+                    <a
+                      href={`https://wa.me/${COMPANY_INFO.whatsapp[0].replace(/[^0-9]/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-lg hover:text-[#FFD700] transition-colors"
+                    >
+                      {COMPANY_INFO.whatsapp[0]}
+                    </a>
                   </div>
                 </div>
 
@@ -196,28 +182,25 @@ const ContactUs = () => {
                     <Phone size={24} />
                   </div>
                   <div className="space-y-1 pt-2">
-                    {COMPANY_INFO.whatsapp.map((phone) => (
-                      <a
-                        key={phone}
-                        href={`tel:${phone.replace(/[^0-9+]/g, "")}`}
-                        onClick={(e) => handlePhoneClick(e, phone)}
-                        className="flex items-center gap-2 text-lg hover:text-[#FFD700] transition-colors cursor-pointer"
-                        title="Click to call (Mobile) or copy (Desktop)"
-                      >
-                        {phone}
-                        {copiedNumber === phone ? (
-                          <Check
-                            size={16}
-                            className="text-green-400 animate-bounce"
-                          />
-                        ) : (
-                          <Copy
-                            size={14}
-                            className="opacity-0 group-hover:opacity-50 transition-opacity hidden md:block"
-                          />
-                        )}
-                      </a>
-                    ))}
+                    <a
+                      href={`tel:${COMPANY_INFO.whatsapp[0].replace(/[^0-9+]/g, "")}`}
+                      onClick={(e) => handlePhoneClick(e, COMPANY_INFO.whatsapp[0])}
+                      className="flex items-center gap-2 text-lg hover:text-[#FFD700] transition-colors cursor-pointer"
+                      title="Click to call (Mobile) or copy (Desktop)"
+                    >
+                      {COMPANY_INFO.whatsapp[0]}
+                      {copiedNumber === COMPANY_INFO.whatsapp[0] ? (
+                        <Check
+                          size={16}
+                          className="text-green-400 animate-bounce"
+                        />
+                      ) : (
+                        <Copy
+                          size={14}
+                          className="opacity-0 group-hover:opacity-50 transition-opacity hidden md:block"
+                        />
+                      )}
+                    </a>
                   </div>
                 </div>
 
@@ -227,11 +210,9 @@ const ContactUs = () => {
                     <MapPin size={24} />
                   </div>
                   <div className="space-y-1 pt-2">
-                    {COMPANY_INFO.address.map((addr) => (
-                      <p key={addr} className="text-lg leading-relaxed">
-                        {addr}
-                      </p>
-                    ))}
+                    <p className="text-lg leading-relaxed">
+                      {COMPANY_INFO.address[0]}
+                    </p>
                   </div>
                 </div>
               </div>

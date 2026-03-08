@@ -15,6 +15,7 @@ import {
   Globe,
   MessageCircle,
 } from "lucide-react";
+import { COMPANY_INFO } from "../../constants/siteData";
 
 const ExpertiseContact = () => {
   const { t } = useTranslation(["contact"]);
@@ -66,8 +67,8 @@ const ExpertiseContact = () => {
       timer: 3000,
       timerProgressBar: true,
     }).then(() => {
-      const recipient = "info@siliconvalue.org";
-      const cc = "maryceo@siliconvalue.org,ademceo@siliconvalue.org";
+      const recipient = COMPANY_INFO.email[0];
+      const cc = COMPANY_INFO.email.length > 1 ? COMPANY_INFO.email.slice(1).join(",") : "";
       const subject = `Inquiry from ${formData.name} - Silicon Value Partnership`;
       const body = `
 Dear Silicon Value Team,
@@ -86,7 +87,9 @@ ${formData.message}
 Sent via SiliconValue.org Inquiry Portal
       `.trim();
 
-      const mailtoLink = `mailto:${recipient}?cc=${cc}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = cc
+        ? `mailto:${recipient}?cc=${cc}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+        : `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailtoLink;
     });
   };
@@ -212,7 +215,7 @@ Sent via SiliconValue.org Inquiry Portal
               {/* Email Section - Centered & Modernized */}
               <div className="flex flex-col items-center justify-center border-b border-slate-100 pb-8">
                 <a
-                  href="mailto:info@siliconvalue.org"
+                  href={`mailto:${COMPANY_INFO.email[0]}`}
                   className="group relative flex items-center gap-3 px-6 py-3 bg-slate-50 rounded-2xl border border-slate-200 transition-all duration-300 hover:bg-white hover:border-[#D4AF37] hover:shadow-lg hover:shadow-[#D4AF37]/10 hover:-translate-y-1"
                 >
                   {/* Icon with a subtle pulse */}
@@ -222,7 +225,7 @@ Sent via SiliconValue.org Inquiry Portal
                   </div>
 
                   <span className="text-base md:text-lg font-bold text-slate-700 group-hover:text-[#003366] transition-colors">
-                    info@siliconvalue.org
+                    {COMPANY_INFO.email[0]}
                   </span>
 
                   {/* Subtle "Send Mail" hint that appears on hover */}
@@ -233,33 +236,27 @@ Sent via SiliconValue.org Inquiry Portal
               </div>
 
               {/* WhatsApp Hubs (Kept consistent with the new style) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
-                {[
-                  { label: t("expertise.chinaHQ"), phone: "+86 132 7223 4047" },
-                  { label: t("expertise.egyptHub"), phone: "+20 11 5859 5725" },
-                ].map((hub) => (
-                  <div
-                    key={hub.label}
-                    className="group cursor-pointer flex flex-col items-center text-center sm:items-start sm:text-start space-y-2"
-                    onClick={() => openWhatsApp(hub.phone)}
-                  >
-                    <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-[#D4AF37]" />
-                      <p className="text-[10px] font-black uppercase tracking-widest text-[#003366]">
-                        {hub.label}
-                      </p>
-                    </div>
-
-                    <div className="flex items-center gap-2 text-sm md:text-base font-bold text-slate-700 group-hover:text-[#25D366] transition-colors">
-                      <Phone size={14} />
-                      <span>{hub.phone}</span>
-                    </div>
-
-                    <p className="text-[9px] text-slate-400 uppercase font-bold tracking-tighter group-hover:text-slate-600">
-                      {t("expertise.clickToChat")}
+              <div className="flex justify-center">
+                <div
+                  className="group cursor-pointer flex flex-col items-center text-center sm:items-start sm:text-start space-y-2"
+                  onClick={() => openWhatsApp("+86 132 7223 4047")}
+                >
+                  <div className="flex items-center gap-2">
+                    <MapPin size={16} className="text-[#D4AF37]" />
+                    <p className="text-[10px] font-black uppercase tracking-widest text-[#003366]">
+                      {t("expertise.chinaHQ")}
                     </p>
                   </div>
-                ))}
+
+                  <div className="flex items-center gap-2 text-sm md:text-base font-bold text-slate-700 group-hover:text-[#25D366] transition-colors">
+                    <Phone size={14} />
+                    <span>+86 132 7223 4047</span>
+                  </div>
+
+                  <p className="text-[9px] text-slate-400 uppercase font-bold tracking-tighter group-hover:text-slate-600">
+                    {t("expertise.clickToChat")}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
