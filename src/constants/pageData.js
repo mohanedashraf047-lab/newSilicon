@@ -385,8 +385,7 @@ export const PAGE_DATA = {
     categories: {
       title: "Browse Our Fabric Collection",
       banner: {
-        image:
-          "https://plus.unsplash.com/premium_photo-1700655741485-92035b5f94aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q290dG9uJTIwJTI2JTIwU2lsayUyMCUyNiUyMExpbmVuJTIwJTI2JTIwUG9seWVzdGVyfGVufDB8fDB8fHww",
+        image: cottonBackground,
         title: "Cotton & Silk & Linen & Polyester",
         subtitle: "Premium Fabrics • Diverse Selection",
       },
