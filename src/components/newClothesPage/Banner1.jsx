@@ -1,14 +1,14 @@
 
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import china from "../../assets/newClothesImages/china-stars3.jpeg";
+import china from "../../assets/newClothesImages/china-stars9.jpeg";
 
 const Banner1 = () => {
   const { t } = useTranslation(["newClothes"]);
 
   return (
     <section
-      className="relative min-h-75 lg:min-h-75 flex items-center justify-center bg-cover bg-center bg-no-repeat   "
+      className="relative min-h-75 lg:min-h-75 flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${china})`,
       }}
