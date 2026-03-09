@@ -10,6 +10,7 @@ import leatherBagImg from "../assets/Product/Leather-bag.jpeg";
 import linenShirt2Img from "../assets/Product/Linen-shirt2.jpeg";
 import fleeceJacketImg from "../assets/Product/Fleece-jacket-newClothes.jpeg";
 import cottonBackground from "../assets/cotton-background.jpeg";
+import china3 from "../assets/newClothesImages/china-stars3.jpeg";
 
 export const PAGE_DATA = {
   // Data for New Clothes page
@@ -157,7 +158,7 @@ export const PAGE_DATA = {
     categories: {
       title: "Browse Our Product Categories",
       banner: {
-        image: cottonBackground,
+        image: china3,
         title: "Used Clothes & Used Shoes & Used Bags",
         subtitle: "Premium Grade Quality • Global Shipping",
       },
