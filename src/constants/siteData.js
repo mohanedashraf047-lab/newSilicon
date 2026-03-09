@@ -18,8 +18,8 @@ export const COMPANY_INFO = {
   fullDescription:
     "Silicon Value Co., Ltd is a highly regarded recycling company that exports used clothes, shoes, and bags to countries in Africa, Southeast Asia, and the Middle East.",
   email: ["info@siliconvalue.org"],
-  whatsapp: ["+86 134 1957 9731", "+20 11 58595725"],
-  address: ["Wuhan, China", "Cairo, Egypt"],
+  whatsapp: ["+8613247197320", "+20 11 58595725"],
+  address: ["China, Hubei, Wuhan", "Cairo, Egypt"],
 };
 
 export const NAVIGATION = {

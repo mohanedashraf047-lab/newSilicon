@@ -98,13 +98,13 @@ Sent via SiliconValue.org Inquiry Portal
     <div className="bg-white font-sans overflow-x-hidden">
       {/* HERO SECTION - Enhanced Top Padding for visibility */}
       <div className="relative min-h-[350px] md:min-h-[450px] w-full flex items-center justify-center bg-[#003366] px-4 pt-24 pb-12">
-        <div className="absolute inset-0 z-0 opacity-40 bg-gradient-to-br from-[#003366] via-[#004a8f] to-[#001f3d] animate-gradient-slow"></div>
+        <div className="absolute inset-0 z-0 opacity-40 bg-linear-to-br from-[#003366] via-[#004a8f] to-[#001f3d] animate-gradient-slow"></div>
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
 
         <div className="relative z-10 w-full max-w-5xl text-center">
           <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-tight animate-fade-in">
             {t("expertise.heroTitle")}{" "}
-            <span className="text-[#D4AF37] block mt-2 animate-shimmer bg-gradient-to-r from-[#D4AF37] via-[#f1d57a] to-[#D4AF37] bg-[length:200%_auto] bg-clip-text text-transparent">
+            <span className="text-[#D4AF37] block mt-2 animate-shimmer bg-linear-to-r from-[#D4AF37] via-[#f1d57a] to-[#D4AF37] bg-[length:200%_auto] bg-clip-text text-transparent">
               {t("expertise.heroHighlight")}
             </span>
           </h1>
@@ -154,7 +154,7 @@ Sent via SiliconValue.org Inquiry Portal
 
           {/* Right Side: Contact Card */}
           <div className="w-full lg:w-1/2 lg:sticky lg:top-8">
-            <div className="bg-white rounded-[2rem] shadow-2xl border border-slate-50 overflow-hidden">
+            <div className="bg-white rounded-4xl shadow-2xl border border-slate-50 overflow-hidden">
               <div className="bg-[#003366] py-6 text-center border-b-4 border-[#D4AF37]">
                 <div className="text-white font-bold text-2xl tracking-[0.2em] uppercase">
                   SILICON<span className="text-[#D4AF37]">VALUE</span>
@@ -239,7 +239,7 @@ Sent via SiliconValue.org Inquiry Portal
               <div className="flex justify-center">
                 <div
                   className="group cursor-pointer flex flex-col items-center text-center sm:items-start sm:text-start space-y-2"
-                  onClick={() => openWhatsApp("+86 132 7223 4047")}
+                  onClick={() => openWhatsApp("+8613247197320")}
                 >
                   <div className="flex items-center gap-2">
                     <MapPin size={16} className="text-[#D4AF37]" />
@@ -250,7 +250,7 @@ Sent via SiliconValue.org Inquiry Portal
 
                   <div className="flex items-center gap-2 text-sm md:text-base font-bold text-slate-700 group-hover:text-[#25D366] transition-colors">
                     <Phone size={14} />
-                    <span>+86 132 7223 4047</span>
+                    <span>+8613247197320</span>
                   </div>
 
                   <p className="text-[9px] text-slate-400 uppercase font-bold tracking-tighter group-hover:text-slate-600">

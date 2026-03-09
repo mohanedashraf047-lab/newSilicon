@@ -7,12 +7,14 @@ import leatherShoesImg from "../assets/Product/Leather-shoes.jpeg";
 import canvasShoesImg from "../assets/Product/Canvas-shoes.jpeg";
 import nylonBagImg from "../assets/Product/Nylon-bag.jpeg";
 import leatherBagImg from "../assets/Product/Leather-bag.jpeg";
-import linenShirtImg from "../assets/Product/Linen-shirt.jpeg";
+import linenShirt2Img from "../assets/Product/Linen-shirt2.jpeg";
 import fleeceJacketImg from "../assets/Product/Fleece-jacket-newClothes.jpeg";
+import cottonBackground from "../assets/cotton-background.jpeg";
 
 export const PAGE_DATA = {
   // Data for New Clothes page
   newClothes: {
+
     products: [
       { id: 6, title: "Cardigans", image: "Cardigans.jpeg" },
       { id: 12, title: "Jackets", image: "Jackets.jpeg" },
@@ -155,8 +157,7 @@ export const PAGE_DATA = {
     categories: {
       title: "Browse Our Product Categories",
       banner: {
-        image:
-          "https://images.unsplash.com/photo-1685875018148-6ac6d41b7c4e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: cottonBackground,
         title: "Used Clothes & Used Shoes & Used Bags",
         subtitle: "Premium Grade Quality • Global Shipping",
       },
@@ -557,9 +558,9 @@ export const PRODUCT_CATEGORIES = [
   },
   {
     id: "New Clothes",
-    name: "Linen shirt",
-    image: linenShirtImg,
-    path: "/linen-clothes",
+    name: "Linen shirt2",
+    image: linenShirt2Img,
+    path: "/linen2-clothes",
   },
   {
     id: "Fleece jacket",

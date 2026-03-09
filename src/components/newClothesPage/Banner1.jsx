@@ -1,6 +1,7 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import china from "../../assets/newClothesImages/china-stars3.jpeg";
 
 const Banner1 = () => {
   const { t } = useTranslation(["newClothes"]);
@@ -9,7 +10,7 @@ const Banner1 = () => {
     <section
       className="relative min-h-75 lg:min-h-75 flex items-center justify-center bg-cover bg-center bg-no-repeat   "
       style={{
-        backgroundImage: `url('https://hissenglobal.com/wp-content/uploads/2025/04/小banner-6.webp')`,
+        backgroundImage: `url(${china})`,
       }}
     >
       {/* Background Overlay - Using Tailwind 4 opacity and blur */}
